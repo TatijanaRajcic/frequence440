@@ -1,0 +1,40 @@
+button {
+  border: none;
+  font-family: Ostia Antica;
+  display: flex;
+  align-self: center;
+  padding: 16px 24px;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 10px 0px;
+  height: 52px;
+}
+
+.buttons-panel {
+  display: flex;
+}
+
+.buttons-panel button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.white-button {
+  background: #ffffff;
+  color: #131e1e;
+}
+
+.black-button {
+  background: #131e1e;
+  color: #ffffff;
+}
+
+.mixed-button {
+  background: #131e1e;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  color: #ffffff;
+}

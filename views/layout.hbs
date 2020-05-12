@@ -2,12 +2,18 @@
 <html>
 
 <head>
+
+  {{!-- COMMUN STYLESHEETS --}}
   <title>{{title}}</title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
-  <link rel='stylesheet' href='/stylesheets/{{style}}.css' />
   <link rel="stylesheet" href="/stylesheets/nav.css">
-  <script type="module" src="/javascripts/nav.js"></script>
   <link rel="stylesheet" href="/stylesheets/footer.css">
+  {{!-- SPECIFIC STYLESHEETS --}}
+  {{#each styles}}
+  <link rel="stylesheet" href="/stylesheets/{{this}}.css">
+  {{/each}}
+  {{!-- JS SCRIPTS --}}
+  <script type="module" src="/javascripts/nav.js"></script>
 </head>
 
 <body id="body">

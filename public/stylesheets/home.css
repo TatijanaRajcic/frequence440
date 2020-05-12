@@ -1,34 +1,22 @@
 /* --------------------- HEADER ------------------- */
 
-.header-home {
-  width: 100%;
-  margin-top: 104px; /* dimensions of the nav */
-  height: 666px; /* 770px - 104px for the nav */
-  padding: 84px 100px 0 100px;
-  background: #131e1e;
-  font-size: 48px;
-  line-height: 60px;
-}
-
-.header-home .main-title {
+.header-intro .main-title {
   display: flex;
   width: fit-content;
-  height: 80px;
+  height: 80px; /* est-ce que c'est nécessaire ? */
   padding: 10px 24px;
   background: #ffffff;
 }
 
-.header-home .main-title h1 {
+.header-intro .main-title h1 {
   align-self: center;
   color: #131e1e;
   margin: 10px 0px;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 48px; /* still need to specify the font-size because otherwise it does not overide h1's degault font size */
 }
 
-.header-home p {
+.header-intro p {
   width: 80%;
-  height: 180px;
   padding-top: 75px;
   color: #ffffff;
 }
@@ -38,9 +26,9 @@
   padding-bottom: 1px;
 }
 
-/* -------------------------- MAIN SECTIONS / COMUN CODE -------------------------- */
+/* -------------------------- MAIN SECTIONS / COMMUN CODE -------------------------- */
 .main-section {
-  height: 666px;
+  height: 60vh;
 }
 
 .prg-header h2 {
@@ -51,9 +39,6 @@
 }
 
 .prg-header p {
-  min-width: 500px; /* changer cette propriété sur mobile*/
-  max-width: 50%;
-  height: 80px;
   font-family: Traulha;
   font-style: italic;
   font-weight: normal;
@@ -82,27 +67,10 @@
   justify-content: space-between;
 }
 
-.left-bottom button {
-  border: none;
-  display: flex;
-  align-self: center;
-  width: 294px;
-  height: 52px;
-  padding: 16px 24px;
-  margin: 10px 0px;
-  background: #131e1e;
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-
 .inline-list {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 25px;
   list-style: none;
   color: #131e1e;
   margin: 0 0 12px 0;
@@ -129,7 +97,6 @@
 .right-bottom h2,
 .right-top h2 {
   width: 100%;
-  height: 80px;
   font-size: 36px;
   line-height: 40px;
   color: #131e1e;

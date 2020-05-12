@@ -1,0 +1,32 @@
+.header-intro {
+  width: 100%;
+  margin-top: 104px; /* dimensions of the nav / 104px*/
+  height: 60vh; /* 770px - 104px = 666px for the nav */
+  padding: 84px 100px 0 100px;
+  background: #131e1e;
+  font-size: 48px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.catchphrase {
+  width: 70%;
+}
+
+.page-title {
+  font-size: 16px;
+  line-height: 20px;
+  color: #adadad;
+  margin: 10px 0px;
+}
+
+.sub-catchphrase {
+  font-family: Traulha;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 40px;
+  color: #e6e6e2;
+  width: 50%;
+  margin: 50px 0;
+}
