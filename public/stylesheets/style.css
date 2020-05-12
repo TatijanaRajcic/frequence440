@@ -1,9 +1,31 @@
+@font-face {
+  font-family: "Ostia Antica";
+  src: url("/fonts/Ostia_Antica_WEB-Regular.eot");
+  src: url("/fonts/Ostia_Antica_WEB-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/Ostia_Antica_WEB-Regular.woff") format("woff"),
+    url("/fonts/Ostia_Antica_WEB-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Traulha";
+  src: url("/fonts/Traulha_WEB-Italica.eot");
+  src: url("/fonts/Traulha_WEB-Italica.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Traulha_WEB-Italica.woff") format("woff"),
+    url("/fonts/Traulha_WEB-Italica.woff2") format("woff2");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-style: normal;
+  font-weight: normal;  
 }
 
 body {
   width: 100%;
+  font-family: Ostia Antica;
+  font-size: 16px;
+  line-height: 20px;
 }

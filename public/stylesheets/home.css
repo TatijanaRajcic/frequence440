@@ -6,27 +6,22 @@
   height: 666px; /* 770px - 104px for the nav */
   padding: 84px 100px 0 100px;
   background: #131e1e;
-  font-family: Ostia Antica;
-  font-style: normal;
-  font-weight: normal;
   font-size: 48px;
   line-height: 60px;
 }
 
 .header-home .main-title {
-  width: 100%;
+  display: flex;
+  width: fit-content;
   height: 80px;
   padding: 10px 24px;
-  display: flex;
   background: #ffffff;
 }
 
 .header-home .main-title h1 {
-  color: #131e1e;
   align-self: center;
+  color: #131e1e;
   margin: 10px 0px;
-  font-style: normal;
-  font-weight: normal;
   font-size: 48px;
   line-height: 60px;
 }
@@ -97,9 +92,6 @@
   margin: 10px 0px;
   background: #131e1e;
   color: #ffffff;
-  font-family: Ostia Antica;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.5px;
@@ -112,11 +104,6 @@
   width: 100%;
   height: 25px;
   list-style: none;
-  font-family: Ostia Antica;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
   color: #131e1e;
   margin: 0 0 12px 0;
 }
@@ -143,9 +130,6 @@
 .right-top h2 {
   width: 100%;
   height: 80px;
-  font-family: Ostia Antica;
-  font-style: normal;
-  font-weight: normal;
   font-size: 36px;
   line-height: 40px;
   color: #131e1e;
@@ -156,10 +140,6 @@
 }
 
 .right-footer h3 {
-  font-family: Ostia Antica;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -218,11 +198,6 @@
 }
 
 .testimonies blockquote footer {
-  font-family: Ostia Antica;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
   text-align: center;
   letter-spacing: 0.5px;
   text-transform: uppercase;
