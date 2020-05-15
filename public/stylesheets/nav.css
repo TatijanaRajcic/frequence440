@@ -66,11 +66,6 @@
   line-height: 56px;
 }
 
-.overlay a:hover,
-.overlay a:focus {
-  color: #bfbfc0;
-}
-
 .overlay footer {
   display: flex;
   justify-content: space-between;
@@ -84,6 +79,10 @@
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
+}
+
+.active-link ::before {
+  content: "— ";
 }
 
 /* @media screen and (max-height: 450px) {

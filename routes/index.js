@@ -3,13 +3,17 @@ var router = express.Router();
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("home", { styles: ["header", "home", "buttons"] });
+  res.render("home", {
+    styles: ["header", "home", "buttons"],
+    currentPage: "home",
+  });
 });
 
 router.get("/prestations", function (req, res, next) {
   res.render("presta", {
     styles: ["header", "presta", "buttons"],
     scripts: ["presta"],
+    currentPage: "presta",
   });
 });
 

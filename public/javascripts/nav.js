@@ -42,6 +42,7 @@ function openNav() {
   menuIcon.classList.remove("fa-bars");
   menuIcon.classList.add("fa-times");
   addNavListeners();
+  addActiveLink();
 }
 
 function closeNav() {
@@ -52,3 +53,18 @@ function closeNav() {
 }
 
 addNavListeners();
+
+function addActiveLink() {
+  let fullscreenNav = document.getElementById("myNav");
+  let currentPage = fullscreenNav.dataset.page;
+  document
+    .querySelector(".overlay-content")
+    .querySelectorAll("li")
+    .forEach((link) => {
+      if (link.classList.contains("active-link"))
+        link.classList.remove("active-link");
+      if (link.dataset.link === currentPage) {
+        link.classList.add("active-link");
+      }
+    });
+}
