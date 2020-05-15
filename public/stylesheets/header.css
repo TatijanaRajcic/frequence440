@@ -1,7 +1,7 @@
 .header-intro {
   width: 100%;
-  margin-top: 104px; /* dimensions of the nav / 104px*/
-  height: 60vh; /* 770px - 104px = 666px for the nav */
+  margin-top: 10vh; /* dimensions of the nav */
+  height: 90vh;
   padding: 84px 100px 0 100px;
   background: #131e1e;
   font-size: 48px;

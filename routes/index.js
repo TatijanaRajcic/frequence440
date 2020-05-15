@@ -7,7 +7,10 @@ router.get("/", function (req, res, next) {
 });
 
 router.get("/prestations", function (req, res, next) {
-  res.render("presta", { styles: ["header", "presta", "buttons"] });
+  res.render("presta", {
+    styles: ["header", "presta", "buttons"],
+    scripts: ["presta"],
+  });
 });
 
 module.exports = router;

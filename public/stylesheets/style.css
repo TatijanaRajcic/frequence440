@@ -34,3 +34,25 @@ html {
   height: 100%;
   width: 100%;
 }
+
+/* -------------------------- MAIN SECTIONS / COMMUN CODE -------------------------- */
+
+.main-section {
+  padding: 64px 100px;
+}
+
+.prg-header h2 {
+  font-size: 36px;
+  line-height: 40px;
+  color: #131e1e;
+  margin: 0 0 12px 0;
+}
+
+.prg-header p {
+  font-family: Traulha;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 40px;
+  color: #000000;
+}

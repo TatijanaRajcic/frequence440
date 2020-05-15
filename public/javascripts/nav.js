@@ -16,7 +16,7 @@ function toggleVisibility() {
 }
 
 function toggleColor() {
-  let myColoredElements = document.querySelectorAll(".main-color");
+  let myColoredElements = document.querySelectorAll(".main-section");
   // console.log(myColoredElements);
   myColoredElements.forEach((oneColoredElement) => {
     let currentBgColor = window.getComputedStyle(oneColoredElement)

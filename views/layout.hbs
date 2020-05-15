@@ -2,7 +2,8 @@
 <html>
 
 <head>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {{!-- COMMUN STYLESHEETS --}}
   <title>{{title}}</title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
@@ -13,7 +14,11 @@
   <link rel="stylesheet" href="/stylesheets/{{this}}.css">
   {{/each}}
   {{!-- JS SCRIPTS --}}
+  <script async src="https://kit.fontawesome.com/3c3287be3c.js" crossorigin="anonymous"></script>
   <script type="module" src="/javascripts/nav.js"></script>
+  {{#each scripts}}
+  <script type="module" src="/javascripts/{{this}}.js"></script>
+  {{/each}}
 </head>
 
 <body id="body">
