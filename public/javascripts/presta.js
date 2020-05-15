@@ -10,6 +10,9 @@ function displayData() {
         (setOfData) => setOfData.category === button.dataset.cat
       );
       let finalData = selectedCategory[0].options;
+      let additionalData = selectedCategory[0].addOn
+        ? selectedCategory[0].addOn
+        : null;
       finalData.forEach((oneArticle, index) => {
         let newArticle = document.createElement("div");
         newArticle.classList.add("card");
@@ -20,6 +23,18 @@ function displayData() {
         `;
         resultDiv.append(newArticle);
       });
+      let additionalContainer = document.querySelector(".additional-container");
+      additionalContainer.innerHTML = "";
+      additionalContainer.style.visibility = "hidden";
+      if (additionalData) {
+        additionalContainer.style.visibility = "visible";
+        let additionalInfo = document.createElement("div");
+        additionalInfo.innerHTML = `
+        <h3>${additionalData.title}</h3>
+        <p class="content">${additionalData.content}</p>
+        `;
+        additionalContainer.append(additionalInfo);
+      }
     }
   });
 }
