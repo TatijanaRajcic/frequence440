@@ -54,7 +54,13 @@ function getGridData() {
   console.log("nbr of cards", nbrCards);
   console.log("nbr of columns", gridColumnCount);
 
-  console.log(nbrCards % gridColumnCount);
+  let lastCard = document.getElementsByClassName("card")[nbrCards - 1];
+
+  if (nbrCards % gridColumnCount === 1) {
+    lastCard.classList.add("expand");
+  } else {
+    lastCard.classList.remove("expand");
+  }
 
   // si égal à 1 alors on agrandit la taille de la dernière section
 }
