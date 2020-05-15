@@ -47,12 +47,6 @@ function getGridData() {
   let gridColumnCount = gridComputedStyle
     .getPropertyValue("grid-template-columns")
     .split(" ").length;
-  let actualColumnSizes = gridComputedStyle
-    .getPropertyValue("grid-template-columns")
-    .split(" ")
-    .map(parseFloat);
-  console.log("nbr of cards", nbrCards);
-  console.log("nbr of columns", gridColumnCount);
 
   let lastCard = document.getElementsByClassName("card")[nbrCards - 1];
 

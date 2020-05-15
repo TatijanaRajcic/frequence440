@@ -23,18 +23,18 @@
 
 @media (min-width: 780px) {
   #home .header-intro p {
-    width: 65%;
+    width: 75%;
   }
 }
 
 .underlined {
-  border-bottom: 1px solid #131e1e;
-  padding-bottom: 1px;
+  text-decoration: underline;
 }
 
 /* -------------------------- DISCOVER -------------------------- */
 
 .discover {
+  height: 70vh;
   background: #e5e5e5;
   display: flex;
   padding: 0;

@@ -1,5 +1,6 @@
 let previousScroll = 30;
 let navbar = document.getElementById("navbar");
+let menuIcon = document.getElementById("content-navbar").querySelector("i");
 
 window.onscroll = function () {
   toggleVisibility();
@@ -17,7 +18,6 @@ function toggleVisibility() {
 
 function toggleColor() {
   let myColoredElements = document.querySelectorAll(".main-section");
-  // console.log(myColoredElements);
   myColoredElements.forEach((oneColoredElement) => {
     let currentBgColor = window.getComputedStyle(oneColoredElement)
       .backgroundColor;
@@ -28,3 +28,27 @@ function toggleColor() {
     }
   });
 }
+
+function addNavListeners() {
+  if (menuIcon.classList.contains("fa-bars")) {
+    menuIcon.onclick = openNav;
+  } else {
+    menuIcon.onclick = closeNav;
+  }
+}
+
+function openNav() {
+  document.getElementById("myNav").style.height = "90vh";
+  menuIcon.classList.remove("fa-bars");
+  menuIcon.classList.add("fa-times");
+  addNavListeners();
+}
+
+function closeNav() {
+  menuIcon.classList.add("fa-bars");
+  menuIcon.classList.remove("fa-times");
+  addNavListeners();
+  document.getElementById("myNav").style.height = "0vh";
+}
+
+addNavListeners();
