@@ -5,6 +5,7 @@ var router = express.Router();
 router.get("/", function (req, res, next) {
   res.render("home", {
     styles: ["header", "home", "buttons"],
+    scripts: ["home"],
     currentPage: "home",
   });
 });
