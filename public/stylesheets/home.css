@@ -112,7 +112,7 @@
 /* -------------------------- CLIENTS -------------------------- */
 
 .grid {
-  margin: 5% 0;
+  margin: 8% 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: minmax(120px, auto);
