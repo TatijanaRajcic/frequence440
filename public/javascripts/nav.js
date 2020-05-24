@@ -1,19 +1,25 @@
-let previousScroll = 30;
+let previousPosition = 0;
 let navbar = document.getElementById("navbar");
 let menuIcon = document.getElementById("content-navbar").querySelector("i");
 
 window.onscroll = function () {
-  toggleVisibility();
-  toggleColor();
+  if (window.scrollY > window.innerHeight) {
+    toggleVisibility();
+  }
+  // toggleColor();
 };
 
 function toggleVisibility() {
-  if (window.scrollY > previousScroll) {
+  console.log("position", window.scrollY);
+  console.log("prev", previousPosition);
+
+  if (window.scrollY > previousPosition) {
     navbar.style.visibility = "hidden";
+    console.log("hide hide hide");
   } else {
     navbar.style.visibility = "visible";
   }
-  previousScroll = window.scrollY;
+  previousPosition = window.scrollY;
 }
 
 function toggleColor() {
