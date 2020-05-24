@@ -1,11 +1,11 @@
 .header-intro {
   width: 100%;
   margin-top: 10vh; /* dimensions of the nav */
-  height: 90vh;
+  min-height: 90vh;
   padding: 100px;
   background: #131e1e;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 3rem;
+  line-height: 3.75rem;
   color: #ffffff;
 }
 
@@ -14,8 +14,8 @@
 }
 
 .page-title {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: #adadad;
   margin: 10px 0px;
 }
@@ -24,8 +24,8 @@
   font-family: Traulha;
   font-style: italic;
   font-weight: normal;
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
   color: #e6e6e2;
   width: 50%;
   margin: 50px 0;

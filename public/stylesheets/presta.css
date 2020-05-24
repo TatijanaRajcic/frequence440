@@ -68,8 +68,8 @@
 }
 
 .card h3 {
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
   color: #ffffff;
   margin: 15px 0;
 }
@@ -89,8 +89,8 @@
 }
 
 .additional-container h3 {
-  font-size: 28px;
-  line-height: 36px;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
   color: #131e1e;
 }
 
@@ -98,8 +98,8 @@
   font-family: Traulha;
   font-style: italic;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: #131e1e;
   margin: 30px 0;
 }

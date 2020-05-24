@@ -1,7 +1,7 @@
 #footer {
   padding: 64px 100px;
   border-top: 1px solid #b8b8b9;
-  height: 560px;
+  min-height: 60vh;
   background: #131e1e;
   display: flex;
   flex-direction: column;
@@ -10,14 +10,16 @@
 
 .contact {
   display: flex;
+  height: 40vh;
+  margin-bottom: 5vh;
 }
 
 .contact p {
   font-family: Ostia Antica;
   font-style: normal;
   font-weight: normal;
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
   color: #ffffff;
 }
 
@@ -42,8 +44,8 @@
   font-family: Ostia Antica;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   text-align: right;
   color: #ffffff;
   padding-top: 15px;

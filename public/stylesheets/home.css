@@ -3,7 +3,6 @@
 #home .header-intro .main-title {
   display: flex;
   width: fit-content;
-  height: 80px; /* est-ce que c'est nécessaire ? */
   padding: 10px 24px;
   background: #ffffff;
 }
@@ -11,8 +10,7 @@
 #home .header-intro .main-title h1 {
   align-self: center;
   color: #131e1e;
-  margin: 10px 0px;
-  font-size: 48px; /* still need to specify the font-size because otherwise it does not overide h1's degault font size */
+  font-size: 3rem; /* still need to specify the font-size because otherwise it does not overide h1's degault font size */
 }
 
 #home .header-intro p {
@@ -34,10 +32,34 @@
 /* -------------------------- DISCOVER -------------------------- */
 
 .discover {
-  height: 80vh;
+  height: 100vh;
   background: #f5f5f5;
   display: flex;
   padding: 0;
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1250px) and (min-height: 450px) and (max-height: 550px) {
+  .discover {
+    height: 130vh;
+  }
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1250px) and (min-height: 550px) and (max-height: 650px) {
+  .discover {
+    height: 120vh;
+  }
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1450px) and (min-height: 450px) and (max-height: 650px) {
+  .discover {
+    height: 120vh;
+  }
+}
+
+@media screen and (min-height: 800px) {
+  .discover {
+    height: 90vh;
+  }
 }
 
 .left,
@@ -83,8 +105,8 @@
 .right-bottom h2,
 .right-top h2 {
   width: 100%;
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
   color: #131e1e;
 }
 
@@ -138,6 +160,12 @@
   align-items: center;
 }
 
+@media screen and (min-width: 1200px) and (max-height: 700px) {
+  .testimonies {
+    height: 80vh;
+  }
+}
+
 .slides {
   flex-direction: column;
   height: 70%;
@@ -151,8 +179,8 @@
   font-family: Traulha;
   font-style: italic;
   font-weight: normal;
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
   text-align: center;
   color: #ffffff;
 }
