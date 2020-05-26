@@ -70,9 +70,6 @@
 .left {
   border-right: 1px solid #b8b8b9;
   padding: 64px 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .inline-list {

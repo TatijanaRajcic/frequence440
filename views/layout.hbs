@@ -9,12 +9,14 @@
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <link rel="stylesheet" href="/stylesheets/nav.css">
   <link rel="stylesheet" href="/stylesheets/footer.css">
+  <link rel="stylesheet" href="/stylesheets/hamburgers.css">
+
   {{!-- SPECIFIC STYLESHEETS --}}
   {{#each styles}}
   <link rel="stylesheet" href="/stylesheets/{{this}}.css">
   {{/each}}
   {{!-- JS SCRIPTS --}}
-  <script async src="https://kit.fontawesome.com/3c3287be3c.js" crossorigin="anonymous"></script>
+  {{!-- <script async src="https://kit.fontawesome.com/3c3287be3c.js" crossorigin="anonymous"></script> --}}
   <script type="module" src="/javascripts/nav.js"></script>
   {{#each scripts}}
   <script type="module" src="/javascripts/{{this}}.js"></script>
@@ -23,10 +25,12 @@
 
 <body id="body">
   <nav id="navbar">
-    <div id="content-navbar">
-      <i class="fas fa-bars fa-2x"></i>
-      <h1>Fréquence 440</h1>
-    </div>
+    <button class="hamburger hamburger--collapse js-hamburger" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <h1>Fréquence 440</h1>
   </nav>
   <nav id="myNav" class="overlay" data-page="{{currentPage}}">
     <ul class="overlay-content">
