@@ -18,4 +18,10 @@ router.get("/prestations", function (req, res, next) {
   });
 });
 
+router.get("/transition", function (req, res, next) {
+  res.render("transition", {
+    currentPage: "transition",
+  });
+});
+
 module.exports = router;

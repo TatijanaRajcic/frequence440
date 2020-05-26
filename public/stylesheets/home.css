@@ -25,10 +25,18 @@
   }
 }
 
-.underlined {
-  text-decoration: underline;
+.main-title a {
+  text-decoration: none;
+  color: #131e1e;
 }
 
+.main-title a:hover {
+  font-style: italic;
+}
+
+.main-title a:active {
+  color: #fc7753;
+}
 /* -------------------------- DISCOVER -------------------------- */
 
 .discover {

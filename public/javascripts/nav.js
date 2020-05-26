@@ -65,6 +65,9 @@ function addActiveLink() {
     .querySelector(".overlay-content")
     .querySelectorAll("li")
     .forEach((link) => {
+      link.onclick = () => {
+        console.log("going to another page");
+      };
       if (link.classList.contains("active-link"))
         link.classList.remove("active-link");
       if (link.dataset.link === currentPage) {
