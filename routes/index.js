@@ -19,8 +19,30 @@ router.get("/prestations", function (req, res, next) {
 });
 
 router.get("/transition", function (req, res, next) {
-  res.render("transition", {
+  res.render("ongoing", {
+    styles: ["ongoing"],
     currentPage: "transition",
+  });
+});
+
+router.get("/about", function (req, res, next) {
+  res.render("ongoing", {
+    styles: ["ongoing"],
+    currentPage: "about",
+  });
+});
+
+router.get("/contact", function (req, res, next) {
+  res.render("ongoing", {
+    styles: ["ongoing"],
+    currentPage: "contact",
+  });
+});
+
+router.get("/ressources", function (req, res, next) {
+  res.render("ongoing", {
+    styles: ["ongoing"],
+    currentPage: "ressources",
   });
 });
 
