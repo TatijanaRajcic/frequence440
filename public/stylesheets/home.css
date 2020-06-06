@@ -154,7 +154,7 @@
 }
 
 .testimonies blockquote p {
-  min-height: 20vh;
+  height: 300px;
 }
 
 .testimonies blockquote footer {

@@ -21,6 +21,10 @@ function displayData() {
         <h3>${oneArticle.title}</h3>
         <p class="content">${oneArticle.content}</p>
         `;
+        if (oneArticle.title === "Ateliers solutions") {
+          let additionalText = `<p class="content"> Pour plus de détails sur les sujets possibles, voir <a href="/transition">ici</a>. </p>`;
+          newArticle.innerHTML += additionalText;
+        }
         resultDiv.append(newArticle);
       });
       let additionalContainer = document.querySelector(".additional-container");

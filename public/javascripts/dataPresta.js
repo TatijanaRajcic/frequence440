@@ -3,7 +3,7 @@ var prestations = [
     category: "diagnostics",
     options: [
       {
-        title: "Bilan carbone (R)",
+        title: "Bilan carbone ®",
         content: "Selon la méthode Association Bilan Carbone",
       },
       {
@@ -84,7 +84,7 @@ var prestations = [
       {
         title: "Ateliers solutions",
         content:
-          "Accompagnement de vos équipes dans la co-construction d'objectifs et de plans d'action. Posture de facilitatrice pour encourager l'intelligence collective et l'innovation. Les sujets",
+          "Accompagnement de vos équipes dans la co-construction d'objectifs et de plans d'action. Posture de facilitatrice pour encourager l'intelligence collective et l'innovation.",
       },
       {
         title: "Collective impact",

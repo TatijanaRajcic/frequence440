@@ -20,6 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .presta-item i {
@@ -78,6 +79,10 @@
   color: #adadad;
 }
 
+.card .content a {
+  color: #adadad;
+  text-decoration: none;
+}
 .expand {
   grid-column: 1/-1;
 }

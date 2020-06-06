@@ -39,6 +39,10 @@
   grid-column: 1/6;
 }
 
+#footer .address a {
+  color: white;
+}
+
 #footer .first-links {
   grid-column: 7/9;
 }
