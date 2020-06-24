@@ -61,7 +61,6 @@
   flex-wrap: wrap;
   width: 100%;
   list-style: none;
-  color: #131e1e;
   margin: 0 0 12px 0;
 }
 
@@ -74,6 +73,10 @@
   margin: 0 0.5em;
 }
 
+.right {
+  color: #131e1e;
+}
+
 .right-bottom,
 .right-top {
   padding: 64px;
@@ -83,16 +86,32 @@
   justify-content: space-between;
 }
 
+.right-top:hover {
+  background: #131e1e;
+}
+
+.right-bottom:hover {
+  background: #fc7753;
+}
+
+.right-top:hover,
+.right-top:hover a {
+  color: white;
+}
+
+.right-bottom:hover,
+.right-bottom:hover a {
+  color: white;
+}
+
 .right-bottom {
   border-top: 1px solid #b8b8b9;
 }
 
-.right-bottom h2,
-.right-top h2 {
+.right h2 {
   width: 100%;
   font-size: 2.25rem;
   line-height: 2.5rem;
-  color: #131e1e;
 }
 
 .right-footer {
@@ -119,6 +138,14 @@
   width: 80px;
   content: "";
   border-top: 3px solid #131e1e;
+}
+
+.right-top:hover .right-footer h3:before {
+  border-top: 3px solid white;
+}
+
+.right-bottom:hover .right-footer h3:before {
+  border-top: 3px solid white;
 }
 
 /* -------------------------- CLIENTS -------------------------- */
