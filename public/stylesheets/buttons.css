@@ -1,8 +1,8 @@
-button {
+.button {
   border: none;
   font-family: Ostia Antica;
   display: flex;
-  align-self: center;
+  align-items: center;
   padding: 16px 24px;
   font-size: 1rem;
   line-height: 1.25rem;
@@ -11,20 +11,31 @@ button {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   margin: 10px 0px;
-  /* height: 52px; */
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 .buttons-panel {
   display: flex;
 }
 
-.buttons-panel button:not(:last-child) {
+.buttons-panel .button:not(:last-child) {
   margin-right: 10px;
 }
 
 .white-button {
   background: #ffffff;
   color: #131e1e;
+}
+
+.white-button:hover {
+  color: white;
+  background: #fc7753;
+}
+
+.white-button:active {
+  color: white;
+  background: #ff4c1c;
 }
 
 .black-button {
@@ -35,6 +46,17 @@ button {
 .mixed-button {
   background: #131e1e;
   border: 2px solid #ffffff;
-  box-sizing: border-box;
   color: #ffffff;
+}
+
+.mixed-button:hover {
+  background: #131e1e;
+  border: 2px solid #fc7753;
+  color: #fc7753;
+}
+
+.mixed-button:active {
+  background: #131e1e;
+  border: 2px solid #ff4c1c;
+  color: #ff4c1c;
 }

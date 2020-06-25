@@ -13,6 +13,10 @@
   font-size: 3rem; /* still need to specify the font-size because otherwise it does not overide h1's degault font size */
 }
 
+#home .header-intro .main-title h1 a:active {
+  color: #fc7753;
+}
+
 #home .header-intro p {
   padding-top: 75px;
   color: #ffffff;
