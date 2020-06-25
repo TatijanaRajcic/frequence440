@@ -34,6 +34,10 @@
   background-color: #ffffff;
 }
 
+.hamburger.is-active {
+  outline: none;
+}
+
 .hamburger-box {
   width: 30px;
   height: 24px;

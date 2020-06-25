@@ -83,6 +83,7 @@
 }
 
 .card .content {
+  font-size: 0.9rem;
   color: #adadad;
 }
 
@@ -92,7 +93,7 @@
 }
 
 .card .semi-underlined {
-  line-height: 16px;
+  line-height: 1rem;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   bottom: 1rem;
