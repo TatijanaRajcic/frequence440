@@ -17,9 +17,14 @@ function displayData() {
         let newArticle = document.createElement("div");
         newArticle.classList.add("card");
         newArticle.innerHTML = `
-        <p class="index">${index + 1}</p>
-        <h3>${oneArticle.title}</h3>
-        <p class="content">${oneArticle.content}</p>
+        <div>
+          <p class="index">0${index + 1}</p>
+          <h3>${oneArticle.title}</h3>
+          <p class="content">${oneArticle.content}</p>
+        </div>
+        <div class="semi-underlined">
+          <a href="/prestations">${oneArticle.callToAction}</a>
+        </div>
         `;
         if (oneArticle.title === "Ateliers solutions") {
           let additionalText = `<p class="content"> Pour plus de détails sur les sujets possibles, voir <a href="/transition">ici</a>. </p>`;

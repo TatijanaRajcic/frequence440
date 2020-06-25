@@ -126,22 +126,11 @@
   line-height: 16px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  position: relative;
 }
 
 .right-footer a {
   text-decoration: none;
   color: #131e1e;
-}
-
-.right-footer h3:before {
-  position: absolute;
-  left: 0;
-  top: 1.5em;
-  height: 0;
-  width: 80px;
-  content: "";
-  border-top: 3px solid #131e1e;
 }
 
 .right-top:hover .right-footer h3:before {
@@ -179,26 +168,22 @@
 
 .testimonies {
   background: #131e1e;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.testimonies blockquote p {
-  height: 300px;
-}
-
-.testimonies blockquote footer {
-  padding: 70px 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
 .slides {
-  flex-direction: column;
-  height: 70%;
-  width: 70%;
+  min-height: 300px;
+  grid-column: 2/12;
   box-sizing: border-box;
-  padding-top: 50px;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-height: 900px) {
+  .slides {
+    min-height: 400px;
+  }
 }
 
 .slides p {
@@ -212,6 +197,7 @@
 }
 
 .slides footer {
+  padding: 40px 0;
   text-align: center;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -221,10 +207,11 @@
 /* Slider */
 
 .dots {
+  grid-column: 2/12;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30%;
+  margin: 30px 0;
 }
 
 .dot {

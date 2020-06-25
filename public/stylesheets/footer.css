@@ -35,6 +35,10 @@
   text-decoration: none;
 }
 
+#footer .links a.sub-link {
+  color: #adadad;
+}
+
 #footer .contact {
   grid-column: 1/6;
 }

@@ -20,6 +20,11 @@
   line-height: 2.5rem;
 }
 
+#navbar h1 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 /* full screen navbar */
 
 .overlay {
@@ -49,12 +54,20 @@
 
 .overlay a {
   text-decoration: none;
-  font-size: 36px;
   color: #ffffff;
   display: block;
   transition: 0.3s;
-  font-size: 2, 6875rem;
+  font-size: 2.6875rem;
   line-height: 3.5rem;
+}
+
+.overlay a:hover {
+  font-style: italic; /* change to italic font family when received */
+}
+
+.overlay a:active {
+  font-style: italic; /* change to italic font family when received */
+  color: #fc7753;
 }
 
 .overlay footer {
