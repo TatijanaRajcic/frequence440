@@ -7,6 +7,12 @@
   background: #ffffff;
 }
 
+@media (min-width: 1600px) {
+  #home .header-intro .main-title {
+    padding: 24px;
+  }
+}
+
 #home .header-intro .main-title h1 {
   align-self: center;
   color: #131e1e;
@@ -25,7 +31,7 @@
 
 @media (min-width: 780px) {
   #home .header-intro p {
-    width: 75%;
+    width: 85%;
   }
 }
 
