@@ -67,7 +67,7 @@
 
 .card {
   background: #131e1e;
-  min-height: 40vh;
+  min-height: 50vh;
   padding: 30px;
   display: flex;
   flex-direction: column;

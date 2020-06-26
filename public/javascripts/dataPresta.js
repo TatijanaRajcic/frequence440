@@ -4,19 +4,20 @@ var prestations = [
     options: [
       {
         title: "Bilan carbone ®",
-        content: "Selon la méthode Association Bilan Carbone",
+        content:
+          "Pour évaluer quantitativement votre impact sur le climat, votre vulnérabilité liée à la dépendance aux énergie fossiles, et connaître les solutions adaptées. Certification par l’Association Bilan Carbone déc 2020",
         callToAction: "demander un devis",
       },
       {
         title: "Diagnostic RSE",
         content:
-          "Avec la grille des Objectifs de Développement Durable à partir de l’outil  développé par l’Université Technolo- gique de Compiègne.",
+          "Pour analyser vos points forts, points faibles, et pistes d’action sur les sujets RSE, avec la grille des Objectifs de Développement Durable",
         callToAction: "prendre rdv",
       },
       {
-        title: "Diagnostic équipes",
+        title: "Questionnaire équipes",
         content:
-          "Niveau de connaissance et d’engagement de vos équipes. Recherche d’ambassadeur",
+          "Pour comprendre le niveau de connaissance et d’engagement de vos équipes, pour recherche des ambassadeur.rice.s au sein de vos collaborateur.rice.s",
         callToAction: "demander un devis",
       },
     ],
@@ -27,37 +28,37 @@ var prestations = [
       {
         title: "Fresque du Climat",
         content:
-          "Atelier créatif par Cédric Ringenbach, basé sur les rapports du GIEC pour comprendre en intelligence collective les mécanismes du climat et les interactions avec les activités humaines",
+          "Pour comprendre en intelligence collective les mécanismes du climat et les interactions avec les activités humaines, avec un atelier créatif basé sur les rapports du GIEC, construit par Cédric Ringenbach",
         callToAction: "demander un devis",
       },
       {
         title: "Atelier 2 Tonnes",
         content:
-          "Simulation interactive basée sur les bilans carbone des participants, (objectif : 2 tonnes pour la neutralité carbone en 2050). Pour comprendre les ordres de grandeur des actions pour le climat et l’interaction individu / collectif",
+          "Pour comprendre les ordres de grandeur des solution pour le climat et l’interaction individu / collectif, avec une simulation interactive basée sur les bilans carbone des participants, créée par François Laugier. Objectif : 2 tonnes pour la neutralité carbone en 2050",
         callToAction: "demander un devis",
       },
       {
         title: "Renaissance Ecologique",
         content:
-          "Atelier créatif et inspirant autour d’un récit et d’une illustration d’un futur souhaitable, inspiré de la fresque de Sienne de 1338 et créé par Julien Dossier, pour comprendre les interactions et le chemin à mener pour un monde bas carbone",
+          "Pour comprendre les interactions et le chemin à mener pour un monde bas carbone, avec un atelier inspirant autour d’un récit et d’une illustration d’un futur souhaitable, tiré de la fresque de Sienne de 1338, et créé par Julien Dossier",
         callToAction: "demander un devis",
       },
       {
         title: "Fresque Biodiversité",
         content:
-          "Atelier créatif basé sur le rapport de l’IPBES pour comprendre en intelligence collective les mécanismes de la biodiversité et comment limiter son effondrement",
+          "Pour comprendre les mécanismes de la biodiversité et comment limiter son effondrement, avec un atelier créatif basé sur le rapport de l’IPBES",
         callToAction: "demander un devis",
       },
       {
         title: "Fresque Océane",
         content:
-          "Atelier créatif pour tout comprendre sur les océans, les menaces qu’ils subissent et les solutions correspondantes",
+          "Pour tout comprendre sur les océans, les menaces qu’ils subissent et les solutions correspondantes, avec un atelier créatif construit par Alice Vitoux",
         callToAction: "demander un devis",
       },
       {
         title: "Fresque du Numérique",
         content:
-          "Atelier interactif pour comprendre les impacts du numérique et réfléchir sur les solutions pour un numérique durable",
+          "Pour comprendre les impacts du numérique et réfléchir sur les solutions pour un numérique durable, avec un atelier créatif, construit par Yvain Mouneu et Aurélien Deragne",
         callToAction: "demander un devis",
       },
     ],
@@ -73,7 +74,8 @@ var prestations = [
     options: [
       {
         title: "Les trois courbes",
-        content: "Panorama de la transition",
+        content:
+          "Panorama de la transition pour connaître les ordres de grandeur et les concepts essentiels à la bonne compréhension du développement durable et des solutions associées",
         callToAction: "demander un devis",
       },
       {
