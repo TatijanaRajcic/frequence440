@@ -22,14 +22,14 @@ function displayData() {
           <h3>${oneArticle.title}</h3>
           <p class="content">${oneArticle.content}</p>
         </div>
-        <div class="semi-underlined">
-          <a href="/prestations">${oneArticle.callToAction}</a>
-        </div>
         `;
         if (oneArticle.title === "Ateliers solutions") {
           let additionalText = `<p class="content"> Pour plus de détails sur les sujets possibles, voir <a href="/transition">ici</a>. </p>`;
           newArticle.innerHTML += additionalText;
         }
+        newArticle.innerHTML += `<div class="semi-underlined">
+        <a href="/prestations">${oneArticle.callToAction}</a>
+        </div>`;
         resultDiv.append(newArticle);
       });
       let additionalContainer = document.querySelector(".additional-container");
