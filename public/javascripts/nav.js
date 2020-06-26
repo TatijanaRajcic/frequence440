@@ -1,9 +1,20 @@
 let previousPosition = 0;
 let navbar = document.getElementById("navbar");
 let menuIcon = document.querySelector(".js-hamburger");
+let header = document.querySelector(".header-intro");
 
 window.onscroll = function () {
-  if (window.scrollY > window.innerHeight) {
+  let bottomOfNavbarScroll = window.scrollY + navbar.clientHeight;
+  console.log(bottomOfNavbarScroll);
+
+  let begginingOfInvisibility = header.clientHeight + navbar.clientHeight;
+
+  console.log(header.clientHeight);
+
+  if (
+    bottomOfNavbarScroll > begginingOfInvisibility &&
+    !menuIcon.classList.contains("is-active")
+  ) {
     toggleVisibility();
   }
   // toggleColor();
@@ -12,6 +23,7 @@ window.onscroll = function () {
 function toggleVisibility() {
   console.log("position", window.scrollY);
   console.log("prev", previousPosition);
+  console.log(navbar.style);
 
   if (window.scrollY > previousPosition) {
     navbar.style.visibility = "hidden";
