@@ -83,7 +83,8 @@ var prestations = [
         callToAction: "demander un devis",
       },
       {
-        title: "Elle est jolie ta robe aujourd’hui !",
+        title:
+          "Elle est jolie <span class=break-line>ta robe aujourd’hui !</span>",
         content: "Les sujets épineux du sexisme au travail",
         callToAction: "demander un devis",
       },
