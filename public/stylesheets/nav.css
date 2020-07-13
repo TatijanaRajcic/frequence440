@@ -75,6 +75,21 @@
   line-height: 3.5rem;
 }
 
+@media screen and (max-width: 500px) {
+  .overlay {
+    padding: 0 50px;
+  }
+
+  .overlay-content {
+    padding: 0;
+  }
+
+  .overlay a {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
 .overlay a:hover {
   font-style: italic; /* change to italic font family when received */
 }
