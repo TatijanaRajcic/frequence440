@@ -9,6 +9,14 @@
   color: #ffffff;
 }
 
+@media screen and (max-width: 500px) {
+  .header-intro {
+    padding: 30px 12px;
+    font-size: 1.75rem;
+    line-height: 3rem;
+  }
+}
+
 .catchphrase {
   width: 70%;
 }

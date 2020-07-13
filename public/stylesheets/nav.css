@@ -16,9 +16,22 @@
   width: 100px;
 }
 
+@media screen and (max-width: 500px) {
+  #navbar .hamburger {
+    width: 55px;
+  }
+}
+
 #navbar h1 {
   font-size: 1.75rem;
   line-height: 2.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  #navbar h1 {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
 }
 
 #navbar h1 a {

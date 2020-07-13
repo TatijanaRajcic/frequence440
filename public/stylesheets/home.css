@@ -1,22 +1,37 @@
 /* --------------------- HEADER ------------------- */
 
-#home .header-intro .main-title {
-  display: flex;
-  width: fit-content;
+#home .header-intro .main-title span {
+  line-height: 3.5rem;
   padding: 10px 24px;
   background: #ffffff;
 }
 
-@media (min-width: 1600px) {
+@media screen and (max-width: 500px) {
   #home .header-intro .main-title {
-    padding: 24px;
+    padding: 10px 12px;
+  }
+  #home .header-intro .main-title span {
+    padding: 5px 0;
+    box-shadow: 0.5em 0 0 #ffffff, -0.5em 0 0 #ffffff;
   }
 }
+
+/* @media (min-width: 1600px) {
+  #home .header-intro .main-title span {
+    padding: 24px;
+  }
+} */
 
 #home .header-intro .main-title h1 {
   align-self: center;
   color: #131e1e;
-  font-size: 3rem; /* still need to specify the font-size because otherwise it does not overide h1's degault font size */
+  font-size: 3rem; /* still need to specify the font-size because otherwise it does not overide h1's default font size */
+}
+
+@media screen and (max-width: 500px) {
+  #home .header-intro .main-title h1 {
+    font-size: 1.75rem;
+  }
 }
 
 #home .header-intro .main-title h1 a:active {
@@ -53,6 +68,7 @@
   min-height: 100vh;
   background: #f5f5f5;
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
 }
 
@@ -66,6 +82,17 @@
   padding: 64px 100px;
 }
 
+@media screen and (max-width: 500px) {
+  .left {
+    width: 100%;
+    padding: 30px 12px;
+  }
+
+  .right {
+    width: 100%;
+  }
+}
+
 .inline-list {
   display: flex;
   flex-wrap: wrap;
@@ -74,8 +101,20 @@
   margin: 0 0 12px 0;
 }
 
+@media screen and (max-width: 500px) {
+  .inline-list {
+    font-size: 0.875rem;
+  }
+}
+
 .right-main h2 {
   padding-bottom: 100px;
+}
+
+@media screen and (max-width: 500px) {
+  .right-main {
+    margin-top: 100px;
+  }
 }
 
 .inline-list > li:not(:last-child)::after {
@@ -94,6 +133,24 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 500px) {
+  .right-bottom,
+  .right-top {
+    padding: 64px 12px;
+    height: 80vh;
+  }
+
+  .right-top {
+    background: #131e1e;
+    color: #ffffff;
+  }
+
+  .right-bottom {
+    background: #fc7753;
+    color: #ffffff;
+  }
 }
 
 .right-top:hover {
@@ -124,8 +181,21 @@
   line-height: 2.5rem;
 }
 
+@media screen and (max-width: 500px) {
+  .right h2 {
+    font-size: 1.625rem;
+    line-height: 2rem;
+  }
+}
+
 .right-footer {
   align-self: flex-end;
+}
+
+@media screen and (max-width: 500px) {
+  .right-footer {
+    align-self: flex-start;
+  }
 }
 
 .right-footer h3 {
@@ -137,6 +207,13 @@
 .right-footer a {
   text-decoration: none;
   color: #131e1e;
+}
+
+@media screen and (max-width: 500px) {
+  .right-footer a {
+    color: #ffffff;
+    font-size: 0.875rem;
+  }
 }
 
 .right-top:hover .right-footer h3:before {

@@ -192,21 +192,21 @@ html {
   }
 }
 
-@media screen and (min-width: 1300px) and (max-width: 1400px) {
+@media screen and (min-width: 1300px) and (max-width: 1450px) {
   body,
   html {
     font-size: 14px;
   }
 }
 
-@media screen and (min-width: 1400px) and (max-width: 1550px) {
+@media screen and (min-width: 1450px) and (max-width: 1600px) {
   body,
   html {
     font-size: 16px;
   }
 }
 
-@media screen and (min-width: 1550px) and (max-width: 1800px) {
+@media screen and (min-width: 1600px) and (max-width: 1800px) {
   html {
     font-size: 18px;
   }
@@ -244,11 +244,23 @@ TESTER TOUTES LES DISPOSITIONS POSSIBLES D'ECRAN
   padding: 64px 100px;
 }
 
+@media screen and (max-width: 500px) {
+  .main-section {
+    padding: 30px 12px;
+  }
+}
+
 .prg-header h2 {
   font-size: 2.25rem;
   line-height: 2.5rem;
   color: #131e1e;
   margin: 0 0 12px 0;
+}
+
+@media screen and (max-width: 500px) {
+  .prg-header h2 {
+    font-size: 1.625rem;
+  }
 }
 
 .prg-header p {
@@ -258,6 +270,14 @@ TESTER TOUTES LES DISPOSITIONS POSSIBLES D'ECRAN
   font-size: 1.75rem;
   line-height: 2.5rem;
   color: #000000;
+}
+
+@media screen and (max-width: 500px) {
+  .prg-header p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin-bottom: 100px;
+  }
 }
 
 .semi-underlined {
@@ -272,4 +292,10 @@ TESTER TOUTES LES DISPOSITIONS POSSIBLES D'ECRAN
   width: 80px;
   content: "";
   border-top: 3px solid #131e1e;
+}
+
+@media screen and (max-width: 500px) {
+  .semi-underlined:before {
+    border-top: 3px solid #ffffff;
+  }
 }
