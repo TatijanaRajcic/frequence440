@@ -51,6 +51,15 @@
   "footer": {
     "name": "Fréquence 440",
     "email": "lea.ikkache@zaclys.net",
+    "rawLinks": {
+      "1": "/",
+      "2": "/transition",
+      "3": "/about",
+      "4": "/contact",
+      "5": "/prestations",
+      "6": "/ressources",
+      "7": "/legal"
+    },
     "mainLinks": {
       "1": "Accueil",
       "2": "Transition",

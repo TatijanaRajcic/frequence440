@@ -68,6 +68,15 @@
   "footer": {
     "name": "Fréquence 440",
     "email": "lea.ikkache@zaclys.net",
+    "rawLinks": {
+      "1": "/",
+      "2": "/sustainability",
+      "3": "/about",
+      "4": "/contact",
+      "5": "/services",
+      "6": "/resources",
+      "7": "/legal"
+    },
     "mainLinks": {
       "1": "Home",
       "2": "Sustainability",

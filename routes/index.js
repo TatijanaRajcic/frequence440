@@ -10,7 +10,7 @@ router.get("/", function (req, res, next) {
   });
 });
 
-router.get("/prestations", function (req, res, next) {
+router.get(["/prestations", "/services"], function (req, res, next) {
   res.render("presta", {
     styles: ["header", "presta", "buttons"],
     scripts: ["presta"],
@@ -18,7 +18,7 @@ router.get("/prestations", function (req, res, next) {
   });
 });
 
-router.get("/transition", function (req, res, next) {
+router.get(["/transition", "sustainability"], function (req, res, next) {
   res.render("ongoing", {
     styles: ["ongoing"],
     currentPage: "transition",
@@ -39,7 +39,7 @@ router.get("/contact", function (req, res, next) {
   });
 });
 
-router.get("/ressources", function (req, res, next) {
+router.get(["/ressources", "/resources"], function (req, res, next) {
   res.render("ongoing", {
     styles: ["ongoing"],
     currentPage: "ressources",
