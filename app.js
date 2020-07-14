@@ -4,6 +4,15 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
+// multi language
+var i18n = require("i18n");
+i18n.configure({
+  locales: ["en", "fr"],
+  cookie: "locale",
+  directory: __dirname + "/locales",
+  objectNotation: true,
+});
+
 var indexRouter = require("./routes/index");
 
 var app = express();
@@ -18,7 +27,28 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
+// i18n set up
+app.use(i18n.init);
+//register hbs helpers in res.locals' context which provides this.locale
+hbs.registerHelper("__", function () {
+  return i18n.__.apply(this, arguments);
+});
+hbs.registerHelper("__n", function () {
+  return i18n.__n.apply(this, arguments);
+});
+
 app.use("/", indexRouter);
+
+// setting up cookie changes
+app.get("/fr", function (req, res) {
+  res.cookie("locale", "fr", { maxAge: 900000, httpOnly: true });
+  res.redirect("back");
+});
+
+app.get("/en", function (req, res) {
+  res.cookie("locale", "en", { maxAge: 900000, httpOnly: true });
+  res.redirect("back");
+});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
