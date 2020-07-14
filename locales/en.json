@@ -11,7 +11,7 @@
   },
   "home": {
     "mainTitle": "Fréquence 440, your steppingstone to <a href='/transition'>sustainability</a>",
-    "introText": "For people and companies who want more sustainability and resilience, and who ask themselves : where can I start?",
+    "introText": "For people and companies who want more sustainability and resilience, and who ask themselves: where can I start?",
     "welcomeMessage": "Welcome!",
     "welcomeSentence": "I offer two types of resources",
     "rightTop": {
@@ -74,7 +74,7 @@
       "3": "About",
       "4": "Contact",
       "5": "Services",
-      "6": "Ressources",
+      "6": "Resources",
       "7": "Terms and Conditions"
     },
     "subLinks": {
