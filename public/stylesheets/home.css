@@ -6,7 +6,7 @@
   background: #ffffff;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 950px) {
   #home .header-intro .main-title {
     padding: 10px 12px;
   }
@@ -22,7 +22,7 @@
   font-size: 3rem; /* still need to specify the font-size because otherwise it does not overide h1's default font size */
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 950px) {
   #home .header-intro .main-title h1 {
     font-size: 1.75rem;
   }
@@ -93,6 +93,16 @@
   }
 }
 
+@media screen and (min-width: 500px) and (max-width: 950px) {
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+  }
+}
+
 .inline-list {
   display: flex;
   flex-wrap: wrap;
@@ -101,7 +111,7 @@
   margin: 0 0 12px 0;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 950px) {
   .inline-list {
     font-size: 0.8rem;
   }
@@ -164,6 +174,23 @@
   }
 }
 
+@media screen and (min-width: 500px) and (max-width: 950px) {
+  .right-bottom,
+  .right-top {
+    padding: 64px 100px;
+  }
+
+  .right-top {
+    background: #131e1e;
+    color: #ffffff;
+  }
+
+  .right-bottom {
+    background: #fc7753;
+    color: #ffffff;
+  }
+}
+
 .right-top:hover {
   background: #131e1e;
 }
@@ -192,7 +219,7 @@
   line-height: 2.5rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 950px) {
   .right h2 {
     font-size: 1.625rem;
     line-height: 2rem;
@@ -203,7 +230,7 @@
   align-self: flex-end;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 950px) {
   .right-footer {
     align-self: flex-start;
   }
@@ -224,6 +251,12 @@
   .right-footer a {
     color: #ffffff;
     font-size: 0.875rem;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 950px) {
+  .right-footer a {
+    color: #ffffff;
   }
 }
 
@@ -249,6 +282,12 @@
 @media screen and (max-width: 500px) {
   .grid {
     grid-template-columns: initial;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 950px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -296,7 +335,7 @@
   color: #ffffff;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 950px) {
   .slides p {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -311,7 +350,7 @@
   color: #ffffff;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 950px) {
   .slides footer {
     font-size: 0.6875rem;
   }

@@ -32,7 +32,7 @@
   width: 100px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 950px) {
   #navbar .hamburger {
     width: 55px;
   }
@@ -43,7 +43,7 @@
   line-height: 2.5rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 950px) {
   #navbar h1 {
     font-size: 1.125rem;
     line-height: 1.625rem;
@@ -91,7 +91,7 @@
   line-height: 3.5rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 950px) {
   .overlay {
     padding: 0 50px;
   }

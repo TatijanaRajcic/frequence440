@@ -17,6 +17,13 @@
   }
 }
 
+@media screen and (min-width: 500px) and (max-width: 950px) {
+  .header-intro {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+}
+
 .catchphrase {
   width: 70%;
 }
