@@ -6,8 +6,24 @@
   background: #131e1e;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: #ffffff;
   z-index: 99;
+}
+
+#navbar > div {
+  display: flex;
+  align-items: center;
+}
+
+.languages a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.languages a:last-child {
+  margin-right: 30px;
 }
 
 #navbar .hamburger {

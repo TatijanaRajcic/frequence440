@@ -25,20 +25,26 @@
 
 <body id="body">
   <nav id="navbar">
-    <button class="hamburger hamburger--collapse js-hamburger" type="button">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
-    <h1><a href="/">Fréquence 440</a></h1>
+    <div>
+      <button class="hamburger hamburger--collapse js-hamburger" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <h1><a href="/">{{{__ "headline.title"}}}</a></h1>
+    </div>
+    <div class="languages">
+      <a href="/fr">FR</a>
+      <a href="/en">EN</a>
+    </div>
   </nav>
   <nav id="myNav" class="overlay" data-page="{{currentPage}}">
     <ul class="overlay-content">
-      <li data-link="home"><a href="/">Accueil</a></li>
-      <li data-link="transition"><a href="/transition">La transition</a></li>
-      <li data-link="about"><a href="/about">À propos</a></li>
-      <li data-link="presta"><a href="/prestations">Les prestations</a></li>
-      <li data-link="ressources"><a href="/ressources">Les ressources</a></li>
+      <li data-link="home"><a href="/">{{{__ "nav.1"}}}</a></li>
+      <li data-link="transition"><a href="/transition">{{{__ "nav.2"}}}</a></li>
+      <li data-link="about"><a href="/about">{{{__ "nav.3"}}}</a></li>
+      <li data-link="presta"><a href="/prestations">{{{__ "nav.4"}}}</a></li>
+      <li data-link="ressources"><a href="/ressources">{{{__ "nav.5"}}}</a></li>
     </ul>
     <footer>
       {{!-- <a href="https://www.linkedin.com/in/l%C3%A9a-ikkache-4b448683/" target="_blank">Linkedin</a> --}}
@@ -48,32 +54,33 @@
   {{{body}}}
   <footer id="footer">
     <div class="contact">
-      <p>Fréquence 440</p>
+      <p>{{{__ "footer.name"}}}</p>
       <address>
         <p class="address">
-          <a href="mailto:lea.ikkache@zaclys.net">lea.ikkache@zaclys.net</a>
+          <a href="mailto:lea.ikkache@zaclys.net">{{{__ "footer.email"}}}</a>
         </p>
       </address>
     </div>
     <div class="links first-links">
-      <a href="/">Accueil</a>
-      <a href="/transition">La transition</a>
-      <a href="/about">A propos</a>
-      <a href="/contact">Contact</a>
+      <a href="/">{{{__ "footer.mainLinks.1"}}}</a>
+      <a href="/transition">{{{__ "footer.mainLinks.2"}}}</a>
+      <a href="/about">{{{__ "footer.mainLinks.3"}}}</a>
+      <a href="/contact">{{{__ "footer.mainLinks.4"}}}</a>
     </div>
     <div class="links second-links">
-      <a href="/prestations">Prestations</a>
-      <a href="/prestations#diagnostics" class="sub-link">Diagnostics</a>
-      <a href="/prestations" class="sub-link">Formations ludiques</a>
-      <a href="/prestations" class="sub-link">Conférences interactives</a>
-      <a href="/prestations" class="sub-link">Ateliers de co-construction</a>
+      <a href="/prestations">{{{__ "footer.mainLinks.5"}}}</a>
+      <a href="/prestations#diagnostics" class="sub-link">{{{__ "footer.subLinks.1"}}}</a>
+      <a href="/prestations" class="sub-link">{{{__ "footer.subLinks.2"}}}</a>
+      <a href="/prestations" class="sub-link">{{{__ "footer.subLinks.3"}}}</a>
+      <a href="/prestations" class="sub-link">{{{__ "footer.subLinks.4"}}}</a>
     </div>
     <div class="links third-links">
-      <a href="/ressources">Ressources</a>
-      <a href="">Mentions légales</a>
+      <a href="/ressources">{{{__ "footer.mainLinks.6"}}}</a>
+      <a href="">{{{__ "footer.mainLinks.7"}}}</a>
     </div>
     <div class="copyright">
-      <p>Design : <a href="https://www.elvirevolkdesign.com/" target="_blank">Elvire Volk Leonovitch</a> | Développement
+      <p>{{{__ "footer.design"}}} : <a href="https://www.elvirevolkdesign.com/" target="_blank">Elvire Volk
+          Leonovitch</a> | {{{__ "footer.dev"}}}
         : <a href="https://www.linkedin.com/in/tatijana-rajcic-692389139/" target="_blank">Tatijana Rajcic</a></p>
       <p>© Copyright 2020 Fréquence 440. All Rights Reserved.</p>
     </div>

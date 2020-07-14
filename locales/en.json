@@ -1,0 +1,112 @@
+{
+  "headline": {
+    "title": "Fréquence 440"
+  },
+  "nav": {
+    "1": "Home",
+    "2": "Sustainability",
+    "3": "About",
+    "4": "Services",
+    "5": "Resources"
+  },
+  "home": {
+    "mainTitle": "Fréquence 440, your steppingstone to <a href='/transition'>sustainability</a>",
+    "introText": "For people and companies who want more sustainability and resilience, and who ask themselves : where can I start?",
+    "welcomeMessage": "Welcome!",
+    "welcomeSentence": "I offer two types of resources",
+    "rightTop": {
+      "details": {
+        "1": "Analysis",
+        "2": "Training & conferences",
+        "3": "Innovation workshops"
+      },
+      "mainGoal": "For companies and Higher ed Institutions",
+      "link": "customized services"
+    },
+    "rightBottom": {
+      "details": {
+        "1": "Literature",
+        "2": "Summaries",
+        "3": "Essays",
+        "4": "Networking"
+      },
+      "mainGoal": "For your personal journey",
+      "link": "resources for all"
+    },
+    "clients": {
+      "title": "My customers",
+      "sentence": "I have had the pleasure to work with various organizations"
+    },
+    "quotes": {
+      "1": {
+        "sentence": "As for me, I found Léa to be very instructive about the messages she conveys. She realized that participants didn’t have comprehensive prior knowledge, and that it’s hard for companies to evolve. She was not judging the group, she was focused on conveying her convictions, and we all appreciated that a lot.",
+        "user": "VINCENT BOUETEL — IT director for Société Générale (French Bank)"
+      },
+      "2": {
+        "sentence": "Lea helped CentraleSupelec set up an ambitious climate training for students. I appreciated her creativity, educational approach, project management skills, and hindsight on difficult questions. Students were grateful for her clear and precise inputs, her vision, and the quality of the interaction.",
+        "user": "CHRISTOPHE LAUX —  former Stanford Professor, and Professor at CentraleSupelec"
+      }
+    },
+    "prestations": {
+      "subtitle": "home.prestations.subtitle",
+      "mainTitle": "home.prestations.mainTitle",
+      "description": "home.prestations.description",
+      "buttons": {
+        "1": "home.prestations.buttons.1",
+        "2": "home.prestations.buttons.2"
+      },
+      "sectionTitle": "home.prestations.sectionTitle",
+      "sectionDescription": "home.prestations.sectionDescription",
+      "links": {
+        "1": "home.prestations.links.1",
+        "2": "home.prestations.links.2",
+        "3": "home.prestations.links.3",
+        "4": "home.prestations.links.4"
+      }
+    }
+  },
+  "footer": {
+    "name": "Fréquence 440",
+    "email": "lea.ikkache@zaclys.net",
+    "mainLinks": {
+      "1": "Home",
+      "2": "Sustainability",
+      "3": "About",
+      "4": "Contact",
+      "5": "Services",
+      "6": "Ressources",
+      "7": "Terms and Conditions"
+    },
+    "subLinks": {
+      "1": "Analysis",
+      "2": "Interactive trainings",
+      "3": "Interactive conferences",
+      "4": "Innovation workshops"
+    },
+    "design": "Design",
+    "dev": "Development"
+  },
+  "prestations": {
+    "subtitle": "Services",
+    "mainTitle": "Customized services for companies and Higher Education.",
+    "description": "Our services are based on your needs, collaboration, creativity and rigor.",
+    "buttons": {
+      "1": "let's meet",
+      "2": "See details"
+    },
+    "sectionTitle": "Services",
+    "sectionDescription": "From analysis and training, to the creation of solutions through innovation workshops",
+    "links": {
+      "1": "Analysis",
+      "2": "Interactive trainings",
+      "3": "Interactive conferences",
+      "4": "Innovation workshops"
+    },
+    "detailedServices": {
+      "1": "analysis",
+      "2": "trainings",
+      "3": "conferences",
+      "4": "workshops"
+    }
+  }
+}

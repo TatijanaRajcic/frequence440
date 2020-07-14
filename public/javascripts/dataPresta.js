@@ -23,6 +23,29 @@ var prestations = [
     ],
   },
   {
+    category: "analysis",
+    options: [
+      {
+        title: "Carbon Footprint ®",
+        content:
+          "Get a quantitative evaluation of your Carbon Footprint, assess your Energy-related risks, and learn about possible solutions. Certification from the French Carbon Footprint Association in December 2020",
+        callToAction: "ask for invoice",
+      },
+      {
+        title: "Social Responsibility analysis",
+        content:
+          "Understand your strenghts and weaknesses in the field of sustainability",
+        callToAction: "let's meet",
+      },
+      {
+        title: "Teams surveys",
+        content:
+          "Understand the level of awareness of your teams about sustainability. Assess the motivation around these subjects and who would be interested in participating in sustainability projects",
+        callToAction: "ask for invoice",
+      },
+    ],
+  },
+  {
     category: "formations",
     options: [
       {
@@ -67,6 +90,86 @@ var prestations = [
       content:
         "Possibilité de former des ambassadeurs parmi vos collaborateurs ",
       callToAction: "demander un devis",
+    },
+  },
+  {
+    category: "trainings",
+    options: [
+      {
+        title: "Climate Collage",
+        content:
+          "understand the mechanisms of climate change, from its sources to its consequences, with this creative workshop created by Cedric Ringenbach. More info here",
+        callToAction: "ask for invoice",
+      },
+      {
+        title: "2 tons",
+        content:
+          "2 tons, the weight of CO2 we should each be emitting yearly by 2050 to reach carbon neutrality. Enter a simulation to 2050 and chose your solutions to reach climate objectives, both as individuals and collectively. Workshop created by François Laugier.",
+        callToAction: "ask for invoice",
+      },
+      {
+        title: "Ecological Renaissance",
+        content:
+          "Understand the interconnexions and types of solutions to reach a low carbon world, with this inspiring workshop create by Julien Dossier. Work with a story and illustration based on the Sienna mural from 1338",
+        callToAction: "ask for invoice",
+      },
+      {
+        title: "Biodiversity Collage",
+        content:
+          "Grasp the interactions within and the importance of biodiversity, and solutions to limit its collapse.",
+        callToAction: "ask for invoice",
+      },
+      {
+        title: "Oceans Collage",
+        content:
+          "Dive into the ocean life, its threats, and the corresponding solutions, thanks to this creative workshop by Alice Vitoux",
+        callToAction: "ask for invoice",
+      },
+      {
+        title: "Digital World Collage",
+        content:
+          "Understand the impacts of our digital consumptions and brainstorm on solutions for more digital sustainability with this creative workshop by Yvain Mouneu and Aurélien Deragne",
+        callToAction: "ask for invoice",
+      },
+    ],
+    addOn: {
+      title: "Collective Intelligence training with experts",
+      content:
+        "Option – we can coach ambassadors amongst your employees to provide in-house training",
+      callToAction: "ask for invoice",
+    },
+  },
+  {
+    category: "conferences",
+    options: [
+      {
+        title: "The three graphs",
+        content:
+          "A holistic view of sustainability: with the basic concepts and orders of magnitude to fully grasp why it’s necessary and what solutions look like.",
+        callToAction: "ask for invoice",
+      },
+      {
+        title: "The three graphs for engineers",
+        content:
+          "A holistic view of sustainability, with the implications for engineers",
+        callToAction: "ask for invoice",
+      },
+      {
+        title: "Your dress looks <span class=break-line> nice today</span>",
+        content:
+          "The thorny issues of workplace sexism, context, data and possible solutions",
+        callToAction: "ask for invoice",
+      },
+      {
+        title: "Special Conference",
+        content: "A conference tailored to your needs",
+        callToAction: "let's meet",
+      },
+    ],
+    addOn: {
+      title: "With live surveys for audience participation",
+      content: "The technical level conferences can be adapted to the audience",
+      callToAction: "ask for invoice",
     },
   },
   {
@@ -116,6 +219,23 @@ var prestations = [
         content:
           "Accompagnement pour lancer une initiative dans votre communauté locale en partenariat avec les habitants, associations, artistes, collectivités territoriales et autres entreprises locales",
         callToAction: "prendre rdv",
+      },
+    ],
+  },
+  {
+    category: "workshops",
+    options: [
+      {
+        title: "Solutions workshops",
+        content:
+          "Facilitating sessions with your teams to build your objectives and action plans through collaboration, with innovative methods. For more details on the possible areas of work, please click here",
+        callToAction: "let's meet",
+      },
+      {
+        title: "Collective Impact action",
+        content:
+          "Launching an initiative in your community, partnering with organizations, local businesses, artists, and local citizens on an area of your choosing.",
+        callToAction: "let's meet",
       },
     ],
   },
