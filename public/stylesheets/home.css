@@ -141,6 +141,11 @@
   justify-content: space-between;
 }
 
+.right-bottom:hover,
+.right-top:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 500px) {
   .right-bottom,
   .right-top {

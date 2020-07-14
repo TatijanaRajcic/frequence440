@@ -91,5 +91,8 @@
       "3": "conférences",
       "4": "ateliers"
     }
+  },
+  "ongoing": {
+    "message": "En construction."
   }
 }

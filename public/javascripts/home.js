@@ -46,4 +46,16 @@ for (let i = 0; i < dots.length; i++) {
   };
 }
 
+function clickableSections() {
+  let rightTop = document.querySelector(".right-top");
+  rightTop.onclick = () => {
+    window.location.assign("/prestations");
+  };
+  let rightBottom = document.querySelector(".right-bottom");
+  rightBottom.onclick = () => {
+    window.location.assign("/ressources");
+  };
+}
+
 showSlideshow(slideIndex);
+clickableSections();
