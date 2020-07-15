@@ -1,5 +1,7 @@
 import data from "./dataPresta.js";
 
+console.log("presta script executed");
+
 function displayData() {
   let buttons = document.querySelectorAll(".presta-item");
   let finalLocation = cleanLocation();
@@ -71,6 +73,19 @@ function createGridFromData(data, additionalData) {
   }
 }
 
+function scrollToGrid() {
+  const y =
+    document.getElementById("details").getBoundingClientRect().top +
+    window.scrollY -
+    document.getElementById("navbar").getBoundingClientRect().height;
+
+  // TO FIX: pbm when you go from the homepage and you click on a footer link because then there is a issue with the scroll (from top to bottom, so the nav is hidden whereas it shouldn't be here)
+  window.scroll({
+    top: y,
+    behavior: "smooth",
+  });
+}
+
 function getGridData() {
   let nbrCards = document.getElementsByClassName("card").length;
   // calc computed style
@@ -93,6 +108,7 @@ function getGridData() {
 // call the functions the first time to display data on screen
 displayData();
 getGridData();
+if (window.location.hash != "") scrollToGrid();
 
 // listen for selected list item (on the left side of the screen)
 document.querySelectorAll(".presta-item").forEach((button) => {
@@ -111,21 +127,16 @@ document.querySelectorAll(".presta-item").forEach((button) => {
 let footerLinks = document.querySelectorAll(".sub-link");
 footerLinks.forEach((link) => {
   link.onclick = () => {
+    console.log(window.location);
+
     window.history.pushState(
       `${link.dataset.cat}`,
       `${link.dataset.cat}`,
       `#${link.dataset.cat}`
     );
-    const y =
-      document.getElementById("details").getBoundingClientRect().top +
-      window.scrollY -
-      document.getElementById("navbar").getBoundingClientRect().height;
-    window.scroll({
-      top: y,
-      behavior: "smooth",
-    });
     displayData();
     getGridData();
+    scrollToGrid();
   };
 });
 
