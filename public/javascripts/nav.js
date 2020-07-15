@@ -5,12 +5,7 @@ let header = document.querySelector(".header-intro");
 
 window.onscroll = function () {
   let bottomOfNavbarScroll = window.scrollY + navbar.clientHeight;
-  console.log(bottomOfNavbarScroll);
-
   let begginingOfInvisibility = header.clientHeight + navbar.clientHeight;
-
-  console.log(header.clientHeight);
-
   if (
     bottomOfNavbarScroll > begginingOfInvisibility &&
     !menuIcon.classList.contains("is-active")
@@ -21,13 +16,13 @@ window.onscroll = function () {
 };
 
 function toggleVisibility() {
-  console.log("position", window.scrollY);
-  console.log("prev", previousPosition);
-  console.log(navbar.style);
+  // console.log("position", window.scrollY);
+  // console.log("prev", previousPosition);
+  // console.log(navbar.style);
 
   if (window.scrollY > previousPosition) {
     navbar.style.visibility = "hidden";
-    console.log("hide hide hide");
+    //console.log("hide hide hide");
   } else {
     navbar.style.visibility = "visible";
   }
@@ -78,7 +73,7 @@ function addActiveLink() {
     .querySelectorAll("li")
     .forEach((link) => {
       link.onclick = () => {
-        console.log("going to another page");
+        //console.log("going to another page");
       };
       if (link.classList.contains("active-link"))
         link.classList.remove("active-link");
