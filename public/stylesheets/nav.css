@@ -73,6 +73,8 @@
   overflow-y: hidden;
   transition: 1s;
   padding: 0 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .overlay-content {
@@ -132,6 +134,12 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: #ffffff;
+}
+
+@media screen and (max-width: 500px) {
+  .overlay footer {
+    display: none;
+  }
 }
 
 .active-link ::before {
