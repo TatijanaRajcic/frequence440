@@ -66,7 +66,7 @@
 
 .discover {
   min-height: 100vh;
-  /* min-height: calc(var(--vh, 1vh) * 100); */
+  min-height: calc(var(--vh, 1vh) * 100);
   background: #f5f5f5;
   display: flex;
   flex-wrap: wrap;
@@ -162,7 +162,7 @@
   .right-top {
     padding: 64px 12px;
     min-height: 80vh;
-    /* min-height: calc(var(--vh, 1vh) * 80); */
+    min-height: calc(var(--vh, 1vh) * 80);
   }
 
   .right-top {

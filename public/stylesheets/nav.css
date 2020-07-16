@@ -81,7 +81,7 @@
   flex-direction: column;
   list-style: none;
   min-height: 80vh;
-  /* min-height: calc(var(--vh, 1vh) * 80); */
+  min-height: calc(var(--vh, 1vh) * 80);
   padding: 100px 0;
 }
 
