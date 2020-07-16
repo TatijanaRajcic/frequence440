@@ -2,6 +2,7 @@
   width: 100%;
   margin-top: 10vh; /* dimensions of the nav */
   min-height: 90vh;
+  min-height: calc(var(--vh, 1vh) * 90);
   padding: 100px;
   background: #131e1e;
   font-size: 3rem;
