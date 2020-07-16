@@ -1,6 +1,6 @@
 .full-screen {
   min-height: 80vh;
-  min-height: calc(var(--vh, 1vh) * 80);
+  /* min-height: calc(var(--vh, 1vh) * 80); */
   color: #131e1e;
   display: flex;
   align-items: center;
