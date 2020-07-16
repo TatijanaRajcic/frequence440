@@ -78,7 +78,7 @@
   justify-content: space-evenly;
   flex-direction: column;
   list-style: none;
-  height: 80vh;
+  min-height: 80vh;
   padding: 100px 0;
 }
 

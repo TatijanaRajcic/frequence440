@@ -1,5 +1,6 @@
 .full-screen {
-  height: 80vh;
+  min-height: 80vh;
+  min-height: -webkit-fill-available;
   color: #131e1e;
   display: flex;
   align-items: center;

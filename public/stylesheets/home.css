@@ -160,7 +160,7 @@
   .right-bottom,
   .right-top {
     padding: 64px 12px;
-    height: 80vh;
+    min-height: 80vh;
   }
 
   .right-top {
