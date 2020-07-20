@@ -1,110 +1,169 @@
 {
-	"headline": {
-		"title": "Fréquence 440"
-	},
-	"nav": {
-		"1": "Accueil",
-		"2": "Transition",
-		"3": "A propos",
-		"4": "Les prestations",
-		"5": "Les ressources"
-	},
-	"home": {
-		"mainTitle": "Fréquence 440, votre tremplin pour la <a href='/transition'>transition</a>",
-		"introText": "Vous voulez agir pour un monde plus durable, juste et résilient, mais ne savez pas par où commencer ?",
-		"welcomeMessage": "Bienvenue !",
-		"welcomeSentence": "En tant qu’ingénieure, artiste et formatrice, je vous propose deux types de ressources pour la transition",
-		"rightTop": {
-			"details": {
-				"1": "Diagnostics",
-				"2": "Formations & conférences",
-				"3": "Ateliers de co-construction"
-			},
-			"mainGoal": "Pour accompagner votre entreprise ou école du supérieur",
-			"link": "PRESTATIONS PERSONNALISÉES"
-		},
-		"rightBottom": {
-			"details": {
-				"1": "Documents de références",
-				"2": "Synthèses",
-				"3": "Essais",
-				"4": "Mise en contact"
-			},
-			"mainGoal": "Pour enrichir votre démarche personnelle",
-			"link": "RESSOURCES OUVERTES À TOUS"
-		},
-		"clients": {
-			"title": "Mes clients",
-			"sentence": "J’ai eu le plaisir de travailler ces sujets avec différentes entités"
-		},
-		"quotes": {
-			"1": {
-				"sentence": "Pour ma part, j’ai trouvé Léa très pédagogique dans les messages à passer. Elle avait conscience que les personnes ne connaissaient pas tout et que c’est compliqué pour les entreprises de bouger. Elle n’était pas dans le jugement mais bien dans la transmission de sa conviction et c’était très appréciable.",
-				"user": "VINCENT BOUETEL — DIRECTEUR IT DE LA SOCIÉTÉ GÉNÉRALE"
-			},
-			"2": {
-				"sentence": "Léa a accompagné CentraleSupelec pour une ambitieuse formation sur le climat. J'ai beaucoup apprécié sa créativité, ses apports pédagogiques, son sens de l'organisation et son recul sur ces questions difficiles. Ses interventions ont été extrêmement appréciées par les étudiants, pour leur contenu synthétique et précis, sa vision et la qualité de la relation humaine qu'elle a engagé avec eux.",
-				"user": "CHRISTOPHE LAUX — PROFESSEUR ET DIRECTEUR DE DÉPARTEMENT À CENTRALESUPELEC"
-			}
-		}
-	},
-	"footer": {
-		"name": "Fréquence 440",
-		"email": "lea.ikkache@zaclys.net",
-		"rawLinks": {
-			"1": "/",
-			"2": "/transition",
-			"3": "/about",
-			"4": "/contact",
-			"5": "/prestations",
-			"6": "/ressources",
-			"7": "/legal"
-		},
-		"mainLinks": {
-			"1": "Accueil",
-			"2": "Transition",
-			"3": "A propos",
-			"4": "Contact",
-			"5": "Prestations",
-			"6": "Ressources",
-			"7": "Mentions légales"
-		},
-		"subLinks": {
-			"1": "Diagnostics",
-			"2": "Formations ludiques",
-			"3": "Conférences interactives",
-			"4": "Ateliers de co-construction"
-		},
-		"design": "Design",
-		"dev": "Développement",
-		"detailedServices": {
-			"1": "footer.detailedServices.1"
-		}
-	},
-	"prestations": {
-		"subtitle": "Les prestations",
-		"mainTitle": "Pour les entreprises et écoles du supérieur, des prestations à la carte personnalisées",
-		"description": "Ancrées dans la rigueur scientifique, une approche collaborative, l’écoute des besoins et la créativité.",
-		"buttons": {
-			"1": "Prendre RDV",
-			"2": "Voir le détail des prestations"
-		},
-		"sectionTitle": "Prestations",
-		"sectionDescription": "Depuis la compréhension et l’analyse des sujets, jusqu’à la co-construction de solutions",
-		"links": {
-			"1": "Diagnostics",
-			"2": "Formations ludiques",
-			"3": "Conférences interactives",
-			"4": "Ateliers de co-construction"
-		},
-		"detailedServices": {
-			"1": "diagnostics",
-			"2": "formations",
-			"3": "conférences",
-			"4": "ateliers"
-		}
-	},
-	"ongoing": {
-		"message": "En construction."
-	}
+  "headline": {
+    "title": "Fréquence 440"
+  },
+  "nav": {
+    "1": "Accueil",
+    "2": "Transition",
+    "3": "A propos",
+    "4": "Les prestations",
+    "5": "Les ressources"
+  },
+  "home": {
+    "mainTitle": "Fréquence 440, votre tremplin pour la <a href='/transition'>transition</a>",
+    "introText": "Vous voulez agir pour un monde plus durable, juste et résilient, mais ne savez pas par où commencer ?",
+    "welcomeMessage": "Bienvenue !",
+    "welcomeSentence": "En tant qu’ingénieure, artiste et formatrice, je vous propose deux types de ressources pour la transition",
+    "rightTop": {
+      "details": {
+        "1": "Diagnostics",
+        "2": "Formations & conférences",
+        "3": "Ateliers de co-construction"
+      },
+      "mainGoal": "Pour accompagner votre entreprise ou école du supérieur",
+      "link": "PRESTATIONS PERSONNALISÉES"
+    },
+    "rightBottom": {
+      "details": {
+        "1": "Documents de références",
+        "2": "Synthèses",
+        "3": "Essais",
+        "4": "Mise en contact"
+      },
+      "mainGoal": "Pour enrichir votre démarche personnelle",
+      "link": "RESSOURCES OUVERTES À TOUS"
+    },
+    "clients": {
+      "title": "Mes clients",
+      "sentence": "J’ai eu le plaisir de travailler ces sujets avec différentes entités"
+    },
+    "quotes": {
+      "1": {
+        "sentence": "Pour ma part, j’ai trouvé Léa très pédagogique dans les messages à passer. Elle avait conscience que les personnes ne connaissaient pas tout et que c’est compliqué pour les entreprises de bouger. Elle n’était pas dans le jugement mais bien dans la transmission de sa conviction et c’était très appréciable.",
+        "user": "VINCENT BOUETEL — DIRECTEUR IT DE LA SOCIÉTÉ GÉNÉRALE"
+      },
+      "2": {
+        "sentence": "Léa a accompagné CentraleSupelec pour une ambitieuse formation sur le climat. J'ai beaucoup apprécié sa créativité, ses apports pédagogiques, son sens de l'organisation et son recul sur ces questions difficiles. Ses interventions ont été extrêmement appréciées par les étudiants, pour leur contenu synthétique et précis, sa vision et la qualité de la relation humaine qu'elle a engagé avec eux.",
+        "user": "CHRISTOPHE LAUX — PROFESSEUR ET DIRECTEUR DE DÉPARTEMENT À CENTRALESUPELEC"
+      }
+    }
+  },
+  "footer": {
+    "name": "Fréquence 440",
+    "email": "lea.ikkache@zaclys.net",
+    "rawLinks": {
+      "1": "/",
+      "2": "/transition",
+      "3": "/about",
+      "4": "/contact",
+      "5": "/prestations",
+      "6": "/ressources",
+      "7": "/legal"
+    },
+    "mainLinks": {
+      "1": "Accueil",
+      "2": "Transition",
+      "3": "A propos",
+      "4": "Contact",
+      "5": "Prestations",
+      "6": "Ressources",
+      "7": "Mentions légales"
+    },
+    "subLinks": {
+      "1": "Diagnostics",
+      "2": "Formations ludiques",
+      "3": "Conférences interactives",
+      "4": "Ateliers de co-construction"
+    },
+    "design": "Design",
+    "dev": "Développement",
+    "detailedServices": {
+      "1": "footer.detailedServices.1"
+    }
+  },
+  "prestations": {
+    "subtitle": "Les prestations",
+    "mainTitle": "Pour les entreprises et écoles du supérieur, des prestations à la carte personnalisées",
+    "description": "Ancrées dans la rigueur scientifique, une approche collaborative, l’écoute des besoins et la créativité.",
+    "buttons": {
+      "1": "Prendre RDV",
+      "2": "Voir le détail des prestations"
+    },
+    "sectionTitle": "Prestations",
+    "sectionDescription": "Depuis la compréhension et l’analyse des sujets, jusqu’à la co-construction de solutions",
+    "links": {
+      "1": "Diagnostics",
+      "2": "Formations ludiques",
+      "3": "Conférences interactives",
+      "4": "Ateliers de co-construction"
+    },
+    "detailedServices": {
+      "1": "diagnostics",
+      "2": "formations",
+      "3": "conférences",
+      "4": "ateliers"
+    }
+  },
+  "ongoing": {
+    "message": "En construction."
+  },
+  "about": {
+    "subtitle": "À propos",
+    "mainTitle": "Fréquence 440",
+    "content440": {
+      "1": "440 Herz est la fréquence principale de la note «La», souvent utilisée pour accorder les instruments de musique d'un orchestre.",
+      "2": "Pour la transition, il faut un mélange de technique, d’esprit scientifique – pour analyser la situation et pour évaluer nos solutions –, et de dialogue, de créativité – pour collaborer, réfléchir ensemble, et innover. La musique, à la fois très mathématique et physique, et en même temps une forme puissante d’expression et de créativité, est donc un symbole intéressant.",
+      "3": "Il y a aussi l’idée de créer ensemble en étant différent.e. La diversité des timbres des instruments qui s’accordent grâce à une simple note, c’est beau non?"
+    },
+    "contentLéa": {
+      "1": {
+        "title": "Une exigence de rigueur scientifique",
+        "paragraph": "— Avec une formation d’ingénieur généraliste"
+      },
+      "2": {
+        "title": "Une expérience dans l’accompagnement",
+        "paragraph": "— Avec des expériences dans l’entreprenariat et le conseil en France et aux Etats-Unis"
+      },
+      "3": {
+        "title": "Une maîtrise de la gestion de projets de transition",
+        "paragraph": "— Avec la création d’associations et la participation active dans de nombreux projets (En’Jeux Communs, Fresque du Climat, Whale Shark Project…)"
+      },
+      "4": {
+        "title": "Une expertise pédagogique",
+        "paragraph": "— Avec la création et l’animation de formations pour différents publics sur les thèmes de nouvelles organisations du travail, environnement, inclusion et diversité …"
+      },
+      "5": {
+        "title": "Un goût pour le mélange des genres",
+        "paragraph": "— Aujourd’hui je travaille sur de nombreux projets : éducation, développement durable, écriture, musique… Combiner plusieurs domaines et rencontrer des personnes d’horizons différents permettent une richesse des idées et une prise de recul extraordinaires"
+      }
+    }
+  },
+  "transition": {
+    "subtitle": "La transition",
+    "mainTitle": "Pourquoi une transition? <br>Vers quoi?",
+    "description": "La transition émane des enjeux majeurs du XXIème siècle, douloureusement exacerbés par la crise du COVID-19",
+    "catchphrase": "Les enjeux majeurs du XXIe siècle",
+    "content": {
+      "1": {
+        "title": "Minimiser le changement climatique et l’effondrement de la biodiversité pour garder notre capacité à nous alimenter en eau et nourriture et maintenir nos infrastructures en place "
+      },
+      "2": {
+        "title": "Prévoir et atténuer l’instabilité amenée par la raréfaction des ressources, par notre système financier et par les crises démocratiques"
+      },
+      "3": {
+        "title": "Lutter contre l’avancement des inégalités"
+      },
+      "4": {
+        "title": "Promouvoir la diversité, l’inclusivité et les nouvelles méthodes de travail"
+      }
+    },
+    "additional": {
+      "1": {
+        "title": "Transformer des impacts négatifs en impacts positifs"
+      },
+      "2": {
+        "title": "Améliorer notre résilience, notre capacité à nous remettre de chocs"
+      }
+    }
+  }
 }

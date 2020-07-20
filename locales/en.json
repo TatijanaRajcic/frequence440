@@ -120,5 +120,64 @@
   },
   "ongoing": {
     "message": "Under construction."
+  },
+  "about": {
+    "subtitle": "About",
+    "mainTitle": "Fréquence 440",
+    "content440": {
+      "1": "400Hz is the frequency of the G3 note. It’s often used to tune instruments in a music group or orchestra.",
+      "2": "For a more sustainable world, we’ll need a combination of science, technology to analyze the situation and assess potential solutions; and creativity, dialogue for collaborative innovation. Music is an interesting symbol, as it involves both mathematics and creative expression.",
+      "3": "We can also appreciate the idea of the diversity of the instruments’ timbers that complete each other thanks to a simple note."
+    },
+    "contentLéa": {
+      "1": {
+        "title": "Engineering background",
+        "paragraph": "— MS from Ecole Centrale Paris and Georgia Tech"
+      },
+      "2": {
+        "title": "Consulting Experience",
+        "paragraph": "— Experiences in entrepreneurship and consulting in France and in the US"
+      },
+      "3": {
+        "title": "Mastering of sustainability projects",
+        "paragraph": "— Creation of non-profits and active participation in numerous projects (Climate Collage, the Whale Shark Project…)"
+      },
+      "4": {
+        "title": "Pedagogical expertise",
+        "paragraph": "– With the creation of training for diverse audiences on subjects including: new methods of work, sustainability, diversity &amp; inclusion…"
+      },
+      "5": {
+        "title": "Multidisciplinary projects",
+        "paragraph": "– I currently work on various projects in education, sustainability, writing, music… Combining several fields and meeting people from different backgrounds allow for a wealth of ideas and hindsight."
+      }
+    }
+  },
+  "transition": {
+    "subtitle": "La transition",
+    "mainTitle": "Pourquoi une transition? <br>Vers quoi?",
+    "description": "La transition émane des enjeux majeurs du XXIème siècle, douloureusement exacerbés par la crise du COVID-19",
+    "catchphrase": "Les enjeux majeurs du XXIe siècle",
+    "content": {
+      "1": {
+        "title": "Minimiser le changement climatique et l’effondrement de la biodiversité pour garder notre capacité à nous alimenter en eau et nourriture et maintenir nos infrastructures en place "
+      },
+      "2": {
+        "title": "Prévoir et atténuer l’instabilité amenée par la raréfaction des ressources, par notre système financier et par les crises démocratiques"
+      },
+      "3": {
+        "title": "Lutter contre l’avancement des inégalités"
+      },
+      "4": {
+        "title": "Promouvoir la diversité, l’inclusivité et les nouvelles méthodes de travail"
+      }
+    },
+    "additional": {
+      "1": {
+        "title": "Transformer des impacts négatifs en impacts positifs"
+      },
+      "2": {
+        "title": "Améliorer notre résilience, notre capacité à nous remettre de chocs"
+      }
+    }
   }
 }

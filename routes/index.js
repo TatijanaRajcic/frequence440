@@ -19,15 +19,15 @@ router.get(["/prestations", "/services"], function (req, res, next) {
 });
 
 router.get(["/transition", "sustainability"], function (req, res, next) {
-  res.render("ongoing", {
-    styles: ["ongoing"],
+  res.render("transition", {
+    styles: ["header", "transition", "full-page-list", "buttons"],
     currentPage: "transition",
   });
 });
 
 router.get("/about", function (req, res, next) {
-  res.render("ongoing", {
-    styles: ["ongoing"],
+  res.render("about", {
+    styles: ["header", "about", "full-page-list"],
     currentPage: "about",
   });
 });
