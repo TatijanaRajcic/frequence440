@@ -33,6 +33,11 @@
   font-size: 1.25rem;
 }
 
+#about img {
+  position: absolute;
+  left: 0;
+}
+
 .full-page-list h1 {
   font-size: 3rem;
   line-height: 3.75rem;
