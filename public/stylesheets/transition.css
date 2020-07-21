@@ -58,3 +58,64 @@
 .actions h1 {
   grid-column: 1/4;
 }
+
+.graph {
+  color: #ffffff;
+  font-size: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, minmax(8rem, 1fr));
+  grid-column: 1/7;
+  padding: 50px 0;
+}
+
+.imbricated {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.imbricated ul {
+  border-left: 1px solid #ffffff;
+  height: 100%;
+}
+
+.imbricated ul li {
+  padding-left: 10px;
+}
+
+.imbricated p {
+  padding-top: 5px;
+}
+
+.first {
+  padding: 20px;
+  background: #2d2d2d;
+  grid-column: 1/7;
+  grid-row: 1/7;
+}
+
+.second {
+  padding: 20px;
+  background: #434343;
+  grid-column: 2/7;
+  grid-row: 2/7;
+}
+
+.second p {
+  width: 8rem;
+}
+
+.third {
+  padding: 20px;
+  background: #9b9b9b;
+  grid-column: 3/7;
+  grid-row: 3/7;
+}
+
+.fourth {
+  padding: 20px;
+  background: #bdbdbd;
+  grid-column: 4/7;
+  grid-row: 4/7;
+}
