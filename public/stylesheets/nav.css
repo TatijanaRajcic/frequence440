@@ -33,7 +33,7 @@
   width: 100px;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 500px) {
   #navbar .hamburger {
     width: 55px;
   }
