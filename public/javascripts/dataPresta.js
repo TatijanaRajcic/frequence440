@@ -53,36 +53,42 @@ var prestations = [
         content:
           "Pour comprendre en intelligence collective les mécanismes du climat et les interactions avec les activités humaines, avec un atelier créatif basé sur les rapports du GIEC, construit par Cédric Ringenbach",
         callToAction: "demander un devis",
+        duration: "3H",
       },
       {
         title: "Atelier 2 Tonnes",
         content:
           "Pour comprendre les ordres de grandeur des solution pour le climat et l’interaction individu / collectif, avec une simulation interactive basée sur les bilans carbone des participants, créée par François Laugier. Objectif : 2 tonnes pour la neutralité carbone en 2050",
         callToAction: "demander un devis",
+        duration: "3H",
       },
       {
         title: "Renaissance Ecologique",
         content:
           "Pour comprendre les interactions et le chemin à mener pour un monde bas carbone, avec un atelier inspirant autour d’un récit et d’une illustration d’un futur souhaitable, tiré de la fresque de Sienne de 1338, et créé par Julien Dossier",
         callToAction: "demander un devis",
+        duration: "1H à 3H",
       },
       {
         title: "Fresque Biodiversité",
         content:
           "Pour comprendre les mécanismes de la biodiversité et comment limiter son effondrement, avec un atelier créatif basé sur le rapport de l’IPBES",
         callToAction: "demander un devis",
+        duration: "3H",
       },
       {
         title: "Fresque Océane",
         content:
           "Pour tout comprendre sur les océans, les menaces qu’ils subissent et les solutions correspondantes, avec un atelier créatif construit par Alice Vitoux",
         callToAction: "demander un devis",
+        duration: "3H",
       },
       {
         title: "Fresque du Numérique",
         content:
           "Pour comprendre les impacts du numérique et réfléchir sur les solutions pour un numérique durable, avec un atelier créatif, construit par Yvain Mouneu et Aurélien Deragne",
         callToAction: "demander un devis",
+        duration: "3H",
       },
     ],
     addOn: {
@@ -100,36 +106,42 @@ var prestations = [
         content:
           "understand the mechanisms of climate change, from its sources to its consequences, with this creative workshop created by Cedric Ringenbach. More info here",
         callToAction: "ask for invoice",
+        duration: "3H",
       },
       {
         title: "2 tons",
         content:
           "2 tons, the weight of CO2 we should each be emitting yearly by 2050 to reach carbon neutrality. Enter a simulation to 2050 and chose your solutions to reach climate objectives, both as individuals and collectively. Workshop created by François Laugier.",
         callToAction: "ask for invoice",
+        duration: "3H",
       },
       {
         title: "Ecological Renaissance",
         content:
           "Understand the interconnexions and types of solutions to reach a low carbon world, with this inspiring workshop create by Julien Dossier. Work with a story and illustration based on the Sienna mural from 1338",
         callToAction: "ask for invoice",
+        duration: "1H to 3H",
       },
       {
         title: "Biodiversity Collage",
         content:
           "Grasp the interactions within and the importance of biodiversity, and solutions to limit its collapse.",
         callToAction: "ask for invoice",
+        duration: "3H",
       },
       {
         title: "Oceans Collage",
         content:
           "Dive into the ocean life, its threats, and the corresponding solutions, thanks to this creative workshop by Alice Vitoux",
         callToAction: "ask for invoice",
+        duration: "3H",
       },
       {
         title: "Digital World Collage",
         content:
           "Understand the impacts of our digital consumptions and brainstorm on solutions for more digital sustainability with this creative workshop by Yvain Mouneu and Aurélien Deragne",
         callToAction: "ask for invoice",
+        duration: "3H",
       },
     ],
     addOn: {
@@ -180,23 +192,27 @@ var prestations = [
         content:
           "Panorama de la transition pour connaître les ordres de grandeur et les concepts essentiels à la bonne compréhension du développement durable et des solutions associées",
         callToAction: "demander un devis",
+        duration: "30MIN à 1H30",
       },
       {
         title: "Les trois courbes - Ingénieurs",
         content:
           "Panorama de la transition, avec les orientations que peuvent prendre des ingénieurs",
         callToAction: "demander un devis",
+        duration: "30MIN à 1H30",
       },
       {
         title:
           "Elle est jolie <span class=break-line>ta robe aujourd’hui !</span>",
         content: "Les sujets épineux du sexisme au travail",
         callToAction: "demander un devis",
+        duration: "30MIN à 1H30",
       },
       {
         title: "Conférence personnalisée",
         content: "Suivant vos attentes...",
         callToAction: "prendre rdv",
+        duration: "30MIN à 1H30",
       },
     ],
     addOn: {

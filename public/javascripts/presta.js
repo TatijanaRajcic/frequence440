@@ -43,9 +43,14 @@ function createGridFromData(data, additionalData) {
   data.forEach((oneArticle, index) => {
     let newArticle = document.createElement("div");
     newArticle.classList.add("card");
+    let duration = oneArticle.duration;
+    if (!duration) duration = "";
     newArticle.innerHTML = `
     <div>
-      <p class="index">0${index + 1}</p>
+      <div class="detailed-info">
+        <p class="index">0${index + 1}</p>
+        <p class="duration">${duration}</p>
+      </div>
       <h3>${oneArticle.title}</h3>
       <p class="content">${oneArticle.content}</p>
     </div>
