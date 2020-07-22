@@ -32,6 +32,12 @@
   width: 70%;
 }
 
+@media screen and (max-width: 500px) {
+  .catchphrase {
+    width: 100%;
+  }
+}
+
 .page-title {
   font-size: 1rem;
   line-height: 1.25rem;
@@ -48,4 +54,10 @@
   color: #e6e6e2;
   width: 50%;
   margin: 50px 0;
+}
+
+@media screen and (max-width: 500px) {
+  .header-intro .sub-catchphrase {
+    width: 100%;
+  }
 }
