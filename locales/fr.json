@@ -1,4 +1,7 @@
 {
+  "lang": {
+    "value": "fr"
+  },
   "headline": {
     "title": "Fréquence 440"
   },
@@ -7,7 +10,14 @@
     "2": "Transition",
     "3": "A propos",
     "4": "Les prestations",
-    "5": "Les ressources"
+    "5": "Les ressources",
+    "rawLinks": {
+      "1": "/",
+      "2": "/transition",
+      "3": "/about",
+      "4": "/prestations",
+      "5": "/ressources"
+    }
   },
   "home": {
     "mainTitle": "Fréquence 440, votre tremplin pour la <a href='/transition'>transition</a>",
@@ -126,7 +136,7 @@
       },
       "3": {
         "title": "Une maîtrise de la gestion de projets de transition",
-        "paragraph": "— Avec la création d’associations et la participation active dans de nombreux projets (En’Jeux Communs, Fresque du Climat, Whale Shark Project…)"
+        "paragraph": "— Avec la création d’associations et la participation active dans de nombreux projets (<a href='https://enjeuxcommuns.fr/' target='blank'>En’Jeux Communs</a>, <a href='http://fresqueduclimat.org/' target='blank'>Fresque du Climat</a>, <a href='https://www.thewhalesharkproject.com/' target='blank'>Whale Shark Project</a>…)"
       },
       "4": {
         "title": "Une expertise pédagogique",
@@ -145,13 +155,13 @@
     "catchphrase": "Les enjeux majeurs du XXIe siècle",
     "content": {
       "1": {
-        "title": "Minimiser le changement climatique et l’effondrement de la biodiversité pour garder notre capacité à nous alimenter en eau et nourriture et maintenir nos infrastructures en place "
+        "title": "Minimiser le <a href='https://www.ipcc.ch/languages-2/francais/' target='blank'>changement climatique</a> et l’effondrement de la <a href='https://ipbes.net/global-assessment' target='blank'>biodiversité</a> pour garder notre capacité à nous alimenter en eau et nourriture et maintenir nos infrastructures en place "
       },
       "2": {
-        "title": "Prévoir et atténuer l’instabilité amenée par la raréfaction des ressources, par notre système financier et par les crises démocratiques"
+        "title": "Prévoir et atténuer l’instabilité amenée par la <a href='https://livre.fnac.com/a6737145/Philippe-Bihouix-L-Age-des-low-tech-Vers-une-civilisation-techniquement-soutenable' target='blank'>raréfaction des ressources</a>, par notre système financier et par les crises démocratiques"
       },
       "3": {
-        "title": "Lutter contre l’avancement des inégalités"
+        "title": "Lutter contre l’avancement des <a href='https://www.oxfamfrance.org/communiques-de-presse/davos-2020-nouveau-rapport-doxfam-sur-les-inegalites-mondiales/' target='blank'>inégalités</a>"
       },
       "4": {
         "title": "Promouvoir la diversité, l’inclusivité et les nouvelles méthodes de travail"

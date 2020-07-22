@@ -17,9 +17,17 @@
 }
 
 .languages a {
-  margin-left: 30px;
+  margin-left: 5px;
   text-decoration: none;
+  color: #757575;
+}
+
+.languages .active-lng {
   color: #ffffff;
+}
+
+.languages a:first-child {
+  margin-right: 5px;
 }
 
 .languages a:last-child {

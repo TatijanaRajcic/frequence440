@@ -1,4 +1,7 @@
 {
+  "lang": {
+    "value": "en"
+  },
   "headline": {
     "title": "Fréquence 440"
   },
@@ -7,7 +10,14 @@
     "2": "Sustainability",
     "3": "About",
     "4": "Services",
-    "5": "Resources"
+    "5": "Resources",
+    "rawLinks": {
+      "1": "/",
+      "2": "/sustainability",
+      "3": "/about",
+      "4": "/services",
+      "5": "/resources"
+    }
   },
   "home": {
     "mainTitle": "Fréquence 440, your steppingstone to <a href='/transition'>sustainability</a>",
@@ -140,7 +150,7 @@
       },
       "3": {
         "title": "Mastering of sustainability projects",
-        "paragraph": "— Creation of non-profits and active participation in numerous projects (Climate Collage, the Whale Shark Project…)"
+        "paragraph": "— Creation of non-profits and active participation in numerous projects (<a href='http://climatecollage.org/' target='blank'>Climate Collage</a>, <a href='https://www.thewhalesharkproject.com/' target='blank'>the Whale Shark Project</a>…)"
       },
       "4": {
         "title": "Pedagogical expertise",
@@ -159,13 +169,13 @@
     "catchphrase": "The major challenges of the 21st century",
     "content": {
       "1": {
-        "title": "How to we curtail climate change and the collapse of biodiversity, so that we can sustain our infrastructures and food and water resources?"
+        "title": "How do we curtail <a href='https://www.ipcc.ch/' target='blank'>climate change</a> and the collapse of <a href='https://ipbes.net/global-assessment' target='blank'>biodiversity</a>, so that we can sustain our infrastructures and food and water resources?"
       },
       "2": {
         "title": "How do we foresee and tackle the instability stemming from dwindling resources, from our financial system, and from threats to democracy? "
       },
       "3": {
-        "title": "How do we fight for equality?"
+        "title": "How do we fight for <a href='https://www.oxfam.org/en/press-releases/worlds-billionaires-have-more-wealth-46-billion-people' target='blank'>equality</a>?"
       },
       "4": {
         "title": "How do we promote diversity, inclusivity and innovation ?"

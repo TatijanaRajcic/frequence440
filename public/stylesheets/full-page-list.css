@@ -33,3 +33,7 @@
 .full-page-list li p:last-child {
   color: #adadad;
 }
+
+.full-page-list li a {
+  color: #adadad;
+}
