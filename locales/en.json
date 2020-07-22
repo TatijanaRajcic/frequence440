@@ -153,30 +153,62 @@
     }
   },
   "transition": {
-    "subtitle": "La transition",
-    "mainTitle": "Pourquoi une transition? <br>Vers quoi?",
-    "description": "La transition émane des enjeux majeurs du XXIème siècle, douloureusement exacerbés par la crise du COVID-19",
+    "subtitle": "Sustainability",
+    "mainTitle": "What is sustainability? <br>Why does it matter?",
+    "description": "Sustainability means facing major issues that are impacting us in the 21st century, and that were exacerbated by the COVID19 crisis",
     "catchphrase": "Les enjeux majeurs du XXIe siècle",
     "content": {
       "1": {
-        "title": "Minimiser le changement climatique et l’effondrement de la biodiversité pour garder notre capacité à nous alimenter en eau et nourriture et maintenir nos infrastructures en place "
+        "title": "How to we curtail climate change and the collapse of biodiversity, so that we can sustain our infrastructures and food and water resources?"
       },
       "2": {
-        "title": "Prévoir et atténuer l’instabilité amenée par la raréfaction des ressources, par notre système financier et par les crises démocratiques"
+        "title": "How do we foresee and tackle the instability stemming from dwindling resources, from our financial system, and from threats to democracy? "
       },
       "3": {
-        "title": "Lutter contre l’avancement des inégalités"
+        "title": "How do we fight for equality?"
       },
       "4": {
-        "title": "Promouvoir la diversité, l’inclusivité et les nouvelles méthodes de travail"
+        "title": "How do we promote diversity, inclusivity and innovation ?"
       }
     },
     "additional": {
-      "1": {
-        "title": "Transformer des impacts négatifs en impacts positifs"
+      "1": "These subjects are intertwined, a systemic approach is key to succeed.",
+      "2": "See the manifesto",
+      "3": "For a person, or a company, the task might seem daunting. But some initiatives at a local scale can prove extremely relevant to:",
+      "4": "Convert negative impacts into solutions",
+      "5": "Improve our resilience, our ability to survive chocks"
+    },
+    "callToAction": {
+      "1": "You can act.",
+      "2": "make a personal transition",
+      "3": "Companies and Higher education Institution can act too.",
+      "4": "act within my company"
+    },
+    "imbricated": {
+      "first": {
+        "1": "Understanding and meeting custommers’ needs",
+        "2": "Training your managers and teams",
+        "3": "Build together and bring together around your core values",
+        "4": "Strategy"
       },
-      "2": {
-        "title": "Améliorer notre résilience, notre capacité à nous remettre de chocs"
+      "second": {
+        "1": "Conduct a carbon footprint analysis and reduce your emissions",
+        "2": "Otimize resources sustainably",
+        "3": "Implement a circular economy",
+        "4": "Products & services design"
+      },
+      "third": {
+        "1": "Encourage innovation and empower your teams",
+        "2": "Implement new ways of working",
+        "3": "Collaborate with your local community",
+        "4": "Organization"
+      },
+      "fourth": {
+        "1": "Strive for energy sobriety",
+        "2": "Provide healthy, local and sustainable food for your teams",
+        "3": "Implement a transportation plan",
+        "4": "Opt for sustainable digital systems",
+        "5": "Campus / Offices"
       }
     }
   }

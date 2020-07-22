@@ -158,11 +158,43 @@
       }
     },
     "additional": {
-      "1": {
-        "title": "Transformer des impacts négatifs en impacts positifs"
+      "1": "Ces sujets sont très liés, une approche systémique est nécessaire",
+      "2": "Voir le Manifeste",
+      "3": "En tant qu’individu ou entreprise, la tâche peut paraître immense. Mais des démarches à l’échelle locale sont très pertinentes, pour :",
+      "4": "Transformer des impacts négatifs en impacts positifs",
+      "5": "Améliorer notre résilience, notre capacité à nous remettre de chocs"
+    },
+    "callToAction": {
+      "1": "Les individus peuvent agir.",
+      "2": "faire une transition personnelle",
+      "3": "Les entreprises et écoles du supérieur aussi*.",
+      "4": "Agir dans mon entreprise"
+    },
+    "imbricated": {
+      "first": {
+        "1": "Comprendre et répondre aux besoins des utilisateurs",
+        "2": "Sensibiliser et former ses managers & collaborateurs",
+        "3": "Co-construire et fédérer autour de vos valeurs",
+        "4": "Stratégie"
       },
-      "2": {
-        "title": "Améliorer notre résilience, notre capacité à nous remettre de chocs"
+      "second": {
+        "1": "Réaliser le bilan carbone de la chaîne de valeur et la minimiser",
+        "2": "Optimiser les ressources de façon durable",
+        "3": "Passer en économie circulaire",
+        "4": "Conception des produits & services"
+      },
+      "third": {
+        "1": "Favoriser l’innovation et la prise d’initiative",
+        "2": "Implémenter de nouvelles méthodes de travail",
+        "3": "S’intégrer dans la communauté locale",
+        "4": "Organisation"
+      },
+      "fourth": {
+        "1": "Atteindre la sobriété énergétique",
+        "2": "Fournir une alimentation saine et durable aux équipes",
+        "3": "Établir une charte de déplacement",
+        "4": "Aller vers un numérique durable",
+        "5": "Campus / Locaux"
       }
     }
   }
