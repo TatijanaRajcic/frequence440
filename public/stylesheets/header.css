@@ -6,8 +6,11 @@
   padding: 100px;
   background: #131e1e;
   font-size: 3rem;
-  line-height: 3.75rem;
   color: #ffffff;
+}
+
+.header-intro p {
+  line-height: 3.75rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -18,7 +21,7 @@
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 950px) {
+@media screen and (min-width: 500px) and (max-width: 1025px) {
   .header-intro {
     font-size: 1.8rem;
     line-height: 2.5rem;
@@ -36,7 +39,7 @@
   margin: 10px 0px;
 }
 
-.sub-catchphrase {
+.header-intro .sub-catchphrase {
   font-family: Traulha;
   font-style: italic;
   font-weight: normal;

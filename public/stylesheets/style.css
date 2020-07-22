@@ -171,14 +171,13 @@ body,
 html {
   height: 100%;
   width: 100%;
-  /* line-height: 20px; */
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-@media screen and (min-width: 950px) and (max-width: 970px) {
+/* @media screen and (min-width: 950px) and (max-width: 970px) {
   body,
   html {
     font-size: 9px;
@@ -189,6 +188,13 @@ html {
   body,
   html {
     font-size: 10px;
+  }
+} */
+
+@media screen and (min-width: 1025px) and (max-width: 1050px) {
+  body,
+  html {
+    font-size: 10.3px;
   }
 }
 
@@ -278,7 +284,7 @@ TESTER TOUTES LES DISPOSITIONS POSSIBLES D'ECRAN
   margin: 0 0 12px 0;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1025px) {
   .prg-header h2 {
     font-size: 1.625rem;
   }
@@ -293,7 +299,7 @@ TESTER TOUTES LES DISPOSITIONS POSSIBLES D'ECRAN
   color: #000000;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1025px) {
   .prg-header p {
     font-size: 1.25rem;
     line-height: 1.5rem;
@@ -301,7 +307,7 @@ TESTER TOUTES LES DISPOSITIONS POSSIBLES D'ECRAN
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 950px) {
+@media screen and (min-width: 500px) and (max-width: 1025px) {
   .prg-header p {
     margin-bottom: 0px;
   }
@@ -321,7 +327,7 @@ TESTER TOUTES LES DISPOSITIONS POSSIBLES D'ECRAN
   border-top: 3px solid #131e1e;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1025px) {
   .semi-underlined:before {
     border-top: 3px solid #ffffff;
   }

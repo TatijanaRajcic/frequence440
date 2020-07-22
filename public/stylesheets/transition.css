@@ -22,10 +22,13 @@
   font-size: 1.5rem;
 }
 
-.full-page-list h1,
-.main-section h1 {
+.full-page-list h1 {
   font-size: 2.25rem;
   line-height: 3.75rem;
+}
+
+.main-section h1 {
+  font-size: 2.25rem;
 }
 
 .full-page-list h1 {

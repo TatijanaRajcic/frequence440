@@ -6,7 +6,7 @@
   background: #ffffff;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1025px) {
   #home .header-intro .main-title {
     padding: 10px 12px;
   }
@@ -19,13 +19,6 @@
 #home .header-intro .main-title h1 {
   align-self: center;
   color: #131e1e;
-  font-size: 3rem; /* still need to specify the font-size because otherwise it does not overide h1's default font size */
-}
-
-@media screen and (max-width: 950px) {
-  #home .header-intro .main-title h1 {
-    font-size: 1.75rem;
-  }
 }
 
 #home .header-intro .main-title h1 a:active {
@@ -94,7 +87,7 @@
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 950px) {
+@media screen and (min-width: 500px) and (max-width: 1025px) {
   .left {
     width: 100%;
   }
@@ -112,7 +105,7 @@
   margin: 0 0 12px 0;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1025px) {
   .inline-list {
     font-size: 0.8rem;
   }
@@ -176,7 +169,7 @@
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 950px) {
+@media screen and (min-width: 500px) and (max-width: 1025px) {
   .right-bottom,
   .right-top {
     padding: 64px 100px;
@@ -221,7 +214,7 @@
   line-height: 2.5rem;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1025px) {
   .right h2 {
     font-size: 1.625rem;
     line-height: 2rem;
@@ -232,7 +225,7 @@
   align-self: flex-end;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1025px) {
   .right-footer {
     align-self: flex-start;
   }
@@ -256,7 +249,7 @@
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 950px) {
+@media screen and (min-width: 500px) and (max-width: 1025px) {
   .right-footer a {
     color: #ffffff;
   }
@@ -287,7 +280,7 @@
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 950px) {
+@media screen and (min-width: 500px) and (max-width: 1025px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -337,7 +330,7 @@
   color: #ffffff;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1025px) {
   .slides p {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -352,7 +345,7 @@
   color: #ffffff;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1025px) {
   .slides footer {
     font-size: 0.6875rem;
   }
