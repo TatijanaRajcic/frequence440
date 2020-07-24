@@ -27,6 +27,13 @@
   line-height: 2rem;
 }
 
+@media screen and (max-width: 1025px) {
+  .header-intro div:last-child {
+    grid-column: 1/11;
+    padding-top: 30px;
+  }
+}
+
 .header-intro div:last-child p {
   margin: 0 0 30px 0;
   line-height: 2rem;
@@ -56,4 +63,30 @@
 .full-page-list address a {
   color: #ffffff;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1025px) {
+  #about img {
+    display: none;
+  }
+
+  #about .full-page-list ol {
+    grid-column: 1/14;
+  }
+
+  .full-page-list h1,
+  .full-page-list address {
+    grid-column: 1/14;
+    padding: 0;
+  }
+
+  .full-page-list h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #about .full-page-list {
+    padding: 30px 12px;
+  }
 }
