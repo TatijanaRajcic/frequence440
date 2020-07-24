@@ -68,9 +68,9 @@ function createGridFromData(data, additionalData) {
   });
   let additionalContainer = document.querySelector(".additional-container");
   additionalContainer.innerHTML = "";
-  additionalContainer.style.visibility = "hidden";
+  additionalContainer.style.display = "none";
   if (additionalData) {
-    additionalContainer.style.visibility = "visible";
+    additionalContainer.style.display = "block";
     let additionalInfo = document.createElement("div");
     additionalInfo.innerHTML = `
     <h3>${additionalData.title}</h3>

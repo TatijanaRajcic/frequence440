@@ -36,3 +36,34 @@
 .full-page-list li a {
   color: #adadad;
 }
+
+@media screen and (max-width: 1025px) {
+  .full-page-list h1,
+  .full-page-list address {
+    grid-column: 1/14;
+    padding: 0;
+  }
+
+  .full-page-list h1 {
+    font-size: 1.75rem;
+    line-height: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .full-page-list {
+    padding: 30px 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .full-page-list ol {
+    grid-column: 4/14;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1025px) {
+  .full-page-list ol {
+    grid-column: 1/14;
+  }
+}

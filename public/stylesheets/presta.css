@@ -1,3 +1,8 @@
+#presta {
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
 /* PRESTA DETAILS */
 
 #presta #details {
@@ -9,20 +14,20 @@
 .presta-grid {
   margin: 3% 0;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 350px 4fr;
 }
 
 /* the list on the left side */
 
 .presta-list {
   list-style: none;
+  width: 100%;
 }
 
 .presta-item {
   border-top: 1px solid #adadad;
   color: #adadad;
   height: 50px;
-  width: 300px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -62,22 +67,17 @@
   display: grid;
   grid-gap: 1em;
   border-collapse: collapse;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /* grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); */
   grid-auto-rows: min-content;
   padding: 0 20px;
-}
-
-@media screen and (min-width: 1500px) {
-  #cards {
-    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-  }
 }
 
 /* one card */
 
 .card {
   background: #131e1e;
-  min-height: 50vh;
+  /* min-height: 50vh; */
   padding: 30px;
 }
 
@@ -169,20 +169,10 @@
   margin: 30px 0;
 }
 
-@media screen and (max-width: 500px) {
-  #presta .buttons-panel .mixed-button {
-    display: none;
-  }
-}
-
 /* CALL TO ACTION  */
 
 .call-to-action > div {
   width: 50%;
-}
-
-.call-to-action > div:first-child p {
-  width: 80%;
 }
 
 .call-to-action > div:last-child {
@@ -226,4 +216,66 @@
   font-size: 0.7rem;
   position: absolute;
   left: -10px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 850px) {
+  .presta-grid {
+    grid-template-columns: initial;
+  }
+
+  .presta-list {
+    margin: 20px 0;
+  }
+
+  #cards {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  #cards {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #cards {
+    grid-column-start: 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #presta .buttons-panel .mixed-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .call-to-action > div {
+    width: 100%;
+  }
+
+  .call-to-action button {
+    margin-top: 20px;
+  }
+
+  .call-to-action > div:last-child {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card h3 {
+    font-size: 1.75rem;
+  }
+
+  .call-to-action > div:last-child {
+    padding: 10px;
+  }
+
+  .square {
+    margin-left: 1em;
+  }
 }
