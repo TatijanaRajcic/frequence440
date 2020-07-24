@@ -8,12 +8,10 @@
       <a class="button mixed-button" href="#details">{{{__ "prestations.buttons.2"}}}</a>
     </div>
   </header>
-  <section id="details" class="presta-cards main-section">
-    <div class="prg-header">
-      <h2>{{{__ "prestations.sectionTitle"}}}</h2>
-      <p>{{{__ "prestations.sectionDescription"}}}</p>
-    </div>
-    <div class="presta-pres">
+  <section id="details" class="detailed-services main-section">
+    <h2 class="hero-title">{{{__ "prestations.sectionTitle"}}}</h2>
+    <p class="hero-subtitle">{{{__ "prestations.sectionDescription"}}}</p>
+    <div class="presta-grid">
       <div>
         <ul class="presta-list">
           <li class="presta-item" data-cat="{{{__ "prestations.detailedServices.1"}}}">
@@ -32,8 +30,34 @@
         <div class="additional-container">
         </div>
       </div>
-
-      <div id="presta-result"></div>
+      <div id="cards"></div>
     </div>
+  </section>
+  <section class="call-to-action flex main-section">
+    <div>
+      <h2 class="hero-title">{{{__ "prestations.callToAction.title"}}}</h2>
+      <p class="hero-subtitle">{{{__ "prestations.callToAction.catchphrase"}}}</p>
+      <button class="button black-button">{{{__ "prestations.callToAction.button"}}}</button>
+    </div>
+    <div>
+      <p>{{{__ "prestations.callToAction.additional.title"}}}</p>
+      <div class="options">
+        <p>{{{__ "prestations.callToAction.additional.catchphrase"}}}</p>
+        <ul class="square">
+          <li>{{{__ "prestations.callToAction.additional.content.1"}}}</li>
+          <li>{{{__ "prestations.callToAction.additional.content.2"}}}</li>
+          <li>{{{__ "prestations.callToAction.additional.content.3"}}}</li>
+          <li>{{{__ "prestations.callToAction.additional.content.4"}}}</li>
+          <ul class="arrow">
+            <li>{{{__ "prestations.callToAction.additional.content.a"}}}</li>
+            <li>{{{__ "prestations.callToAction.additional.content.b"}}}</li>
+            <li>{{{__ "prestations.callToAction.additional.content.c"}}}</li>
+          </ul>
+          <li>{{{__ "prestations.callToAction.additional.content.5"}}}</li>
+        </ul>
+      </div>
+
+    </div>
+
   </section>
 </section>

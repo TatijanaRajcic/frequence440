@@ -177,20 +177,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* @media screen and (min-width: 950px) and (max-width: 970px) {
-  body,
-  html {
-    font-size: 9px;
-  }
-}
-
-@media screen and (min-width: 970px) and (max-width: 1050px) {
-  body,
-  html {
-    font-size: 10px;
-  }
-} */
-
 @media screen and (min-width: 1025px) and (max-width: 1050px) {
   body,
   html {
@@ -257,14 +243,6 @@ html {
   }
 }
 
-/* A CHANGER:
-
-FIXED HEIGHT EN PIXELS
-PADDINGS EN PIXELS
-TESTER TOUTES LES DISPOSITIONS POSSIBLES D'ECRAN
-
-*/
-
 /* -------------------------- MAIN SECTIONS / COMMUN CODE -------------------------- */
 
 .main-section {
@@ -277,7 +255,7 @@ TESTER TOUTES LES DISPOSITIONS POSSIBLES D'ECRAN
   }
 }
 
-.prg-header h2 {
+.hero-title {
   font-size: 2.25rem;
   line-height: 2.5rem;
   color: #131e1e;
@@ -285,30 +263,32 @@ TESTER TOUTES LES DISPOSITIONS POSSIBLES D'ECRAN
 }
 
 @media screen and (max-width: 1025px) {
-  .prg-header h2 {
+  .hero-title {
     font-size: 1.625rem;
   }
 }
 
-.prg-header p {
+.hero-subtitle {
   font-family: Traulha;
   font-style: italic;
   font-weight: normal;
   font-size: 1.75rem;
   line-height: 2.5rem;
   color: #000000;
+  max-width: 40vw;
 }
 
 @media screen and (max-width: 1025px) {
-  .prg-header p {
+  .hero-subtitle {
     font-size: 1.25rem;
     line-height: 1.5rem;
     margin-bottom: 50px;
+    max-width: 100vw;
   }
 }
 
 @media screen and (min-width: 500px) and (max-width: 1025px) {
-  .prg-header p {
+  .hero-subtitle {
     margin-bottom: 0px;
   }
 }
@@ -332,3 +312,35 @@ TESTER TOUTES LES DISPOSITIONS POSSIBLES D'ECRAN
     border-top: 3px solid #ffffff;
   }
 }
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.space-b {
+  justify-content: space-between;
+}
+
+.space-e {
+  justify-content: space-evenly;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+/* --------------------------- */

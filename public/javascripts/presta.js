@@ -26,7 +26,7 @@ function displayData() {
 }
 
 function cleanLocation() {
-  let checkFrEn = document.querySelector(".prg-header h2").innerHTML;
+  let checkFrEn = document.querySelector(".hero-title").innerHTML;
   let cutHash = window.location.hash.split("#")[1];
   let finalLocation = cutHash;
   if (finalLocation === undefined && checkFrEn === "Prestations")
@@ -38,16 +38,18 @@ function cleanLocation() {
 }
 
 function createGridFromData(data, additionalData) {
-  let resultDiv = document.getElementById("presta-result");
+  let resultDiv = document.getElementById("cards");
   resultDiv.innerHTML = "";
   data.forEach((oneArticle, index) => {
     let newArticle = document.createElement("div");
     newArticle.classList.add("card");
+    newArticle.classList.add("flex-col");
+    newArticle.classList.add("space-b");
     let duration = oneArticle.duration;
     if (!duration) duration = "";
     newArticle.innerHTML = `
     <div>
-      <div class="detailed-info">
+      <div class="detailed-info flex space-b">
         <p class="index">0${index + 1}</p>
         <p class="duration">${duration}</p>
       </div>
@@ -82,7 +84,7 @@ function scrollToGrid() {
   const y =
     document.getElementById("details").getBoundingClientRect().top +
     window.scrollY -
-    document.getElementById("navbar").getBoundingClientRect().height;
+    document.getElementById("navbar-sticky").getBoundingClientRect().height;
 
   // TO FIX: pbm when you go from the homepage and you click on a footer link because then there is a issue with the scroll (from top to bottom, so the nav is hidden whereas it shouldn't be here)
   window.scroll({
@@ -95,7 +97,7 @@ function getGridData() {
   let nbrCards = document.getElementsByClassName("card").length;
   // calc computed style
   const gridComputedStyle = window.getComputedStyle(
-    document.getElementById("presta-result")
+    document.getElementById("cards")
   );
   let gridColumnCount = gridComputedStyle
     .getPropertyValue("grid-template-columns")

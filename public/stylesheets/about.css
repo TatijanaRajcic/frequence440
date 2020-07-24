@@ -3,7 +3,9 @@
   line-height: 2rem;
 }
 
-#about .header-intro {
+/* HEADER */
+
+.header-intro {
   background: #f5f5f5;
   color: #131e1e;
   display: grid;
@@ -11,11 +13,11 @@
   grid-template-rows: max-content 1fr;
 }
 
-.full-line {
+.header-intro div:first-child {
   grid-column: 1/11;
 }
 
-.half-line {
+.header-intro div:last-child {
   grid-column: 6/11;
   grid-row: 2/3;
   font-family: Traulha;
@@ -25,14 +27,12 @@
   line-height: 2rem;
 }
 
-.half-line p {
+.header-intro div:last-child p {
   margin: 0 0 30px 0;
   line-height: 2rem;
 }
 
-.full-page-list h2 {
-  font-size: 1.25rem;
-}
+/* FULL PAGE LIST */
 
 #about img {
   position: absolute;

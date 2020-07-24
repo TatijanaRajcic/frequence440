@@ -112,6 +112,25 @@
       "2": "formations",
       "3": "conférences",
       "4": "ateliers"
+    },
+    "callToAction": {
+      "title": "Prise en main",
+      "catchphrase": "Vous pouvez sélectionner une ou plusieurs options à la carte. Si vous avez des questions avant de choisir, je suis à votre disposition",
+      "button": "Prendre rendez-vous",
+      "additional": {
+        "title": "Nous pouvons aussi déterminer ensemble un packaging complet.",
+        "catchphrase": "Voici un exemple pour une démarche climat :",
+        "content": {
+          "1": "Fresque du climat pour vos managers",
+          "2": "Cadrage du projet",
+          "3": "Diagnostic Bilan carbone",
+          "4": "Demi-journée climat pour tous vos collaborateurs :",
+          "5": "Ateliers de co-construction de votre stratégie carbone : ½ journée récurrente par équipe concernée",
+          "a": "Fresque du climat",
+          "b": "Restitution du bilan carbone",
+          "c": "Conférence-repas « les trois courbes »"
+        }
+      }
     }
   },
   "ongoing": {

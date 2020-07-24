@@ -5,13 +5,44 @@
   min-height: calc(var(--vh, 1vh) * 90);
   padding: 100px;
   background: #131e1e;
-  font-size: 3rem;
   color: #ffffff;
-}
-
-.header-intro p {
+  font-size: 3rem;
   line-height: 3.75rem;
 }
+
+/* page-title: reminder of the name page in every header */
+
+.page-title {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #adadad;
+  margin: 10px 0px;
+}
+
+/* catchphrase: long introductionary sentence in every header */
+
+.catchphrase {
+  width: 70%;
+}
+
+/* sub-catchphrase: descriptive sentence under every cathcphrase in headers */
+
+.sub-catchphrase {
+  font-family: Traulha;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  color: #e6e6e2;
+  width: 50%;
+  margin: 50px 0;
+}
+
+.white {
+  background: #ffffff;
+}
+
+/* ALL MEDIA QUERIES */
 
 @media screen and (max-width: 500px) {
   .header-intro {
@@ -28,36 +59,12 @@
   }
 }
 
-.catchphrase {
-  width: 70%;
-}
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1025px) {
   .catchphrase {
     width: 100%;
   }
-}
 
-.page-title {
-  font-size: 1rem;
-  line-height: 1.25rem;
-  color: #adadad;
-  margin: 10px 0px;
-}
-
-.header-intro .sub-catchphrase {
-  font-family: Traulha;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 1.75rem;
-  line-height: 2.5rem;
-  color: #e6e6e2;
-  width: 50%;
-  margin: 50px 0;
-}
-
-@media screen and (max-width: 500px) {
-  .header-intro .sub-catchphrase {
+  .sub-catchphrase {
     width: 100%;
   }
 }

@@ -27,7 +27,7 @@
 </head>
 
 <body id="body">
-  <nav id="navbar">
+  <nav id="navbar-sticky" class="flex space-b">
     <div>
       <button class="hamburger hamburger--collapse js-hamburger" type="button">
         <span class="hamburger-box">
@@ -41,15 +41,15 @@
       <a href="/en">EN</a>
     </div>
   </nav>
-  <nav id="myNav" class="overlay" data-page="{{currentPage}}">
-    <ul class="overlay-content">
+  <nav id="navbar-fullscreen" class="flex-col" data-page="{{currentPage}}">
+    <ul class="flex-col space-e">
       <li data-link="home"><a href="{{{__ "nav.rawLinks.1"}}}">{{{__ "nav.1"}}}</a></li>
       <li data-link="transition"><a href="{{{__ "nav.rawLinks.2"}}}">{{{__ "nav.2"}}}</a></li>
       <li data-link="about"><a href="{{{__ "nav.rawLinks.3"}}}">{{{__ "nav.3"}}}</a></li>
       <li data-link="presta"><a href="{{{__ "nav.rawLinks.4"}}}">{{{__ "nav.4"}}}</a></li>
       <li data-link="ressources"><a href="{{{__ "nav.rawLinks.4"}}}">{{{__ "nav.5"}}}</a></li>
     </ul>
-    <footer>
+    <footer class="flex space-b">
       {{!-- <a href="https://www.linkedin.com/in/l%C3%A9a-ikkache-4b448683/" target="_blank">Linkedin</a> --}}
       <p>© Copyright 2020 IMCO transition. All Rights Reserved.</p>
     </footer>
@@ -59,19 +59,19 @@
     <div class="contact">
       <p>{{{__ "footer.name"}}}</p>
       <address>
-        <p class="address">
+        <p class="address flex-col">
           <a href="https://www.linkedin.com/in/l%C3%A9a-ikkache-4b448683/" target="_blank">Linkedin</a>
           <a href="mailto:lea.ikkache@zaclys.net">{{{__ "footer.email"}}}</a>
         </p>
       </address>
     </div>
-    <div class="links first-links">
+    <div class="links flex-col first-links">
       <a href="{{{__ "footer.rawLinks.1"}}}">{{{__ "footer.mainLinks.1"}}}</a>
       <a href="{{{__ "footer.rawLinks.2"}}}">{{{__ "footer.mainLinks.2"}}}</a>
       <a href="{{{__ "footer.rawLinks.3"}}}">{{{__ "footer.mainLinks.3"}}}</a>
       <a href="{{{__ "footer.rawLinks.4"}}}">{{{__ "footer.mainLinks.4"}}}</a>
     </div>
-    <div class="links second-links">
+    <div class="links flex-col second-links">
       <a href="{{{__ "footer.rawLinks.5"}}}">{{{__ "footer.mainLinks.5"}}}</a>
       <a href="{{{__ "footer.rawLinks.5"}}}#{{{__ "prestations.detailedServices.1"}}}"
         data-cat="{{{__ "prestations.detailedServices.1"}}}" class="sub-link">{{{__ "footer.subLinks.1"}}}</a>
@@ -82,11 +82,11 @@
       <a href="{{{__ "footer.rawLinks.5"}}}#{{{__ "prestations.detailedServices.4"}}}"
         data-cat="{{{__ "prestations.detailedServices.4"}}}" class="sub-link">{{{__ "footer.subLinks.4"}}}</a>
     </div>
-    <div class="links third-links">
+    <div class="links flex-col third-links">
       <a href="/ressources">{{{__ "footer.mainLinks.6"}}}</a>
       <a href="">{{{__ "footer.mainLinks.7"}}}</a>
     </div>
-    <div class="copyright">
+    <div class="copyright flex space-b">
       <p>{{{__ "footer.design"}}} : <a href="https://www.elvirevolkdesign.com/" target="_blank">Elvire Volk
           Leonovitch</a> | {{{__ "footer.dev"}}}
         : <a href="https://www.linkedin.com/in/tatijana-rajcic-692389139/" target="_blank">Tatijana Rajcic</a></p>

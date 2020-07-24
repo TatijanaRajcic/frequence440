@@ -1,5 +1,5 @@
 let previousPosition = 0;
-let navbar = document.getElementById("navbar");
+let navbar = document.getElementById("navbar-sticky");
 let menuIcon = document.querySelector(".js-hamburger");
 let header = document.querySelector(".header-intro");
 
@@ -32,7 +32,7 @@ function addNavListeners() {
 }
 
 function openNav() {
-  document.getElementById("myNav").style.height = "90vh";
+  document.getElementById("navbar-fullscreen").style.height = "90vh";
   menuIcon.classList.add("is-active");
   addNavListeners();
   addActiveLink();
@@ -41,14 +41,14 @@ function openNav() {
 function closeNav() {
   menuIcon.classList.remove("is-active");
   addNavListeners();
-  document.getElementById("myNav").style.height = "0vh";
+  document.getElementById("navbar-fullscreen").style.height = "0vh";
 }
 
 function addActiveLink() {
-  let fullscreenNav = document.getElementById("myNav");
+  let fullscreenNav = document.getElementById("navbar-fullscreen");
   let currentPage = fullscreenNav.dataset.page;
-  document
-    .querySelector(".overlay-content")
+  fullscreenNav
+    .querySelector("ul")
     .querySelectorAll("li")
     .forEach((link) => {
       link.onclick = () => {

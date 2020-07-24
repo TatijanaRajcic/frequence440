@@ -1,12 +1,18 @@
-.presta-cards {
+/* PRESTA DETAILS */
+
+#presta #details {
   background: #f5f5f5;
 }
 
-.presta-pres {
+/* the whole grid */
+
+.presta-grid {
   margin: 3% 0;
   display: grid;
   grid-template-columns: 1fr 4fr;
 }
+
+/* the list on the left side */
 
 .presta-list {
   list-style: none;
@@ -50,7 +56,9 @@
   color: #ffffff;
 }
 
-#presta-result {
+/* the cards on the right side */
+
+#cards {
   display: grid;
   grid-gap: 1em;
   border-collapse: collapse;
@@ -60,24 +68,20 @@
 }
 
 @media screen and (min-width: 1500px) {
-  #presta-result {
+  #cards {
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   }
 }
 
+/* one card */
+
 .card {
   background: #131e1e;
   min-height: 50vh;
-  /* min-height: calc(var(--vh, 1vh) * 50); */
   padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .card .detailed-info {
-  display: flex;
-  justify-content: space-between;
   border-bottom: 1px solid #adadad;
 }
 
@@ -141,6 +145,8 @@
   grid-column: 1/-1;
 }
 
+/* additional content */
+
 .additional-container {
   background: #e6e6e2;
   margin: 30px 0;
@@ -167,4 +173,57 @@
   #presta .buttons-panel .mixed-button {
     display: none;
   }
+}
+
+/* CALL TO ACTION  */
+
+.call-to-action > div {
+  width: 50%;
+}
+
+.call-to-action > div:first-child p {
+  width: 80%;
+}
+
+.call-to-action > div:last-child {
+  background: #131e1e;
+  color: #ffffff;
+  padding: 50px;
+}
+
+.call-to-action > div:last-child > p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
+.call-to-action button {
+  margin-top: 80px;
+}
+
+.options {
+  padding-top: 40px;
+}
+
+.options > p {
+  text-decoration: underline;
+  padding-bottom: 15px;
+}
+
+.square {
+  list-style-type: square;
+  margin-left: 4em;
+}
+
+.arrow li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 10px;
+}
+
+.arrow li:before {
+  content: "\25BA \0020";
+  font-size: 0.7rem;
+  position: absolute;
+  left: -10px;
 }

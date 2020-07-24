@@ -3,19 +3,19 @@
     <div class="main-title">
       <h1><span>{{{__ "home.mainTitle"}}}</span></h1>
     </div>
-    <p>{{{__ "home.introText"}}}</p>
+    <p class="catchphrase">{{{__ "home.introText"}}}</p>
   </header>
-  <section class="discover main-section">
+  <section class="discover flex wrap main-section">
     <div class="left">
-      <div class="prg-header">
-        <h2>{{{__ "home.welcomeMessage"}}}</h2>
-        <p>{{{__ "home.welcomeSentence"}}}</p>
+      <div>
+        <h2 class="hero-title">{{{__ "home.welcomeMessage"}}}</h2>
+        <p class="hero-subtitle">{{{__ "home.welcomeSentence"}}}</p>
       </div>
     </div>
     <div class="right">
-      <div class="right-top">
+      <div class="right-top flex-col space-b">
         <div class="right-main">
-          <ul class="inline-list">
+          <ul class="inline-list flex wrap">
             <li>{{{__ "home.rightTop.details.1"}}}</li>
             <li>{{{__ "home.rightTop.details.2"}}}</li>
             <li>{{{__ "home.rightTop.details.3"}}}</li>
@@ -28,9 +28,9 @@
           </h3>
         </div>
       </div>
-      <div class="right-bottom">
+      <div class="right-bottom flex-col space-b">
         <div class="right-main">
-          <ul class="inline-list">
+          <ul class="inline-list flex wrap">
             <li>{{{__ "home.rightBottom.details.1"}}}</li>
             <li>{{{__ "home.rightBottom.details.2"}}}</li>
             <li>{{{__ "home.rightBottom.details.3"}}}</li>
@@ -47,9 +47,9 @@
     </div>
   </section>
   <section class="clients main-section">
-    <div class="prg-header">
-      <h2>{{{__ "home.clients.title"}}}</h2>
-      <p>{{{__ "home.clients.sentence"}}}</p>
+    <div>
+      <h2 class="hero-title">{{{__ "home.clients.title"}}}</h2>
+      <p class="hero-subtitle">{{{__ "home.clients.sentence"}}}</p>
     </div>
     <div class="grid">
       <figure class="img-cell"> <img src="/images/cerdd.png" alt="logo CERDD">
@@ -71,15 +71,15 @@
     </div>
   </section>
   <section class="testimonies main-section">
-    <blockquote class="slides">
+    <blockquote class="slides col flex-center">
       <p>{{{__ "home.quotes.1.sentence"}}}</p>
       <footer>{{{__ "home.quotes.1.user"}}}</footer>
     </blockquote>
-    <blockquote class="slides">
+    <blockquote class="slides col flex-center">
       <p>{{{__ "home.quotes.2.sentence"}}}</p>
       <footer>{{{__ "home.quotes.2.user"}}}</footer>
     </blockquote>
-    <div class="dots">
+    <div class="dots flex flex-center">
       <span class="dot" data-index="0"></span>
       <span class="dot" data-index="1"></span>
     </div>

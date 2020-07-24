@@ -1,51 +1,36 @@
+#home {
+  color: #131e1e;
+}
+
 /* --------------------- HEADER ------------------- */
 
-#home .header-intro .main-title span {
+.main-title span {
   line-height: 3.5rem;
   padding: 10px 24px;
   background: #ffffff;
 }
 
 @media screen and (max-width: 1025px) {
-  #home .header-intro .main-title {
+  .main-title {
     padding: 10px 12px;
   }
-  #home .header-intro .main-title span {
+  .main-title span {
     padding: 5px 0;
     box-shadow: 0.5em 0 0 #ffffff, -0.5em 0 0 #ffffff;
   }
 }
 
-#home .header-intro .main-title h1 {
+.main-title h1 {
   align-self: center;
   color: #131e1e;
 }
 
-#home .header-intro .main-title h1 a:active {
-  color: #fc7753;
-}
-
-#home .header-intro p {
-  padding-top: 75px;
-  color: #ffffff;
-  width: 100%;
-}
-
-@media (min-width: 780px) {
-  #home .header-intro p {
-    width: 85%;
-  }
-}
-
-@media screen and (max-width: 500px) and (max-height: 600px) {
-  #home .header-intro p {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
-}
-
 .main-title a {
   color: #131e1e;
+}
+
+.main-title a:active {
+  color: #fc7753;
 }
 
 .main-title a:hover {
@@ -55,16 +40,34 @@
 .main-title a:active {
   color: #fc7753;
 }
+
+#home .catchphrase {
+  padding-top: 75px;
+}
+
+@media (min-width: 780px) {
+  #home .catchphrase {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 350px) and (max-height: 600px) {
+  #home .catchphrase {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+
 /* -------------------------- DISCOVER -------------------------- */
 
 .discover {
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
   background: #f5f5f5;
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
 }
+
+/* left and right sections */
 
 .left,
 .right {
@@ -78,71 +81,23 @@
 
 @media screen and (max-width: 500px) {
   .left {
-    width: 100%;
     padding: 30px 12px;
   }
-
-  .right {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 500px) and (max-width: 1025px) {
-  .left {
-    width: 100%;
-  }
-
-  .right {
-    width: 100%;
-  }
-}
-
-.inline-list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  list-style: none;
-  margin: 0 0 12px 0;
 }
 
 @media screen and (max-width: 1025px) {
-  .inline-list {
-    font-size: 0.8rem;
+  .left,
+  .right {
+    width: 100%;
   }
 }
 
-.right-main h2 {
-  padding-bottom: 100px;
-}
-
-@media screen and (max-width: 500px) {
-  .right-main {
-    margin-top: 100px;
-  }
-}
-
-@media screen and (max-width: 500px) and (max-height: 600px) {
-  .right-main {
-    margin-top: 50px;
-  }
-}
-
-.inline-list > li:not(:last-child)::after {
-  content: "|";
-  margin: 0 0.5em;
-}
-
-.right {
-  color: #131e1e;
-}
+/* details right section */
 
 .right-bottom,
 .right-top {
   padding: 64px;
   height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .right-bottom:hover,
@@ -157,14 +112,19 @@
     min-height: 80vh;
     min-height: calc(var(--vh, 1vh) * 80);
   }
+}
 
+@media screen and (max-width: 1025px) {
   .right-top {
     background: #131e1e;
-    color: #ffffff;
   }
 
   .right-bottom {
     background: #fc7753;
+  }
+
+  .right-top,
+  .right-bottom {
     color: #ffffff;
   }
 }
@@ -173,16 +133,6 @@
   .right-bottom,
   .right-top {
     padding: 64px 100px;
-  }
-
-  .right-top {
-    background: #131e1e;
-    color: #ffffff;
-  }
-
-  .right-bottom {
-    background: #fc7753;
-    color: #ffffff;
   }
 }
 
@@ -208,14 +158,49 @@
   border-top: 1px solid #b8b8b9;
 }
 
-.right h2 {
+/* details of right-top and right-bottom sections */
+
+@media screen and (max-width: 500px) {
+  .right-main {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) and (max-height: 600px) {
+  .right-main {
+    margin-top: 50px;
+  }
+}
+
+.inline-list {
+  width: 100%;
+  list-style: none;
+  margin: 0 0 12px 0;
+}
+
+.inline-list > li:not(:last-child)::after {
+  content: "|";
+  margin: 0 0.5em;
+}
+
+@media screen and (max-width: 1025px) {
+  .inline-list {
+    font-size: 0.8rem;
+  }
+}
+
+.right-main h2 {
+  padding-bottom: 100px;
+}
+
+.right-main h2 {
   width: 100%;
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
 @media screen and (max-width: 1025px) {
-  .right h2 {
+  .right-main h2 {
     font-size: 1.625rem;
     line-height: 2rem;
   }
@@ -310,8 +295,6 @@
   min-height: 300px;
   grid-column: 2/12;
   box-sizing: border-box;
-  flex-direction: column;
-  justify-content: center;
 }
 
 @media screen and (min-height: 900px) {
@@ -355,9 +338,6 @@
 
 .dots {
   grid-column: 2/12;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 30px 0;
 }
 
