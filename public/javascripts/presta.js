@@ -1,6 +1,18 @@
 import data from "./dataPresta.js";
 
-console.log("presta script executed");
+function changeChevrons() {
+  let icons = document.querySelectorAll(".fas");
+  let windowWidth = window.innerWidth;
+  let chevronType;
+  windowWidth >= "850" ? (chevronType = "right") : (chevronType = "down");
+  icons.forEach((icon) => {
+    if (icon.classList.contains("fa-chevron-right"))
+      icon.classList.remove("fa-chevron-right");
+    if (icon.classList.contains("fa-chevron-down"))
+      icon.classList.remove("fa-chevron-down");
+    icon.classList.add(`fa-chevron-${chevronType}`);
+  });
+}
 
 function displayData() {
   let buttons = document.querySelectorAll(".presta-item");
@@ -148,5 +160,11 @@ footerLinks.forEach((link) => {
 });
 
 // listen for changes in display
-window.addEventListener("DOMContentLoaded", getGridData);
-window.addEventListener("resize", getGridData);
+window.addEventListener("DOMContentLoaded", () => {
+  changeChevrons();
+  getGridData();
+});
+window.addEventListener("resize", () => {
+  changeChevrons();
+  getGridData();
+});
