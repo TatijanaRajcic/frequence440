@@ -21,6 +21,7 @@
 .full-page-list li::before {
   content: "0" counter(my-awesome-counter);
   position: absolute;
+  font-variant-numeric: tabular-nums;
   left: -70px;
   color: #adadad;
 }
