@@ -46,4 +46,11 @@ router.get(["/ressources", "/resources"], function (req, res, next) {
   });
 });
 
+router.get(["/legal"], function (req, res, next) {
+  res.render("ongoing", {
+    styles: ["ongoing"],
+    currentPage: "legal",
+  });
+});
+
 module.exports = router;

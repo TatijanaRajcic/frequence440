@@ -42,7 +42,8 @@
   .full-page-list h1,
   .full-page-list address {
     grid-column: 1/14;
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 30px;
   }
 
   .full-page-list h1 {

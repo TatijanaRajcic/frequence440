@@ -44,6 +44,7 @@
 #about img {
   position: absolute;
   left: 0;
+  margin-bottom: 30px;
 }
 
 .full-page-list h1 {
@@ -67,7 +68,18 @@
 
 @media screen and (max-width: 1025px) {
   #about img {
-    display: none;
+    position: initial;
   }
 }
 
+@media screen and (max-width: 500px) {
+  #about img {
+    width: 60vw;
+  }
+}
+
+@media screen and (min-width:500px) and (max-width: 1025px) {
+  #about img {
+    width: 40vw;
+  }
+}
