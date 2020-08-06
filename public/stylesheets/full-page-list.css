@@ -54,11 +54,13 @@
   .full-page-list {
     padding: 30px 12px;
   }
-}
 
-@media screen and (max-width: 500px) {
   .full-page-list ol {
-    grid-column: 4/14;
+    grid-column: 1/15;
+  }
+
+  .full-page-list li::before {
+    position: initial;
   }
 }
 
