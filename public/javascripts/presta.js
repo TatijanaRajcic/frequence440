@@ -32,6 +32,7 @@ function displayData() {
       let additionalData = selectedCategory[0].addOn
         ? selectedCategory[0].addOn
         : null;
+
       createGridFromData(finalData, additionalData);
     }
   });
@@ -124,9 +125,32 @@ function getGridData() {
   }
 }
 
+function createContainingDivs() {
+  // cards grid
+  let resultDiv = document.createElement("div");
+  resultDiv.setAttribute("id", "cards");
+  // additional data container
+  let additionalDiv = document.createElement("div");
+  additionalDiv.setAttribute("class", "additional-container");
+
+  let siblingDivCards = document.querySelector(".presta-list").parentNode;
+  siblingDivCards.parentNode.insertBefore(
+    resultDiv,
+    siblingDivCards.nextSibling
+  );
+
+  let siblingDivAdditional = document.querySelector(".presta-list");
+  siblingDivAdditional.parentNode.insertBefore(
+    additionalDiv,
+    siblingDivAdditional.nextSibling
+  );
+}
+
 // call the functions the first time to display data on screen
+createContainingDivs();
 displayData();
 getGridData();
+
 if (window.location.hash != "") scrollToGrid();
 
 // listen for selected list item (on the left side of the screen)

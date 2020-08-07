@@ -326,6 +326,10 @@ html {
   flex-direction: column;
 }
 
+.align-c {
+  align-items: center;
+}
+
 .space-b {
   justify-content: space-between;
 }

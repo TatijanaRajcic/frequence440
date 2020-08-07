@@ -25,25 +25,26 @@
 }
 
 .presta-item {
-  border-top: 1px solid #adadad;
   color: #adadad;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-.presta-item:hover {
-  color: #fc7753;
 }
 
 .presta-item i {
   visibility: hidden;
 }
 
-.presta-item:last-child {
+.presta-item:last-child  .presta-item-title{
   border-bottom: 1px solid #adadad;
+}
+
+.presta-item-title {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #adadad;
+  cursor: pointer;
+}
+
+.presta-item-title:hover {
+  color: #fc7753;
 }
 
 .selected-item {
@@ -93,6 +94,7 @@
 
 .card .duration {
   color: #adadad;
+  font-variant-numeric: tabular-nums;
 }
 
 .card h3 {
