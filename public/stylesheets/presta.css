@@ -318,6 +318,18 @@
   overflow-y: scroll;
 }
 
+@media screen and (max-width: 500px) {
+  #invoice {
+    width: 95vw;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1025px) {
+  #invoice {
+    width: 90vw;
+  }
+}
+
 #invoice .button {
   width: max-content;
 }
