@@ -79,6 +79,14 @@ function createGridFromData(data, additionalData) {
     </div>`;
     resultDiv.append(newArticle);
   });
+  if (window.innerWidth < 500) {
+    let navigationDiv = document.createElement("a");
+    navigationDiv.className = "button black-button flex";
+    navigationDiv.setAttribute("href", "#details")
+    navigationDiv.innerHTML =
+      '<i class="fa fa-chevron-up" aria-hidden="true"></i><p>Voir les autres prestations</p>';
+    resultDiv.append(navigationDiv);
+  }
   let additionalContainer = document.querySelector(".additional-container");
   additionalContainer.innerHTML = "";
   additionalContainer.style.display = "none";

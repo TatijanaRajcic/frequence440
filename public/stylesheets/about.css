@@ -74,11 +74,11 @@
 
 @media screen and (max-width: 500px) {
   #about img {
-    width: 60vw;
+    display: none;
   }
 }
 
-@media screen and (min-width:500px) and (max-width: 1025px) {
+@media screen and (min-width: 500px) and (max-width: 1025px) {
   #about img {
     width: 40vw;
   }
