@@ -126,10 +126,12 @@ function addAdditionalText(additionalData) {
 
 function displayInvoice() {
   event.preventDefault();
-  console.log("heyyyy invoice");
-  let grey = document.createElement("div");
-  grey.innerHTML = `<div id="invoice">
-  <h2>FORMULAIRE DE DEVIS</h2>
+  let invoiceContainer = document.createElement("div");
+  invoiceContainer.innerHTML = `<div id="invoice">
+  <div class="flex space-b">
+    <h2>FORMULAIRE DE DEVIS</h2>
+    <img src="/images/menu-close.svg" id="close-invoice"></img>
+  </div>
   <div class="bordered flex-col flex-center">
     <p>Si vous voulez discuter avant, prenez RDV:</p>
     <a href="" class="button black-button">Voir le calendrier</a>
@@ -176,9 +178,14 @@ function displayInvoice() {
     <button class="button black-button" type="submit">Envoyer</button>
   </form>
 </div>`;
-  grey.className = "full-grey";
-  grey.style.minHeight = "100vh";
-  document.querySelector("body").append(grey);
+  invoiceContainer.className = "invoice-container";
+  invoiceContainer.style.minHeight = "100vh";
+  document.querySelector("body").append(invoiceContainer);
+  invoiceContainer.querySelector("#close-invoice").onclick = removeInvoice;
+}
+
+function removeInvoice() {
+  document.querySelector(".invoice-container").remove()
 }
 
 function scrollToGrid() {
