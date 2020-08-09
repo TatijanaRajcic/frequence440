@@ -71,7 +71,7 @@ function createGridFromData(data, additionalData) {
     </div>
     `;
     if (oneArticle.title === "Ateliers solutions") {
-      let additionalText = `<p class="content"> Pour plus de détails sur les sujets possibles, voir <a href="/transition">ici</a>. </p>`;
+      let additionalText = `<p class="content"> Pour plus de détails sur les sujets possibles, voir <a href="/transition#graph">ici</a>. </p>`;
       newArticle.innerHTML += additionalText;
     }
     newArticle.innerHTML += `<div class="semi-underlined">
