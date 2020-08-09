@@ -74,15 +74,20 @@ function createGridFromData(data, additionalData) {
       let additionalText = `<p class="content"> Pour plus de détails sur les sujets possibles, voir <a href="/transition#graph">ici</a>. </p>`;
       newArticle.innerHTML += additionalText;
     }
+    let link =
+      oneArticle.callToAction === "prendre rdv" ||
+      oneArticle.callToAction === "let's meet"
+        ? "https://calendly.com/frequence440"
+        : "/prestations";
     newArticle.innerHTML += `<div class="semi-underlined">
-    <a href="/prestations">${oneArticle.callToAction}</a>
+    <a href="${link}">${oneArticle.callToAction}</a>
     </div>`;
     resultDiv.append(newArticle);
   });
   if (window.innerWidth < 500) {
     let navigationDiv = document.createElement("a");
     navigationDiv.className = "button black-button flex";
-    navigationDiv.setAttribute("href", "#details")
+    navigationDiv.setAttribute("href", "#details");
     navigationDiv.innerHTML =
       '<i class="fa fa-chevron-up" aria-hidden="true"></i><p>Voir les autres prestations</p>';
     resultDiv.append(navigationDiv);
