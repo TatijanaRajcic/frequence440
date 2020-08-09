@@ -54,44 +54,62 @@ function createGridFromData(data, additionalData) {
   let resultDiv = document.getElementById("cards");
   resultDiv.innerHTML = "";
   data.forEach((oneArticle, index) => {
-    let newArticle = document.createElement("div");
-    newArticle.classList.add("card");
-    newArticle.classList.add("flex-col");
-    newArticle.classList.add("space-b");
-    let duration = oneArticle.duration;
-    if (!duration) duration = "";
-    newArticle.innerHTML = `
-    <div>
-      <div class="detailed-info flex space-b">
-        <p class="index">0${index + 1}</p>
-        <p class="duration">${duration}</p>
-      </div>
-      <h3>${oneArticle.title}</h3>
-      <p class="content">${oneArticle.content}</p>
-    </div>
-    `;
-    if (oneArticle.title === "Ateliers solutions") {
-      let additionalText = `<p class="content"> Pour plus de détails sur les sujets possibles, voir <a href="/transition#graph">ici</a>. </p>`;
-      newArticle.innerHTML += additionalText;
-    }
-    let link =
-      oneArticle.callToAction === "prendre rdv" ||
-      oneArticle.callToAction === "let's meet"
-        ? "https://calendly.com/frequence440"
-        : "/prestations";
-    newArticle.innerHTML += `<div class="semi-underlined">
-    <a href="${link}">${oneArticle.callToAction}</a>
-    </div>`;
-    resultDiv.append(newArticle);
+    createOneCard(oneArticle, index, resultDiv);
   });
   if (window.innerWidth < 500) {
-    let navigationDiv = document.createElement("a");
-    navigationDiv.className = "button black-button flex";
-    navigationDiv.setAttribute("href", "#details");
-    navigationDiv.innerHTML =
-      '<i class="fa fa-chevron-up" aria-hidden="true"></i><p>Voir les autres prestations</p>';
-    resultDiv.append(navigationDiv);
+    addAdditionalButton(resultDiv);
   }
+  addAdditionalText(additionalData);
+}
+
+function createOneCard(oneArticle, index, resultDiv) {
+  let newArticle = document.createElement("div");
+  newArticle.classList.add("card");
+  newArticle.classList.add("flex-col");
+  newArticle.classList.add("space-b");
+  let duration = oneArticle.duration;
+  if (!duration) duration = "";
+  newArticle.innerHTML = `
+  <div>
+    <div class="detailed-info flex space-b">
+      <p class="index">0${index + 1}</p>
+      <p class="duration">${duration}</p>
+    </div>
+    <h3>${oneArticle.title}</h3>
+    <p class="content">${oneArticle.content}</p>
+  </div>
+  `;
+  if (oneArticle.title === "Ateliers solutions") {
+    let additionalText = `<p class="content"> Pour plus de détails sur les sujets possibles, voir <a href="/transition#graph">ici</a>. </p>`;
+    newArticle.innerHTML += additionalText;
+  }
+  let link =
+    oneArticle.callToAction === "prendre rdv" ||
+    oneArticle.callToAction === "let's meet"
+      ? "https://calendly.com/frequence440"
+      : "";
+  newArticle.innerHTML += `<div class="semi-underlined">
+  <a href="${link}">${oneArticle.callToAction}</a>
+  </div>`;
+  if (
+    oneArticle.callToAction === "demander un devis" ||
+    oneArticle.callToAction === "ask for invoice"
+  ) {
+    newArticle.querySelector(".semi-underlined a").onclick = displayInvoice;
+  }
+  resultDiv.append(newArticle);
+}
+
+function addAdditionalButton(resultDiv) {
+  let navigationDiv = document.createElement("a");
+  navigationDiv.className = "button black-button flex";
+  navigationDiv.setAttribute("href", "#details");
+  navigationDiv.innerHTML =
+    '<i class="fa fa-chevron-up" aria-hidden="true"></i><p>Voir les autres prestations</p>';
+  resultDiv.append(navigationDiv);
+}
+
+function addAdditionalText(additionalData) {
   let additionalContainer = document.querySelector(".additional-container");
   additionalContainer.innerHTML = "";
   additionalContainer.style.display = "none";
@@ -104,6 +122,63 @@ function createGridFromData(data, additionalData) {
     `;
     additionalContainer.append(additionalInfo);
   }
+}
+
+function displayInvoice() {
+  event.preventDefault();
+  console.log("heyyyy invoice");
+  let grey = document.createElement("div");
+  grey.innerHTML = `<div id="invoice">
+  <h2>FORMULAIRE DE DEVIS</h2>
+  <div class="bordered flex-col flex-center">
+    <p>Si vous voulez discuter avant, prenez RDV:</p>
+    <a href="" class="button black-button">Voir le calendrier</a>
+  </div>
+  <form action="/invoice" class="flex-col">
+    <div class="form-group flex-col">
+      <label for="client-name">Nom*</label>
+      <input type="text" name="name" id="client-name" required />
+    </div>
+    <div class="form-group flex-col">
+      <label for="client-email">Email de contact*</label>
+      <input type="text" name="email" id="client-email" required />
+    </div>
+    <div class="form-group flex-col">
+      <label for="client-number">Numéro de téléphone</label>
+      <input type="text" name="number" id="client-number" />
+    </div>
+    <div class="form-group flex-col">
+      <label for="client-type">Nom de l'Entreprise ou Ecole du supérieur*</label>
+      <input type="text" name="type" id="client-type" required/>
+    </div>
+    <div class="form-group flex-col">
+      <label for="client-quantity"
+        >Nombre de personnes*</label
+      >
+      <input type="number" name="quantity" id="client-quantity" required />
+    </div>
+    <div class="form-group flex-col">
+      <label for="client-message"
+        >Message (merci de préciser les équipes qui seront concernées, les
+        contraintes de temps / espace / matériel, etc.)</label
+      >
+      <textarea
+        name="message"
+        id="client-message"
+        cols="30"
+        rows="3"
+      ></textarea>
+    </div>
+    <div class="form-group flex-col">
+      <label for="client-hours">Horaire</label>
+      <input type="text" name="hours" id="client-hours" />
+    </div>
+    <button class="button black-button" type="submit">Envoyer</button>
+  </form>
+</div>`;
+  grey.className = "full-grey";
+  grey.style.minHeight = "100vh";
+  document.querySelector("body").append(grey);
 }
 
 function scrollToGrid() {

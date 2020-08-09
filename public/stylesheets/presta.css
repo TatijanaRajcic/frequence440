@@ -287,3 +287,52 @@
     margin-left: 1em;
   }
 }
+
+/* Invoice styling */
+
+.full-grey {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(19, 30, 30, 0.7);
+  overflow-x: visible;
+  overflow-y: visible;
+  transition: 1s;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#invoice {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  opacity: 1;
+  width: 50vw;
+  padding: 50px 30px;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  overflow-y: scroll;
+}
+
+#invoice .button {
+  width: max-content;
+}
+
+#invoice .bordered {
+  padding: 20px;
+  margin: 10px 0;
+}
+
+#invoice input,
+#invoice textarea {
+  border: 1px solid #adadad;
+  padding: 10px;
+}
+
+.form-group {
+  margin: 10px 0;
+}
