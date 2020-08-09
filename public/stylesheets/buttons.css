@@ -60,3 +60,18 @@
   border: 2px solid #ff4c1c;
   color: #ff4c1c;
 }
+
+.icon-container {
+  background: #ffffff;
+  color: #131e1e;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.icon-container i {
+  font-size: 1.5rem;
+}

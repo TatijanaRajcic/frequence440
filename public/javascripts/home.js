@@ -31,7 +31,7 @@ function showSlideshow() {
   if (slideIndex >= slides.length) {
     slideIndex = 0;
   }
-  setTimeout(showSlideshow, 7000); // Change image every 2 seconds
+  setTimeout(showSlideshow, 10000); // Change image every 2 seconds
 }
 
 for (let i = 0; i < dots.length; i++) {

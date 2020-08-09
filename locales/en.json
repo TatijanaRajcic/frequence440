@@ -128,21 +128,21 @@
       "4": "workshops"
     },
     "callToAction": {
-      "title": "Prise en main",
-      "catchphrase": "Vous pouvez sélectionner une ou plusieurs options à la carte. Si vous avez des questions avant de choisir, je suis à votre disposition",
-      "button": "Prendre rendez-vous",
+      "title": "Get started",
+      "catchphrase": "Choose one or several options. If you have questions before making your decision, I am at your disposal",
+      "button": "Let’s meet",
       "additional": {
-        "title": "Nous pouvons aussi déterminer ensemble un packaging complet.",
-        "catchphrase": "Voici un exemple pour une démarche climat :",
+        "title": "We can work on a service package on the subject of your choosing.",
+        "catchphrase": "Here is an example for a climate project:",
         "content": {
-          "1": "Fresque du climat pour vos managers",
-          "2": "Cadrage du projet",
-          "3": "Diagnostic Bilan carbone",
-          "4": "Demi-journée climat pour tous vos collaborateurs :",
-          "5": "Ateliers de co-construction de votre stratégie carbone : ½ journée récurrente par équipe concernée",
-          "a": "Fresque du climat",
-          "b": "Restitution du bilan carbone",
-          "c": "Conférence-repas « les trois courbes »"
+          "1": "Climate Collage for your managing teams",
+          "2": "Setting up the project monitoring",
+          "3": "Carbon Footprint analysis",
+          "4": "Building your climate strategy: collaborative workshops: recurring ½ days with the concerned teams",
+          "5": "Half a day of climate seminar for your employees:",
+          "a": "Climate Collage",
+          "b": "Carbon Footprint presentation",
+          "c": "Sustainability conference"
         }
       }
     }
@@ -197,7 +197,7 @@
         "title": "How do we fight for <a href='https://www.oxfam.org/en/press-releases/worlds-billionaires-have-more-wealth-46-billion-people' target='blank'>equality</a>?"
       },
       "4": {
-        "title": "How do we promote diversity, inclusivity and innovation ?"
+        "title": "How do we promote diversity, inclusivity and innovation?"
       }
     },
     "additional": {
@@ -240,5 +240,8 @@
         "5": "Campus / Offices"
       }
     }
+  },
+  "linkedin": {
+    "link": "https://www.linkedin.com/in/l%C3%A9a-ikkache-4b448683/?locale=en_US"
   }
 }

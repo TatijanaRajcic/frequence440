@@ -163,7 +163,7 @@
       },
       "5": {
         "title": "Un goût pour le mélange des genres",
-        "paragraph": "— Aujourd’hui je travaille sur de nombreux projets : éducation, développement durable, écriture, musique… Combiner plusieurs domaines et rencontrer des personnes d’horizons différents permettent une richesse des idées et une prise de recul extraordinaires"
+        "paragraph": "— Aujourd’hui je travaille sur des projets variés : éducation, développement durable, écriture, musique… Combiner plusieurs domaines et rencontrer des personnes d’horizons différents permettent une richesse des idées et une prise de recul extraordinaires"
       }
     }
   },
@@ -226,5 +226,8 @@
         "5": "Campus / Locaux"
       }
     }
+  },
+  "linkedin": {
+    "link": "https://www.linkedin.com/in/l%C3%A9a-ikkache-4b448683/"
   }
 }
