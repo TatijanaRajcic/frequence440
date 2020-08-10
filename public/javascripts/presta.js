@@ -152,7 +152,7 @@ function displayInvoice(requestedService) {
   </div>
   <div class="bordered flex-col flex-center">
     <p>Si vous voulez discuter avant, prenez RDV:</p>
-    <a href="" class="button black-button">Voir le calendrier</a>
+    <a href="https://calendly.com/frequence440" class="button black-button" target="_blank">Voir le calendrier</a>
   </div>
   <div class="flex-col">
     <input type="hidden" id="requested-service" name="requestedService" value="${requestedService}">
