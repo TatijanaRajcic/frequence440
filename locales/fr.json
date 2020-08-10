@@ -229,5 +229,19 @@
   },
   "linkedin": {
     "link": "https://www.linkedin.com/in/l%C3%A9a-ikkache-4b448683/"
+  },
+  "legal": {
+    "subtitle": "Mentions légales",
+    "mainTitle": "Traitement de données",
+    "contentList": {
+      "1": {
+        "title": "Données récoltées sur ce site",
+        "paragraph": "Les données récoltées par le formulaire de contact et le formulaire de demande de devis sont celles que vous remplissez avec le formulaire uniquement. Elles ne sont partagées avec aucun tiers. Elles sont conservées dans un dossier chiffré pour une durée maximale de 2 ans. Elles permettent le suivi commercial des demandes faites à Fréquence 440. Conformément au RGPD, vous pouvez à tout moment demander une copie, modification ou suppression de vos données, en envoyant un message par le formulaire de contact."
+      },
+      "2": {
+        "title": "Données récupérées au cours d’une mission",
+        "paragraph": "Chaque contrat de mission ou devis comporte une mention sur l’utilisation, la durée de conservation et la possibilité de voir, modifier ou supprimer les données récoltées au cours de la mission. "
+      }
+    }
   }
 }
