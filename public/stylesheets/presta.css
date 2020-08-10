@@ -345,6 +345,10 @@
   padding: 10px;
 }
 
+#invoice #send-invoice {
+  margin-right: 10px;
+}
+
 .form-group {
   margin: 10px 0;
 }

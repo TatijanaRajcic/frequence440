@@ -194,7 +194,10 @@ function displayInvoice(requestedService) {
       <label for="client-hours">Horaire</label>
       <input type="text" name="hours" id="client-hours" />
     </div>
-    <button id="send-invoice" class="button black-button" type="submit">Envoyer</button>
+    <div class="flex align-c">
+      <button id="send-invoice" class="button black-button" type="submit">Envoyer</button>
+      <div id="additional-message"></div>
+    </div>
   </div>
 </div>`;
   invoiceContainer.className = "invoice-container";
@@ -217,15 +220,25 @@ function sendInvoice() {
     type: document.querySelector('input[name="type"]').value,
     number: document.querySelector('input[name="number"]').value,
     quantity: document.querySelector('input[name="quantity"]').value,
-    message: document.querySelector('textarea[name="message"]').innerText,
+    message: document.querySelector('textarea[name="message"]').value,
     hours: document.querySelector('input[name="hours"]').value,
   };
+
+  let additionalMessage = document.querySelector("#additional-message");
+  if (
+    invoiceToSend.email === "" ||
+    invoiceToSend.name === "" ||
+    invoiceToSend.type === "" ||
+    invoiceToSend.number === ""
+  ) {
+    additionalMessage.innerHTML = `<p>Veuillez renseigner tous les champs obligatoires</p>`;
+    return;
+  }
   axios
     .post("/send-email", invoiceToSend)
     .then((success) => {
-      let successMessage = document.createElement("div");
-      successMessage.innerHTML = `<p>${success.data[0]}</p>`;
-      document.querySelector(".invoice-container").append(successMessage);
+      console.log("success:", success.data[0]);
+      additionalMessage.innerHTML = `<p>${success.data[0]}</p>`;
     })
     .catch((error) => {
       console.log(error);
