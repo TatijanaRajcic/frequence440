@@ -293,13 +293,12 @@
 .invoice-container {
   height: 0;
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   background-color: rgba(19, 30, 30, 0.7);
   overflow-x: visible;
   overflow-y: visible;
-  transition: 1s;
   padding: 0 100px;
   display: flex;
   flex-direction: column;
@@ -321,7 +320,6 @@
 @media screen and (max-width: 500px) {
   #invoice {
     width: 95vw;
-    height: 1000px;
   }
 }
 
