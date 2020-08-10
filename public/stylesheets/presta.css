@@ -321,7 +321,7 @@
 @media screen and (max-width: 500px) {
   #invoice {
     width: 95vw;
-    min-height: 100vh;
+    height: 1000px;
   }
 }
 
