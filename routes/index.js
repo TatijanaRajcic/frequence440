@@ -53,4 +53,25 @@ router.get(["/legal"], function (req, res, next) {
   });
 });
 
+router.post(["/send-mail"], function (req, res, next) {
+  let { email, name, message } = req.body;
+  let transporter = nodemailer.createTransport({
+    service: "Gmail",
+    auth: {
+      user: process.env.MY_EMAIL,
+      pass: process.env.MY_PASSWORD,
+    },
+  });
+  transporter
+    .sendMail({
+      from: email,
+      to: process.env.MY_EMAIL,
+      subject: `Nouvelle demande de devis de ${name}`,
+      text: message,
+      html: `<b>${message}</b>`,
+    })
+    .then((info) => res.send("message sent!"))
+    .catch((error) => console.log(error));
+});
+
 module.exports = router;

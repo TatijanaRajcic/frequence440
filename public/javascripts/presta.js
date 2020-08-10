@@ -136,7 +136,7 @@ function displayInvoice() {
     <p>Si vous voulez discuter avant, prenez RDV:</p>
     <a href="" class="button black-button">Voir le calendrier</a>
   </div>
-  <form action="/invoice" class="flex-col">
+  <form action="/send-mail" class="flex-col" method="post">
     <div class="form-group flex-col">
       <label for="client-name">Nom*</label>
       <input type="text" name="name" id="client-name" required />
@@ -185,7 +185,7 @@ function displayInvoice() {
 }
 
 function removeInvoice() {
-  document.querySelector(".invoice-container").remove()
+  document.querySelector(".invoice-container").remove();
 }
 
 function scrollToGrid() {
