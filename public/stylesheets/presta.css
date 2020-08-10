@@ -315,7 +315,7 @@
   padding: 50px 30px;
   margin-top: 15vh;
   margin-bottom: 15vh;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 @media screen and (max-width: 500px) {
