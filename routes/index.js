@@ -1,5 +1,7 @@
-var express = require("express");
-var router = express.Router();
+let express = require("express");
+let nodemailer = require("nodemailer");
+let router = express.Router();
+require("dotenv").config();
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
@@ -53,8 +55,17 @@ router.get(["/legal"], function (req, res, next) {
   });
 });
 
-router.post(["/send-mail"], function (req, res, next) {
-  let { email, name, message } = req.body;
+router.post("/send-email", function (req, res, next) {
+  let {
+    email,
+    name,
+    number,
+    type,
+    quantity,
+    message,
+    hours,
+    requestedService,
+  } = req.body;
   let transporter = nodemailer.createTransport({
     service: "Gmail",
     auth: {
@@ -64,14 +75,33 @@ router.post(["/send-mail"], function (req, res, next) {
   });
   transporter
     .sendMail({
-      from: email,
+      from: `demande devis <${email}>`,
       to: process.env.MY_EMAIL,
-      subject: `Nouvelle demande de devis de ${name}`,
+      subject: `< FREQUENCE 440 > Nouvelle demande de devis de ${name}`,
       text: message,
-      html: `<b>${message}</b>`,
+      html: `
+      <p>Prestation demandée: ${requestedService}</p>
+      <p>Nom du client: ${name}</p>
+      <p>Email du client: ${email}</p>
+      <p>Numéro de téléphone: ${number}</p>
+      <p>Nom de l'Entreprise ou Ecole du supérieur: ${type}</p>
+      <p>Nombre de personnes:${quantity}</p>
+      <p>Message: ${message}</p>
+      <p>Horaires: ${hours}</p>
+      `,
     })
-    .then((info) => res.send("message sent!"))
-    .catch((error) => console.log(error));
+    .then(() =>
+      res.json([
+        "Votre demande a été envoyée avec succès",
+        "Your email has been successfully sent",
+      ])
+    )
+    .catch(() =>
+      res.json([
+        "Une erreur s'est produite, veuillez réessayer",
+        "An error occured, please try again",
+      ])
+    );
 });
 
 module.exports = router;

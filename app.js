@@ -4,6 +4,7 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var hbs = require("hbs");
+// var flash = require("connect-flash"); // designed to keep messages between 2 http request/response cycles
 
 // multi language
 var i18n = require("i18n");
@@ -28,6 +29,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
+
+// flash messages
+// app.use(flash());
+// app.use(require("./middlewares/exposeFlashMessage"));
 
 // i18n set up
 app.use(i18n.init);

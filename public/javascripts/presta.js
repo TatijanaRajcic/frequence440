@@ -17,6 +17,23 @@ function changeChevrons() {
 function displayData() {
   let buttons = document.querySelectorAll(".presta-item");
   let finalLocation = cleanLocation();
+  if (finalLocation === "details") {
+    document.querySelectorAll(".presta-item").forEach((button) => {
+      button.classList.contains("selected-item") &&
+        button.classList.remove("selected-item");
+    });
+    let firstButton = document.querySelector(".presta-item");
+    firstButton.classList.add("selected-item");
+    let selectedCategory = data.filter(
+      (setOfData) => setOfData.category === firstButton.dataset.cat
+    );
+    let finalData = selectedCategory[0].options;
+    let additionalData = selectedCategory[0].addOn
+      ? selectedCategory[0].addOn
+      : null;
+
+    createGridFromData(finalData, additionalData);
+  }
   buttons.forEach((button) => {
     if (button.dataset.cat === finalLocation) {
       document.querySelectorAll(".presta-item").forEach((button) => {
@@ -95,7 +112,8 @@ function createOneCard(oneArticle, index, resultDiv) {
     oneArticle.callToAction === "demander un devis" ||
     oneArticle.callToAction === "ask for invoice"
   ) {
-    newArticle.querySelector(".semi-underlined a").onclick = displayInvoice;
+    newArticle.querySelector(".semi-underlined a").onclick = () =>
+      displayInvoice(oneArticle.title);
   }
   resultDiv.append(newArticle);
 }
@@ -124,7 +142,7 @@ function addAdditionalText(additionalData) {
   }
 }
 
-function displayInvoice() {
+function displayInvoice(requestedService) {
   event.preventDefault();
   let invoiceContainer = document.createElement("div");
   invoiceContainer.innerHTML = `<div id="invoice">
@@ -136,7 +154,8 @@ function displayInvoice() {
     <p>Si vous voulez discuter avant, prenez RDV:</p>
     <a href="" class="button black-button">Voir le calendrier</a>
   </div>
-  <form action="/send-mail" class="flex-col" method="post">
+  <div class="flex-col">
+    <input type="hidden" id="requested-service" name="requestedService" value="${requestedService}">
     <div class="form-group flex-col">
       <label for="client-name">Nom*</label>
       <input type="text" name="name" id="client-name" required />
@@ -175,17 +194,42 @@ function displayInvoice() {
       <label for="client-hours">Horaire</label>
       <input type="text" name="hours" id="client-hours" />
     </div>
-    <button class="button black-button" type="submit">Envoyer</button>
-  </form>
+    <button id="send-invoice" class="button black-button" type="submit">Envoyer</button>
+  </div>
 </div>`;
   invoiceContainer.className = "invoice-container";
   invoiceContainer.style.minHeight = "100vh";
   document.querySelector("body").append(invoiceContainer);
   invoiceContainer.querySelector("#close-invoice").onclick = removeInvoice;
+  invoiceContainer.querySelector("#send-invoice").onclick = sendInvoice;
 }
 
 function removeInvoice() {
   document.querySelector(".invoice-container").remove();
+}
+
+function sendInvoice() {
+  let invoiceToSend = {
+    requestedService: document.querySelector('input[name="requestedService"]')
+      .value,
+    email: document.querySelector('input[name="email"]').value,
+    name: document.querySelector('input[name="name"]').value,
+    type: document.querySelector('input[name="type"]').value,
+    number: document.querySelector('input[name="number"]').value,
+    quantity: document.querySelector('input[name="quantity"]').value,
+    message: document.querySelector('textarea[name="message"]').innerText,
+    hours: document.querySelector('input[name="hours"]').value,
+  };
+  axios
+    .post("/send-email", invoiceToSend)
+    .then((success) => {
+      let successMessage = document.createElement("div");
+      successMessage.innerHTML = `<p>${success.data[0]}</p>`;
+      document.querySelector(".invoice-container").append(successMessage);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 }
 
 function scrollToGrid() {
