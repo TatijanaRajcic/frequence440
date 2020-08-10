@@ -106,7 +106,7 @@ function createOneCard(oneArticle, index, resultDiv) {
       ? "https://calendly.com/frequence440"
       : "";
   newArticle.innerHTML += `<div class="semi-underlined">
-  <a href="${link}">${oneArticle.callToAction}</a>
+  <a href="${link}" target="_blank">${oneArticle.callToAction}</a>
   </div>`;
   if (
     oneArticle.callToAction === "demander un devis" ||

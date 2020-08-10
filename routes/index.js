@@ -96,11 +96,12 @@ router.post("/send-email", function (req, res, next) {
         "Your email has been successfully sent",
       ])
     )
-    .catch(() =>
-      res.json([
-        "Une erreur s'est produite, veuillez réessayer",
-        "An error occured, please try again",
-      ])
+    .catch(
+      (error) => res.json(error)
+      // res.json([
+      //   "Une erreur s'est produite, veuillez réessayer",
+      //   "An error occured, please try again",
+      // ])
     );
 });
 
