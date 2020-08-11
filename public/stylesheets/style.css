@@ -351,4 +351,8 @@ html {
   justify-content: center;
 }
 
+.justify-e {
+  justify-content: flex-end;
+}
+
 /* --------------------------- */

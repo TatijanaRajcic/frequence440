@@ -14,7 +14,7 @@ router.get("/", function (req, res, next) {
 
 router.get(["/prestations", "/services"], function (req, res, next) {
   res.render("presta", {
-    styles: ["header", "presta", "buttons"],
+    styles: ["header", "presta", "buttons", "forms"],
     scripts: ["presta"],
     currentPage: "presta",
   });
@@ -35,8 +35,9 @@ router.get("/about", function (req, res, next) {
 });
 
 router.get("/contact", function (req, res, next) {
-  res.render("ongoing", {
-    styles: ["ongoing"],
+  res.render("contact", {
+    styles: ["header", "contact", "buttons", "forms"],
+    scripts: ["contact"],
     currentPage: "contact",
   });
 });
@@ -55,7 +56,7 @@ router.get(["/legal"], function (req, res, next) {
   });
 });
 
-router.post("/send-email", function (req, res, next) {
+router.post("/send-invoice", function (req, res, next) {
   let {
     email,
     name,
@@ -88,6 +89,42 @@ router.post("/send-email", function (req, res, next) {
       <p>Nombre de personnes:${quantity}</p>
       <p>Message: ${message}</p>
       <p>Horaires: ${hours}</p>
+      `,
+    })
+    .then(() =>
+      res.json([
+        "Votre demande a été envoyée avec succès",
+        "Your email has been successfully sent",
+      ])
+    )
+    .catch(
+      (error) => res.json(error)
+      // res.json([
+      //   "Une erreur s'est produite, veuillez réessayer",
+      //   "An error occured, please try again",
+      // ])
+    );
+});
+
+router.post("/send-contact", function (req, res, next) {
+  let { email, name, message } = req.body;
+  let transporter = nodemailer.createTransport({
+    service: "Gmail",
+    auth: {
+      user: process.env.MY_EMAIL,
+      pass: process.env.MY_PASSWORD,
+    },
+  });
+  transporter
+    .sendMail({
+      from: `demande contact <${email}>`,
+      to: process.env.MY_EMAIL,
+      subject: `< FREQUENCE 440 > Nouvelle demande de contact de ${name}`,
+      text: message,
+      html: `
+      <p>Nom du client: ${name}</p>
+      <p>Email du client: ${email}</p>
+      <p>Message: ${message}</p>
       `,
     })
     .then(() =>

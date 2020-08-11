@@ -145,7 +145,7 @@ function addAdditionalText(additionalData) {
 function displayInvoice(requestedService) {
   event.preventDefault();
   let invoiceContainer = document.createElement("div");
-  invoiceContainer.innerHTML = `<div id="invoice">
+  invoiceContainer.innerHTML = `<div id="invoice" class="form">
   <div class="flex space-b">
     <h2>FORMULAIRE DE DEVIS</h2>
     <img src="/images/menu-close.svg" id="close-invoice"></img>
@@ -157,11 +157,11 @@ function displayInvoice(requestedService) {
   <div class="flex-col">
     <input type="hidden" id="requested-service" name="requestedService" value="${requestedService}">
     <div class="form-group flex-col">
-      <label for="client-name">Nom*</label>
+      <label for="client-name">Nom<span class="mandatory">*</span></label>
       <input type="text" name="name" id="client-name" required />
     </div>
     <div class="form-group flex-col">
-      <label for="client-email">Email de contact*</label>
+      <label for="client-email">Email de contact<span class="mandatory">*</span></label>
       <input type="text" name="email" id="client-email" required />
     </div>
     <div class="form-group flex-col">
@@ -169,12 +169,12 @@ function displayInvoice(requestedService) {
       <input type="text" name="number" id="client-number" />
     </div>
     <div class="form-group flex-col">
-      <label for="client-type">Nom de l'Entreprise ou Ecole du supérieur*</label>
+      <label for="client-type">Nom de l'Entreprise ou Ecole du supérieur<span class="mandatory">*</span></label>
       <input type="text" name="type" id="client-type" required/>
     </div>
     <div class="form-group flex-col">
       <label for="client-quantity"
-        >Nombre de personnes*</label
+        >Nombre de personnes<span class="mandatory">*</span></label
       >
       <input type="number" name="quantity" id="client-quantity" required />
     </div>
@@ -235,7 +235,7 @@ function sendInvoice() {
     return;
   }
   axios
-    .post("/send-email", invoiceToSend)
+    .post("/send-invoice", invoiceToSend)
     .then((success) => {
       console.log("success:", success.data[0]);
       additionalMessage.innerHTML = `<p>${success.data[0]}</p>`;
@@ -245,23 +245,45 @@ function sendInvoice() {
     });
 }
 
+let previousHeight = document.getElementById("details").getBoundingClientRect()
+  .height;
+
+let newPage = true;
+
 function scrollToGrid() {
   const y =
     document.getElementById("details").getBoundingClientRect().top +
     window.scrollY -
     document.getElementById("navbar-sticky").getBoundingClientRect().height;
 
-  // TO FIX: pbm when you go from the homepage and you click on a footer link because then there is a issue with the scroll (from top to bottom, so the nav is hidden whereas it shouldn't be here)
-  window.scroll({
-    top: y,
-    behavior: "smooth",
-  });
+  let difference =
+    document.getElementById("details").getBoundingClientRect().height -
+    previousHeight;
+
+  previousHeight = document.getElementById("details").getBoundingClientRect()
+    .height;
+
+  if (navigator.userAgent.toLowerCase().indexOf("firefox") > -1 && !newPage) {
+    window.scrollTo({
+      top: y - difference,
+      left: 0,
+      behavior: "smooth",
+    });
+  } else {
+    window.scrollTo({
+      top: y,
+      left: 0,
+      behavior: "smooth",
+    });
+  }
+
+  newPage = false;
 }
 
 function getGridData() {
   let nbrCards = document.getElementsByClassName("card").length;
   // calc computed style
-  const gridComputedStyle = window.getComputedStyle(
+  let gridComputedStyle = window.getComputedStyle(
     document.getElementById("cards")
   );
   let gridColumnCount = gridComputedStyle
@@ -322,8 +344,6 @@ document.querySelectorAll(".presta-item").forEach((button) => {
 let footerLinks = document.querySelectorAll(".sub-link");
 footerLinks.forEach((link) => {
   link.onclick = () => {
-    console.log(window.location);
-
     window.history.pushState(
       `${link.dataset.cat}`,
       `${link.dataset.cat}`,
