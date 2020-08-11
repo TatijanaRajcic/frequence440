@@ -257,5 +257,14 @@
         "paragraph": "Each consulting contract or invoice includes information about the use, duration of storage, and possibility to access to, modify or delete the data collected during the mission."
       }
     }
+  },
+  "contact": {
+    "subtitle": "Contact",
+    "mainTitle": "Je suis à votre écoute",
+    "description": "Pour discuter de votre projet personnel ou professionnel, collaborer, vous mettre en contact avec des initiatives intéressantes ...",
+    "buttons": {
+      "1": "Prendre contact",
+      "2": "Demander un devis"
+    }
   }
 }

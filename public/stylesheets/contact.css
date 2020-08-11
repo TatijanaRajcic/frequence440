@@ -1,0 +1,27 @@
+#contact {
+  background: #e5e5e5;
+}
+
+#contact h2 {
+  font-size: 3rem;
+}
+
+.contact-form {
+  background: #ffffff;
+  padding: 30px;
+}
+
+.additional {
+  margin-right: 30px;
+}
+
+.index-container {
+  padding: 20px 30px;
+  font-variant-numeric: tabular-nums;
+  background: #131e1e;
+  color: #ffffff;
+}
+
+.form-group .form-group {
+  margin: 20px 30px;
+}

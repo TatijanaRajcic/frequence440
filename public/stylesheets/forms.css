@@ -1,0 +1,31 @@
+.form {
+  padding: 30px;
+}
+
+.form-group input,
+.form-group textarea {
+  border: 1px solid #adadad;
+  padding: 10px;
+}
+
+.form-group input:hover,
+.form-group textarea:hover {
+  border: 1px solid #131e1e;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border: 1px solid #f17452;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+.mandatory {
+  color: #f17452;
+}
+
+select {
+  padding: 10px
+}

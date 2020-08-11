@@ -243,5 +243,14 @@
         "paragraph": "Chaque contrat de mission ou devis comporte une mention sur l’utilisation, la durée de conservation et la possibilité de voir, modifier ou supprimer les données récoltées au cours de la mission. "
       }
     }
+  },
+  "contact": {
+    "subtitle": "Contact",
+    "mainTitle": "Je suis à votre écoute",
+    "description": "Pour discuter de votre projet personnel ou professionnel, collaborer, vous mettre en contact avec des initiatives intéressantes ...",
+    "buttons": {
+      "1": "Prendre contact",
+      "2": "Demander un devis"
+    }
   }
 }
