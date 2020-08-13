@@ -202,8 +202,9 @@
   text-transform: uppercase;
 }
 
-.call-to-action button {
+.call-to-action a.button {
   margin-top: 80px;
+  width: max-content;
 }
 
 .options {
@@ -211,7 +212,6 @@
 }
 
 .options > p {
-  text-decoration: underline;
   padding-bottom: 15px;
 }
 
@@ -272,7 +272,7 @@
     width: 100%;
   }
 
-  .call-to-action button {
+  .call-to-action a.button {
     margin-top: 20px;
   }
 
@@ -292,6 +292,18 @@
 
   .square {
     margin-left: 1em;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1025px) {
+  .card h3 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 750px) {
+  .square {
+    margin-left: 2em;
   }
 }
 
@@ -346,4 +358,10 @@
 
 #invoice #send-invoice {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 1025px) {
+  .call-to-action .hero-subtitle {
+    margin-right: 30px;
+  }
 }

@@ -112,7 +112,7 @@
   "prestations": {
     "subtitle": "Services",
     "mainTitle": "Customized services for companies and Higher Education",
-    "description": "Our services are based on your needs, collaboration, creativity and rigor.",
+    "description": "Our services are based on your needs and collaboration, creativity and rigor.",
     "buttons": {
       "1": "let's meet",
       "2": "See details"
@@ -133,17 +133,17 @@
     },
     "callToAction": {
       "title": "Get started",
-      "catchphrase": "Choose one or several options. If you have questions before making your decision, I am at your disposal",
+      "catchphrase": "Choose one or several options. If you have questions before making your decision, I am available to meet you",
       "button": "Let’s meet",
       "additional": {
         "title": "We can work on a service package on the subject of your choosing.",
-        "catchphrase": "Here is an example for a climate project:",
+        "catchphrase": "Here is an example for a climate strategy:",
         "content": {
           "1": "Climate Collage for your managing teams",
           "2": "Setting up the project monitoring",
           "3": "Carbon Footprint ® analysis",
-          "4": "Building your climate strategy: collaborative workshops: recurring ½ days with the concerned teams",
-          "5": "Half a day of climate seminar for your employees:",
+          "4": "Half a day of climate seminar for your employees:",
+          "5": "Building your climate strategy: collaborative workshops: recurring ½ days with the concerned teams",
           "a": "Climate Collage",
           "b": "Carbon Footprint presentation",
           "c": "Sustainability conference"
@@ -181,7 +181,7 @@
       },
       "5": {
         "title": "Multidisciplinary projects",
-        "paragraph": "– I currently work on various projects in education, sustainability, writing, music… Combining several fields and meeting people from different backgrounds allow for a wealth of ideas and hindsight."
+        "paragraph": "– I currently work on various projects in education, sustainability, writing, music… Combining several fields and meeting people from different backgrounds allow for a wealth of ideas and hindsight"
       }
     }
   },
@@ -214,7 +214,7 @@
     "callToAction": {
       "1": "You can act.",
       "2": "make a personal transition",
-      "3": "Companies and Higher education Institution can act too.",
+      "3": "Companies and Higher education Institutions can act too.",
       "4": "act within my company"
     },
     "imbricated": {
@@ -258,7 +258,7 @@
       },
       "2": {
         "title": "Data collected during a consulting job",
-        "paragraph": "Each consulting contract or invoice includes information about the use, duration of storage, and possibility to access to, modify or delete the data collected during the mission."
+        "paragraph": "Each consulting contract or invoice includes information about the use, duration of storage, and possibility to access, modify or delete the data collected during the mission."
       }
     }
   },

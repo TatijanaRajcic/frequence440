@@ -66,7 +66,6 @@ router.post("/send-invoice", function (req, res, next) {
     type,
     quantity,
     message,
-    hours,
     requestedService,
   } = req.body;
   let transporter = nodemailer.createTransport({
@@ -90,7 +89,6 @@ router.post("/send-invoice", function (req, res, next) {
       <p><strong>Nom de l'Entreprise ou Ecole du supérieur</strong>: ${type}</p>
       <p><strong>Nombre de personnes</strong>:${quantity}</p>
       <p><strong>Message</strong>: ${message}</p>
-      <p><strong>Horaires</strong>: ${hours}</p>
       `,
     })
     .then(() =>

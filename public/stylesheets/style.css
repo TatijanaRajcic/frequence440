@@ -330,6 +330,10 @@ select:focus {
   border: 1px solid red;
 }
 
+label {
+  margin-bottom: 5px;
+}
+
 .flex {
   display: flex;
 }

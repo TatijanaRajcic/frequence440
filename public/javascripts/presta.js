@@ -122,8 +122,11 @@ function addAdditionalButton(resultDiv) {
   let navigationDiv = document.createElement("a");
   navigationDiv.className = "button black-button flex";
   navigationDiv.setAttribute("href", "#details");
+  navigationDiv.style.width = "max-content";
   navigationDiv.innerHTML =
-    '<i class="fa fa-chevron-up" aria-hidden="true"></i><p>Voir les autres prestations</p>';
+    checkFrEn === "Prestations"
+      ? '<i class="fa fa-chevron-up" aria-hidden="true"></i><p>Voir les autres prestations</p>'
+      : '<i class="fa fa-chevron-up" aria-hidden="true"></i><p>Back to services</p>';
   resultDiv.append(navigationDiv);
 }
 
@@ -198,10 +201,6 @@ function displayInvoice(requestedService) {
             rows="3"
           ></textarea>
         </div>
-        <div class="form-group flex-col">
-          <label for="client-hours">Horaire</label>
-          <input type="text" name="hours" id="client-hours" />
-        </div>
         <div class="flex align-c">
           <button id="send-invoice" class="button black-button" type="submit">Envoyer</button>
           <div id="additional-message"></div>
@@ -260,10 +259,6 @@ function displayInvoice(requestedService) {
             rows="3"
           ></textarea>
         </div>
-        <div class="form-group flex-col">
-          <label for="client-hours">Hours</label>
-          <input type="text" name="hours" id="client-hours" />
-        </div>
         <div class="flex align-c">
           <button id="send-invoice" class="button black-button" type="submit">Send</button>
           <div id="additional-message"></div>
@@ -293,7 +288,6 @@ function sendInvoice() {
     number: document.querySelector('input[name="number"]').value,
     quantity: document.querySelector('select[name="quantity"]').value,
     message: document.querySelector('textarea[name="message"]').value,
-    hours: document.querySelector('input[name="hours"]').value,
   };
 
   let additionalMessage = document.querySelector("#additional-message");

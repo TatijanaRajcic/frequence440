@@ -58,7 +58,7 @@ var prestations = [
       {
         title: "Atelier 2 Tonnes",
         content:
-          "Pour comprendre les ordres de grandeur des solution pour le climat et l’interaction individu / collectif, avec une simulation interactive basée sur les bilans carbone des participants, créée par François Laugier. Objectif : 2 tonnes pour la neutralité carbone en 2050",
+          "Pour comprendre les ordres de grandeur des solutions pour le climat et l’interaction individu / collectif, avec une simulation interactive basée sur les bilans carbone des participants, créée par François Laugier. Objectif : 2 tonnes pour la neutralité carbone en 2050",
         callToAction: "demander un devis",
         duration: "3H",
       },
@@ -79,7 +79,7 @@ var prestations = [
       {
         title: "Fresque Océane",
         content:
-        "Pour comprendre les enjeux liés aux océans, les menaces qu'ils subissent et réfléchir sur les actions individuelles et collectives pour protéger cet écosystème, avec un atelier créatif construit par Alice Vitoux",
+          "Pour comprendre les enjeux liés aux océans, les menaces qu'ils subissent et réfléchir sur les actions individuelles et collectives pour protéger cet écosystème, avec un atelier créatif construit par Alice Vitoux",
         callToAction: "demander un devis",
         duration: "30MIN à 4H",
       },
@@ -92,9 +92,9 @@ var prestations = [
       },
     ],
     addOn: {
-      title: "Des formations en intelligence collective, par des experts",
+      title: "Des formations en intelligence collective, par des expert.e.s",
       content:
-        "Possibilité de former des ambassadeurs parmi vos collaborateurs ",
+        "Possibilité de former des ambassadeurs parmi vos collaborateur.rice.s",
       callToAction: "demander un devis",
     },
   },
@@ -103,36 +103,35 @@ var prestations = [
     options: [
       {
         title: "Climate Collage",
-        content:
-          "understand the mechanisms of climate change, from its sources to its consequences, with this creative workshop created by Cedric Ringenbach. More info here",
+        content: `Understand the mechanisms of climate change, from its sources to its consequences, with this creative workshop created by Cedric Ringenbach. More info <a target="_blank" href="https://www.climatecollage.org">here</a>`,
         callToAction: "ask for invoice",
         duration: "3H",
       },
       {
         title: "2 tons",
         content:
-          "2 tons, the weight of CO2 we should each be emitting yearly by 2050 to reach carbon neutrality. Enter a simulation to 2050 and chose your solutions to reach climate objectives, both as individuals and collectively. Workshop created by François Laugier.",
+          "2 tons, the weight of CO2 we should each be emitting yearly by 2050 to reach carbon neutrality. Enter a simulation to 2050 and chose your solutions to reach climate objectives, both as individuals and collectively. Workshop created by François Laugier",
         callToAction: "ask for invoice",
         duration: "3H",
       },
       {
         title: "Ecological Renaissance",
         content:
-          "Understand the interconnexions and types of solutions to reach a low carbon world, with this inspiring workshop create by Julien Dossier. Work with a story and illustration based on the Sienna mural from 1338",
+          "Understand the interconnections and types of solutions to reach a low carbon world, with this inspiring workshop create by Julien Dossier. Work with a story and illustration based on the Sienna mural from 1338",
         callToAction: "ask for invoice",
         duration: "1H to 3H",
       },
       {
         title: "Biodiversity Collage",
         content:
-          "Grasp the interactions within and the importance of biodiversity, and solutions to limit its collapse.",
+          "Grasp the interactions within and the importance of biodiversity, and solutions to limit its collapse",
         callToAction: "ask for invoice",
         duration: "3H",
       },
       {
         title: "Oceans Collage",
         content:
-          "Dive into the ocean life, its threats, and the corresponding solutions, thanks to this creative workshop by Alice Vitoux",
+          "Dive into the ocean life, threats to its biodiversity, and the corresponding solutions, thanks to this creative workshop by Alice Vitoux",
         callToAction: "ask for invoice",
         duration: "3H",
       },
@@ -157,7 +156,7 @@ var prestations = [
       {
         title: "The three graphs",
         content:
-          "A holistic view of sustainability: with the basic concepts and orders of magnitude to fully grasp why it’s necessary and what solutions look like.",
+          "A holistic view of sustainability: with the basic concepts and orders of magnitude to fully grasp why it’s necessary and what solutions look like",
         callToAction: "ask for invoice",
       },
       {
@@ -244,13 +243,13 @@ var prestations = [
       {
         title: "Solutions workshops",
         content:
-          "Facilitating sessions with your teams to build your objectives and action plans through collaboration, with innovative methods. For more details on the possible areas of work, please click here",
+          'Facilitating sessions with your teams to build your objectives and action plans through collaboration, with innovative methods. For more details on the possible areas of work, please <a href="/sustainability#graph">click here</a>',
         callToAction: "let's meet",
       },
       {
         title: "Collective Impact action",
         content:
-          "Launching an initiative in your community, partnering with organizations, local businesses, artists, and local citizens on an area of your choosing.",
+          "Launching an initiative in your community, partnering with organizations, local businesses, artists, and local citizens on an issue of your choosing",
         callToAction: "let's meet",
       },
     ],
