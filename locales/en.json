@@ -31,7 +31,8 @@
         "3": "Innovation workshops"
       },
       "mainGoal": "For companies and Higher ed Institutions",
-      "link": "customized services"
+      "link": "customized services",
+      "rawLink": "/services"
     },
     "rightBottom": {
       "details": {
@@ -41,7 +42,8 @@
         "4": "Networking"
       },
       "mainGoal": "For your personal journey",
-      "link": "resources for all"
+      "link": "resources for all",
+      "rawLink": "/resources"
     },
     "clients": {
       "title": "My customers",
@@ -260,11 +262,51 @@
   },
   "contact": {
     "subtitle": "Contact",
-    "mainTitle": "Je suis à votre écoute",
-    "description": "Pour discuter de votre projet personnel ou professionnel, collaborer, vous mettre en contact avec des initiatives intéressantes ...",
+    "mainTitle": "Let’s chat",
+    "description": "To discuss your personal or professional projects, see possible synergies ...",
     "buttons": {
-      "1": "Prendre contact",
-      "2": "Demander un devis"
+      "1": "Let's chat",
+      "2": "Ask for a quote"
+    },
+    "contactForm": {
+      "title": "Reach out",
+      "name": "Name",
+      "email": "Email address",
+      "message": "Message",
+      "button": "Send"
+    },
+    "invoiceForm": {
+      "title": "Quote request form",
+      "name": "Name",
+      "email": "Email address",
+      "number": "Phone number",
+      "type": "Name of the Company or Higher Education Organization",
+      "address": "Address",
+      "services": "Services",
+      "serviceType": "Type (analysis, training, conference, solutions workshop)",
+      "combinations": {
+        "1": {
+          "value": "analysis",
+          "title": "Analysis"
+        },
+        "2": {
+          "value": "workshops",
+          "title": "Workshops"
+        },
+        "3": {
+          "value": "conferences",
+          "title": "Conferences"
+        },
+        "4": {
+          "value": "trainings",
+          "title": "Trainings"
+        }
+      },
+      "serviceName": "Service",
+      "quantity": "Number of participants",
+      "message": "Message (please mention your needs, field of interest, which teams will be involved, your time or space constraints, schedule, budget, etc.)",
+      "button": "Send",
+      "add": "Add a service"
     }
   }
 }

@@ -56,6 +56,8 @@ router.get(["/legal"], function (req, res, next) {
   });
 });
 
+// Individual invoice on presta page
+
 router.post("/send-invoice", function (req, res, next) {
   let {
     email,
@@ -92,19 +94,20 @@ router.post("/send-invoice", function (req, res, next) {
       `,
     })
     .then(() =>
-      res.json([
-        "Votre demande a été envoyée avec succès",
-        "Your email has been successfully sent",
-      ])
+      res.status(200).json({
+        fr: "Votre demande a été envoyée avec succès",
+        en: "Your email has been successfully sent",
+      })
     )
-    .catch(
-      (error) => res.json(error)
-      // res.json([
-      //   "Une erreur s'est produite, veuillez réessayer",
-      //   "An error occured, please try again",
-      // ])
+    .catch(() =>
+      res.json({
+        fr: "Une erreur s'est produite, veuillez réessayer",
+        en: "An error occured, please try again",
+      })
     );
 });
+
+// Contact and full invoice on contact page
 
 router.post("/send-contact", function (req, res, next) {
   let { email, name, message } = req.body;
@@ -127,18 +130,18 @@ router.post("/send-contact", function (req, res, next) {
       <p><strong>Message</strong>: ${message}</p>
       `,
     })
-    .then(() =>
-      res.json([
-        "Votre demande a été envoyée avec succès",
-        "Your email has been successfully sent",
-      ])
-    )
-    .catch(
-      (error) => res.json(error)
-      // res.json([
-      //   "Une erreur s'est produite, veuillez réessayer",
-      //   "An error occured, please try again",
-      // ])
+    .then(() => {
+      console.log("hey it's a success");
+      res.status(200).json({
+        fr: "Votre demande a été envoyée avec succès",
+        en: "Your email has been successfully sent",
+      });
+    })
+    .catch(() =>
+      res.json({
+        fr: "Une erreur s'est produite, veuillez réessayer",
+        en: "An error occured, please try again",
+      })
     );
 });
 
@@ -184,17 +187,16 @@ router.post("/send-complete-invoice", function (req, res, next) {
       `,
     })
     .then(() =>
-      res.json([
-        "Votre demande a été envoyée avec succès",
-        "Your email has been successfully sent",
-      ])
+      res.status(200).json({
+        fr: "Votre demande a été envoyée avec succès",
+        en: "Your email has been successfully sent",
+      })
     )
-    .catch(
-      (error) => res.json(error)
-      // res.json([
-      //   "Une erreur s'est produite, veuillez réessayer",
-      //   "An error occured, please try again",
-      // ])
+    .catch(() =>
+      res.json({
+        fr: "Une erreur s'est produite, veuillez réessayer",
+        en: "An error occured, please try again",
+      })
     );
 });
 

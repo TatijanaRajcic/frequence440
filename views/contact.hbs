@@ -9,93 +9,99 @@
     </div>
   </header>
   <section id="contact-form" class="main-section">
-    <h2>Prise de contact</h2>
+    <h2>{{{__ "contact.contactForm.title"}}}</h2>
     <div class="form contact-form">
-      <input type="hidden" id="requested-service" name="requestedService" value="${requestedService}">
       <div class="form-group flex-col">
-        <label for="client-name">Nom<span class="mandatory">*</span></label>
+        <label for="client-name">{{{__ "contact.contactForm.name"}}}<span class="mandatory">*</span></label>
         <input type="text" name="name" id="client-name" required />
       </div>
       <div class="form-group flex-col">
-        <label for="client-email">Email de contact<span class="mandatory">*</span></label>
+        <label for="client-email">{{{__ "contact.contactForm.email"}}}<span class="mandatory">*</span></label>
         <input type="text" name="email" id="client-email" required />
       </div>
       <div class="form-group flex-col">
-        <label for="client-message">Message<span class="mandatory">*</span></label>
+        <label for="client-message">{{{__ "contact.contactForm.message"}}}<span class="mandatory">*</span></label>
         <textarea name="message" id="client-message" cols="30" rows="6"></textarea>
       </div>
       <div class="flex align-c justify-e">
         <div class="additional"></div>
-        <button id="send-contact" class="button black-button" type="submit">Envoyer</button>
+        <button id="send-contact" class="button black-button"
+          type="submit">{{{__ "contact.contactForm.button"}}}</button>
       </div>
     </div>
   </section>
   <section id="invoice-form" class="main-section">
-    <h2>Formulaire de devis</h2>
+    <h2>{{{__ "contact.invoiceForm.title"}}}</h2>
     <div class="form contact-form">
       <input type="hidden" id="requested-service" name="requestedService" value="${requestedService}">
       <div class="form-group flex-col">
-        <label for="client-name-invoice">Nom<span class="mandatory">*</span></label>
+        <label for="client-name-invoice">{{{__ "contact.invoiceForm.name"}}}<span class="mandatory">*</span></label>
         <input type="text" name="name" id="client-name-invoice" required />
       </div>
       <div class="form-group flex-col">
-        <label for="client-email-invoice">Email de contact<span class="mandatory">*</span></label>
+        <label for="client-email-invoice">{{{__ "contact.invoiceForm.email"}}}<span class="mandatory">*</span></label>
         <input type="text" name="email" id="client-email-invoice" required />
       </div>
       <div class="form-group flex-col">
-        <label for="client-number">Numéro de téléphone</label>
+        <label for="client-number">{{{__ "contact.invoiceForm.number"}}}</label>
         <input type="text" name="number" id="client-number" />
       </div>
       <div class="form-group flex-col">
-        <label for="client-type">Nom de l'Entreprise ou Ecole du supérieur<span class="mandatory">*</span></label>
+        <label for="client-type">{{{__ "contact.invoiceForm.type"}}}<span class="mandatory">*</span></label>
         <input type="text" name="client-type" id="client-type" required />
       </div>
       <div class="form-group flex-col">
-        <label for="client-type">Adresse de l'Entreprise ou Ecole du supérieur<span class="mandatory">*</span></label>
+        <label for="client-type">{{{__ "contact.invoiceForm.address"}}}<span class="mandatory">*</span></label>
         <input type="text" name="address" id="client-address" required />
       </div>
       <div id="services" class="form-group flex-col">
-        <p for="client-type">Prestations</p>
+        <p for="client-type">{{{__ "contact.invoiceForm.services"}}}</p>
         <div class="service bordered">
           <div class="index-container flex space-b">
             <p class="index">01</p>
             <img src="/images/menu-close-white.svg" class="close-invoice"></img>
           </div>
           <div class="form-group flex-col">
-            <label for="presta-type-1">Type (diagnostic, atelier, conférence, formation)<span
+            <label for="presta-type-1">{{{__ "contact.invoiceForm.serviceType"}}}<span
                 class="mandatory">*</span></label>
             <select class="select-presta-type" name="service-type" id="presta-type-1">
               <option value=""></option>
-              <option value="diagnostics">Diagnostics</option>
-              <option value="ateliers">Ateliers</option>
-              <option value="conférences">Conférences</option>
-              <option value="formations">Formations</option>
+              <option value="{{{__ "contact.invoiceForm.combinations.1.value"}}}">
+                {{{__ "contact.invoiceForm.combinations.1.title"}}}</option>
+              <option value="{{{__ "contact.invoiceForm.combinations.2.value"}}}">
+                {{{__ "contact.invoiceForm.combinations.2.title"}}}</option>
+              <option value="{{{__ "contact.invoiceForm.combinations.3.value"}}}">
+                {{{__ "contact.invoiceForm.combinations.3.title"}}}</option>
+              <option value="{{{__ "contact.invoiceForm.combinations.4.value"}}}">
+                {{{__ "contact.invoiceForm.combinations.4.title"}}}</option>
             </select>
           </div>
           <div class="form-group flex-col">
-            <label for="details-presta-1">Nom de la prestation<span class="mandatory">*</span></label>
+            <label for="details-presta-1">{{{__ "contact.invoiceForm.serviceName"}}}<span
+                class="mandatory">*</span></label>
             <select class="select-presta-details" name="service-name" id="details-presta-1">
               <option value=""></option>
             </select>
           </div>
           <div class="form-group flex-col">
-            <label for="client-quantity-1">Nombre de personnes<span class="mandatory">*</span></label>
+            <label for="client-quantity-1">{{{__ "contact.invoiceForm.quantity"}}}s<span
+                class="mandatory">*</span></label>
             <input type="number" name="quantity" id="client-quantity-1" required />
           </div>
           <div class="form-group flex-col">
-            <label for="client-message-1">Message (merci de préciser les équipes qui seront concernées, les
-              contraintes de temps / espace / matériel, etc.)</label>
+            <label for="client-message-1">{{{__ "contact.invoiceForm.message"}}}</label>
             <textarea name="message" id="client-message-1" cols="30" rows="6"></textarea>
           </div>
         </div>
       </div>
       <div id="add" class="flex align-c justify-e">
-        <div>Ajouter une prestation</div>
+        <div>{{{__ "contact.invoiceForm.add"}}}</div>
         <img src="/images/menu-add.svg"></img>
       </div>
       <div class="flex align-c justify-e">
         <div class="additional"></div>
-        <button id="send-invoice" class="button black-button" type="submit">Envoyer</button>
+        <button id="send-invoice" class="button black-button"
+          type="submit">{{{__ "contact.invoiceForm.button"}}}</button>
       </div>
     </div>
   </section>

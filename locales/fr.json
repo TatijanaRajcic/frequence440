@@ -31,7 +31,8 @@
         "3": "Ateliers de co-construction"
       },
       "mainGoal": "Pour accompagner votre entreprise ou école du supérieur",
-      "link": "PRESTATIONS PERSONNALISÉES"
+      "link": "PRESTATIONS PERSONNALISÉES",
+      "rawLink": "/prestations"
     },
     "rightBottom": {
       "details": {
@@ -41,7 +42,8 @@
         "4": "Mise en contact"
       },
       "mainGoal": "Pour enrichir votre démarche personnelle",
-      "link": "RESSOURCES OUVERTES À TOUS"
+      "link": "RESSOURCES OUVERTES À TOUS",
+      "rawLink": "/ressources"
     },
     "clients": {
       "title": "Mes clients",
@@ -251,6 +253,46 @@
     "buttons": {
       "1": "Prendre contact",
       "2": "Demander un devis"
+    },
+    "contactForm": {
+      "title": "Prise de contact",
+      "name": "Nom",
+      "email": "Email de contact",
+      "message": "Message",
+      "button": "Envoyer"
+    },
+    "invoiceForm": {
+      "title": "Formulaire de devis",
+      "name": "Nom",
+      "email": "Email de contact",
+      "number": "Numéro de téléphone",
+      "type": "Nom de l'Entreprise ou Ecole du supérieur",
+      "address": "Adresse de l'Entreprise ou Ecole du supérieur",
+      "services": "Prestations",
+      "serviceType": "Type (diagnostic, atelier, conférence, formation)",
+      "combinations": {
+        "1": {
+          "value": "diagnostics",
+          "title": "Diagnostics"
+        },
+        "2": {
+          "value": "ateliers",
+          "title": "Ateliers"
+        },
+        "3": {
+          "value": "conférences",
+          "title": "Conférences"
+        },
+        "4": {
+          "value": "formations",
+          "title": "Formations"
+        }
+      },
+      "serviceName": "Nom de la prestation",
+      "quantity": "Nombre de personnes",
+      "message": "Message (merci de préciser les équipes qui seront concernées, les contraintes de temps / espace / matériel, etc.)",
+      "button": "Envoyer",
+      "add": "Ajouter une prestation"
     }
   }
 }

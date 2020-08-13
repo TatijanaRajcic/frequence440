@@ -1,4 +1,5 @@
 import data from "./dataPresta.js";
+let checkFrEn = document.querySelector(".hero-title").innerHTML;
 
 function changeChevrons() {
   let icons = document.querySelectorAll(".fas");
@@ -56,7 +57,6 @@ function displayData() {
 }
 
 function cleanLocation() {
-  let checkFrEn = document.querySelector(".hero-title").innerHTML;
   let cutHash = window.location.hash.split("#")[1];
   let finalLocation = cutHash;
   if (finalLocation === undefined && checkFrEn === "Prestations")
@@ -145,61 +145,121 @@ function addAdditionalText(additionalData) {
 function displayInvoice(requestedService) {
   event.preventDefault();
   let invoiceContainer = document.createElement("div");
-  invoiceContainer.innerHTML = `<div id="invoice" class="form">
-  <div class="flex space-b">
-    <h2>FORMULAIRE DE DEVIS</h2>
-    <img src="/images/menu-close.svg" id="close-invoice"></img>
-  </div>
-  <div class="bordered flex-col flex-center">
-    <p>Si vous voulez discuter avant, prenez RDV:</p>
-    <a href="https://calendly.com/frequence440" class="button black-button" target="_blank">Voir le calendrier</a>
-  </div>
-  <div class="flex-col">
-    <input type="hidden" id="requested-service" name="requestedService" value="${requestedService}">
-    <div class="form-group flex-col">
-      <label for="client-name">Nom<span class="mandatory">*</span></label>
-      <input type="text" name="name" id="client-name" required />
-    </div>
-    <div class="form-group flex-col">
-      <label for="client-email">Email de contact<span class="mandatory">*</span></label>
-      <input type="text" name="email" id="client-email" required />
-    </div>
-    <div class="form-group flex-col">
-      <label for="client-number">Numéro de téléphone</label>
-      <input type="text" name="number" id="client-number" />
-    </div>
-    <div class="form-group flex-col">
-      <label for="client-type">Nom de l'Entreprise ou Ecole du supérieur<span class="mandatory">*</span></label>
-      <input type="text" name="type" id="client-type" required/>
-    </div>
-    <div class="form-group flex-col">
-      <label for="client-quantity"
-        >Nombre de personnes<span class="mandatory">*</span></label
-      >
-      <input type="number" name="quantity" id="client-quantity" required />
-    </div>
-    <div class="form-group flex-col">
-      <label for="client-message"
-        >Message (merci de préciser les équipes qui seront concernées, les
-        contraintes de temps / espace / matériel, etc.)</label
-      >
-      <textarea
-        name="message"
-        id="client-message"
-        cols="30"
-        rows="3"
-      ></textarea>
-    </div>
-    <div class="form-group flex-col">
-      <label for="client-hours">Horaire</label>
-      <input type="text" name="hours" id="client-hours" />
-    </div>
-    <div class="flex align-c">
-      <button id="send-invoice" class="button black-button" type="submit">Envoyer</button>
-      <div id="additional-message"></div>
-    </div>
-  </div>
-</div>`;
+  if (checkFrEn === "Prestations") {
+    invoiceContainer.innerHTML = `
+    <div id="invoice" class="form">
+      <div class="flex space-b">
+        <h2>FORMULAIRE DE DEVIS</h2>
+        <img src="/images/menu-close.svg" id="close-invoice"></img>
+      </div>
+      <div class="bordered flex-col flex-center">
+        <p>Si vous voulez discuter avant, prenez RDV:</p>
+        <a href="https://calendly.com/frequence440" class="button black-button" target="_blank">Voir le calendrier</a>
+      </div>
+      <div class="flex-col">
+        <input type="hidden" id="requested-service" name="requestedService" value="${requestedService}">
+        <div class="form-group flex-col">
+          <label for="client-name">Nom<span class="mandatory">*</span></label>
+          <input type="text" name="name" id="client-name" required />
+        </div>
+        <div class="form-group flex-col">
+          <label for="client-email">Email de contact<span class="mandatory">*</span></label>
+          <input type="text" name="email" id="client-email" required />
+        </div>
+        <div class="form-group flex-col">
+          <label for="client-number">Numéro de téléphone</label>
+          <input type="text" name="number" id="client-number" />
+        </div>
+        <div class="form-group flex-col">
+          <label for="client-type">Nom de l'Entreprise ou Ecole du supérieur<span class="mandatory">*</span></label>
+          <input type="text" name="type" id="client-type" required/>
+        </div>
+        <div class="form-group flex-col">
+          <label for="client-quantity"
+            >Nombre de personnes<span class="mandatory">*</span></label
+          >
+          <input type="number" name="quantity" id="client-quantity" required />
+        </div>
+        <div class="form-group flex-col">
+          <label for="client-message"
+            >Message (merci de préciser les équipes qui seront concernées, les
+            contraintes de temps / espace / matériel, etc.)</label
+          >
+          <textarea
+            name="message"
+            id="client-message"
+            cols="30"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="form-group flex-col">
+          <label for="client-hours">Horaire</label>
+          <input type="text" name="hours" id="client-hours" />
+        </div>
+        <div class="flex align-c">
+          <button id="send-invoice" class="button black-button" type="submit">Envoyer</button>
+          <div id="additional-message"></div>
+        </div>
+      </div>
+    </div>`;
+  } else {
+    invoiceContainer.innerHTML = `
+    <div id="invoice" class="form">
+      <div class="flex space-b">
+        <h2>QUOTE REQUEST FORM</h2>
+        <img src="/images/menu-close.svg" id="close-invoice"></img>
+      </div>
+      <div class="bordered flex-col flex-center">
+        <p>If you have any questions before completing this form, we can meet on the phone:</p>
+        <a href="https://calendly.com/frequence440" class="button black-button" target="_blank">Let's meet</a>
+      </div>
+      <div class="flex-col">
+        <input type="hidden" id="requested-service" name="requestedService" value="${requestedService}">
+        <div class="form-group flex-col">
+          <label for="client-name">Name<span class="mandatory">*</span></label>
+          <input type="text" name="name" id="client-name" required />
+        </div>
+        <div class="form-group flex-col">
+          <label for="client-email">Email address<span class="mandatory">*</span></label>
+          <input type="text" name="email" id="client-email" required />
+        </div>
+        <div class="form-group flex-col">
+          <label for="client-number">Phone number</label>
+          <input type="text" name="number" id="client-number" />
+        </div>
+        <div class="form-group flex-col">
+          <label for="client-type">Name of the Company or Higher Education Organization*<span class="mandatory">*</span></label>
+          <input type="text" name="type" id="client-type" required/>
+        </div>
+        <div class="form-group flex-col">
+          <label for="client-quantity"
+            >Number of participants<span class="mandatory">*</span></label
+          >
+          <input type="number" name="quantity" id="client-quantity" required />
+        </div>
+        <div class="form-group flex-col">
+          <label for="client-message"
+            >Message (please mention your needs, field of interest, which teams will be involved, your time or space constraints, schedule, budget, etc.) </label
+          >
+          <textarea
+            name="message"
+            id="client-message"
+            cols="30"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="form-group flex-col">
+          <label for="client-hours">Hours</label>
+          <input type="text" name="hours" id="client-hours" />
+        </div>
+        <div class="flex align-c">
+          <button id="send-invoice" class="button black-button" type="submit">Send</button>
+          <div id="additional-message"></div>
+        </div>
+      </div>
+    </div>`;
+  }
+
   invoiceContainer.className = "invoice-container";
   invoiceContainer.style.minHeight = "100vh";
   document.querySelector("body").append(invoiceContainer);
@@ -231,14 +291,19 @@ function sendInvoice() {
     invoiceToSend.type === "" ||
     invoiceToSend.number === ""
   ) {
-    additionalMessage.innerHTML = `<p>Veuillez renseigner tous les champs obligatoires</p>`;
+    additionalMessage.innerHTML =
+      checkFrEn === "Prestations"
+        ? "<p>Veuillez renseigner tous les champs obligatoires</p>"
+        : "Please enter every mandatory field";
     return;
   }
   axios
     .post("/send-invoice", invoiceToSend)
     .then((success) => {
-      console.log("success:", success.data[0]);
-      additionalMessage.innerHTML = `<p>${success.data[0]}</p>`;
+      additionalMessage.innerHTML =
+        checkFrEn === "Prestations"
+          ? `<p>${success.data.fr}</p>`
+          : `<p>${success.data.en}</p>`;
     })
     .catch((error) => {
       console.log(error);
@@ -364,3 +429,8 @@ window.addEventListener("resize", () => {
   changeChevrons();
   getGridData();
 });
+
+document.onkeydown = function (evt) {
+  evt = evt || window.event;
+  if (evt.keyCode == 27 && document.querySelector("#invoice")) removeInvoice();
+};

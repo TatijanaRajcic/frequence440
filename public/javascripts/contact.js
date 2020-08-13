@@ -1,6 +1,3 @@
-let contactButton = document.querySelector("#send-contact");
-contactButton.onclick = sendContact;
-
 let prestaDetails = [
   {
     presta: "diagnostics",
@@ -27,7 +24,40 @@ let prestaDetails = [
       "Fresque du Numérique",
     ],
   },
+  {
+    presta: "analysis",
+    details: [
+      "Carbon Footprint ®",
+      "Social Responsibility analysis",
+      "Teams surveys",
+    ],
+  },
+  {
+    presta: "trainings",
+    details: [
+      "Climate Collage",
+      "2 tons",
+      "Ecological Renaissance",
+      "Biodiversity Collage",
+      "Oceans Collage",
+      "Digital World Collage",
+    ],
+  },
+  {
+    presta: "conferences",
+    details: [
+      "The three graphs",
+      "The three graphs for engineers",
+      "Your dress looks nice today",
+    ],
+  },
+  {
+    presta: "workshops",
+    details: ["Solutions workshops", "Collective Impact action"],
+  },
 ];
+
+let checkFrEn = document.querySelector(".catchphrase").innerHTML;
 
 function sendContact() {
   let contactToSend = {
@@ -42,14 +72,19 @@ function sendContact() {
     contactToSend.name === "" ||
     contactToSend.message === ""
   ) {
-    additionalMessage.innerHTML = `<p>Veuillez renseigner tous les champs obligatoires</p>`;
+    additionalMessage.innerHTML =
+      checkFrEn === "Je suis à votre écoute"
+        ? "<p>Veuillez renseigner tous les champs obligatoires</p>"
+        : "Please enter every mandatory field";
     return;
   }
   axios
     .post("/send-contact", contactToSend)
     .then((success) => {
-      console.log("success:", success.data[0]);
-      additionalMessage.innerHTML = `<p>${success.data[0]}</p>`;
+      additionalMessage.innerHTML =
+        checkFrEn === "Je suis à votre écoute"
+          ? `<p>${success.data.fr}</p>`
+          : `<p>${success.data.en}</p>`;
     })
     .catch((error) => {
       console.log(error);
@@ -58,17 +93,17 @@ function sendContact() {
 
 function sendInvoice() {
   let invoice = document.querySelector("#invoice-form");
+  let additionalMessage = document.querySelector("#invoice-form .additional");
   let notComplete = false;
   invoice.querySelectorAll(".mandatory").forEach((mandatory) => {
     if (mandatory.closest(".form-group").lastElementChild.value === "") {
-      let additionalMessage = document.querySelector(
-        "#invoice-form .additional"
-      );
-      additionalMessage.innerHTML = "You must complete everything";
+      additionalMessage.innerHTML =
+        checkFrEn === "Je suis à votre écoute"
+          ? "<p>Veuillez renseigner tous les champs obligatoires</p>"
+          : "Please enter every mandatory field";
       notComplete = true;
     }
   });
-
   if (notComplete) return;
 
   let invoiceToSend = {
@@ -90,13 +125,13 @@ function sendInvoice() {
     invoiceToSend.services.push(serviceDetails);
   });
 
-  console.log(invoiceToSend);
-
   axios
     .post("/send-complete-invoice", invoiceToSend)
     .then((success) => {
-      console.log("success:", success.data[0]);
-      additionalMessage.innerHTML = `<p>${success.data[0]}</p>`;
+      additionalMessage.innerHTML =
+        checkFrEn === "Je suis à votre écoute"
+          ? `<p>${success.data.fr}</p>`
+          : `<p>${success.data.en}</p>`;
     })
     .catch((error) => {
       console.log(error);
@@ -108,36 +143,69 @@ function addNewService() {
   let index = alreadyExistingServices + 1;
   let newService = document.createElement("div");
   newService.setAttribute("class", "service bordered");
-  newService.innerHTML = ` 
-  <div class="index-container flex space-b">
-    <p class="index">0${index}</p>
-    <img src="/images/menu-close-white.svg" class="close-invoice"></img>
-  </div>
-  <div class="form-group flex-col">
-    <label for="presta-type-${index}">Type (diagnostic, atelier, conférence, formation)<span class="mandatory">*</span></label>
-    <select class="select-presta-type" name="service-type" id="presta-type-${index}">
-      <option value=""></option>
-      <option value="diagnostics">Diagnostics</option>
-      <option value="ateliers">Ateliers</option>
-      <option value="conférences">Conférences</option>
-      <option value="formations">Formations</option>
-    </select>
-  </div>
-  <div class="form-group flex-col">
-    <label for="details-presta-${index}">Nom de la prestation<span class="mandatory">*</span></label>
-    <select class="select-presta-details" name="service-name" id="details-presta-${index}">
-      <option value=""></option>
-    </select>
-  </div>
-  <div class="form-group flex-col">
-    <label for="client-quantity-${index}">Nombre de personnes<span class="mandatory">*</span></label>
-    <input type="number" name="quantity" id="client-quantity-${index}" required />
-  </div>
-  <div class="form-group flex-col">
-    <label for="client-message-${index}">Message (merci de préciser les équipes qui seront concernées, les
-      contraintes de temps / espace / matériel, etc.)</label>
-    <textarea name="message" id="client-message-${index}" cols="30" rows="6"></textarea>
-  </div>`;
+  if (checkFrEn === "Je suis à votre écoute") {
+    newService.innerHTML = ` 
+    <div class="index-container flex space-b">
+      <p class="index">0${index}</p>
+      <img src="/images/menu-close-white.svg" class="close-invoice"></img>
+    </div>
+    <div class="form-group flex-col">
+      <label for="presta-type-${index}">Type (diagnostic, atelier, conférence, formation)<span class="mandatory">*</span></label>
+      <select class="select-presta-type" name="service-type" id="presta-type-${index}">
+        <option value=""></option>
+        <option value="diagnostics">Diagnostics</option>
+        <option value="ateliers">Ateliers</option>
+        <option value="conférences">Conférences</option>
+        <option value="formations">Formations</option>
+      </select>
+    </div>
+    <div class="form-group flex-col">
+      <label for="details-presta-${index}">Nom de la prestation<span class="mandatory">*</span></label>
+      <select class="select-presta-details" name="service-name" id="details-presta-${index}">
+        <option value=""></option>
+      </select>
+    </div>
+    <div class="form-group flex-col">
+      <label for="client-quantity-${index}">Nombre de personnes<span class="mandatory">*</span></label>
+      <input type="number" name="quantity" id="client-quantity-${index}" required />
+    </div>
+    <div class="form-group flex-col">
+      <label for="client-message-${index}">Message (merci de préciser les équipes qui seront concernées, les
+        contraintes de temps / espace / matériel, etc.)</label>
+      <textarea name="message" id="client-message-${index}" cols="30" rows="6"></textarea>
+    </div>`;
+  } else {
+    newService.innerHTML = ` 
+    <div class="index-container flex space-b">
+      <p class="index">0${index}</p>
+      <img src="/images/menu-close-white.svg" class="close-invoice"></img>
+    </div>
+    <div class="form-group flex-col">
+      <label for="presta-type-${index}">Type (analysis, training, conference, solutions workshop)<span class="mandatory">*</span></label>
+      <select class="select-presta-type" name="service-type" id="presta-type-${index}">
+        <option value=""></option>
+        <option value="analysis">Analysis</option>
+        <option value="workshops">Workshops</option>
+        <option value="conferences">Conferences</option>
+        <option value="trainings">Trainings</option>
+      </select>
+    </div>
+    <div class="form-group flex-col">
+      <label for="details-presta-${index}">Service<span class="mandatory">*</span></label>
+      <select class="select-presta-details" name="service-name" id="details-presta-${index}">
+        <option value=""></option>
+      </select>
+    </div>
+    <div class="form-group flex-col">
+      <label for="client-quantity-${index}">Number of participants<span class="mandatory">*</span></label>
+      <input type="number" name="quantity" id="client-quantity-${index}" required />
+    </div>
+    <div class="form-group flex-col">
+      <label for="client-message-${index}">Message (please mention your needs, field of interest, which teams will be involved, your time or space constraints, schedule, budget, etc.)</label>
+      <textarea name="message" id="client-message-${index}" cols="30" rows="6"></textarea>
+    </div>`;
+  }
+
   newService.querySelector(".close-invoice").onclick = removeService;
   newService.querySelector(".select-presta-type").onchange = (e) => {
     fillPrestaList(e);
@@ -172,9 +240,12 @@ function fillPrestaList(e) {
   });
 }
 
+// Event listeners
+
 document.getElementById("add").onclick = addNewService;
 document.querySelector(".close-invoice").onclick = removeService;
 document.querySelector(".select-presta-type").onchange = (e) => {
   fillPrestaList(e);
 };
+document.getElementById("send-contact").onclick = sendContact;
 document.getElementById("send-invoice").onclick = sendInvoice;
