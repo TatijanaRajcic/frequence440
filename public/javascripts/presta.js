@@ -124,7 +124,7 @@ function addAdditionalButton(resultDiv) {
   navigationDiv.setAttribute("href", "#details");
   navigationDiv.innerHTML =
     checkFrEn === "Prestations"
-      ? '<i class="fa fa-chevron-up" aria-hidden="true"></i><p>Voir les autres prestations</p>'
+      ? '<i class="fa fa-chevron-up" aria-hidden="true"></i><p>autres prestations</p>'
       : '<i class="fa fa-chevron-up" aria-hidden="true"></i><p>Back to services</p>';
   resultDiv.append(navigationDiv);
 }
