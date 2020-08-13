@@ -112,8 +112,13 @@ function createOneCard(oneArticle, index, resultDiv) {
     oneArticle.callToAction === "demander un devis" ||
     oneArticle.callToAction === "ask for invoice"
   ) {
-    newArticle.querySelector(".semi-underlined a").onclick = () =>
-      displayInvoice(oneArticle.title);
+    newArticle.querySelector(".semi-underlined a").onclick = () => {
+      if (window.innerWidth > 750) {
+        displayInvoice(oneArticle.title);
+      } else {
+        window.location = "/contact#invoice-form";
+      }
+    };
   }
   resultDiv.append(newArticle);
 }
