@@ -52,7 +52,7 @@
       </div>
       <div class="form-group flex-col">
         <label for="client-type">Adresse de l'Entreprise ou Ecole du supérieur<span class="mandatory">*</span></label>
-        <input type="text" name="type" id="client-type" required />
+        <input type="text" name="type" id="client-address" required />
       </div>
       <div class="form-group flex-col">
         <p for="client-type">Prestations</p>
@@ -62,7 +62,17 @@
             <img src="/images/menu-close-white.svg" id="close-invoice"></img>
           </div>
           <div class="form-group flex-col">
-            <label for="client-type1">Type (diagnostic, atelier, conférence, formation)</label>
+            <label for="presta-type1">Type (diagnostic, atelier, conférence, formation)</label>
+            <select name="type1" id="client-type-1">
+              <option value=""></option>
+              <option value="diagnostics">Diagnostics</option>
+              <option value="ateliers">Ateliers</option>
+              <option value="conférences">Conférences</option>
+              <option value="formations">Formations</option>
+            </select>
+          </div>
+          <div class="form-group flex-col">
+            <label for="presta-name-1">Nom de la prestation</label>
             <select name="type1" id="client-type-1">
               <option value=""></option>
               <option value="diagnostics">Diagnostics</option>
