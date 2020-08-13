@@ -79,9 +79,9 @@ var prestations = [
       {
         title: "Fresque Océane",
         content:
-          "Pour tout comprendre sur les océans, les menaces qu’ils subissent et les solutions correspondantes, avec un atelier créatif construit par Alice Vitoux",
+        "Pour comprendre les enjeux liés aux océans, les menaces qu'ils subissent et réfléchir sur les actions individuelles et collectives pour protéger cet écosystème, avec un atelier créatif construit par Alice Vitoux",
         callToAction: "demander un devis",
-        duration: "3H",
+        duration: "30MIN à 4H",
       },
       {
         title: "Fresque du Numérique",

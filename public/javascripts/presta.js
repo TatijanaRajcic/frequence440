@@ -178,7 +178,13 @@ function displayInvoice(requestedService) {
           <label for="client-quantity"
             >Nombre de personnes<span class="mandatory">*</span></label
           >
-          <input type="number" name="quantity" id="client-quantity" required />
+          <select name="quantity" id="client-quantity" required>
+            <option value=""></option>
+            <option value="1-5">1 - 5</option>
+            <option value="6-10">6 - 10</option>
+            <option value="11-20">11 - 20</option>
+            <option value="+20">+20</option>
+          </select>
         </div>
         <div class="form-group flex-col">
           <label for="client-message"
@@ -235,7 +241,13 @@ function displayInvoice(requestedService) {
           <label for="client-quantity"
             >Number of participants<span class="mandatory">*</span></label
           >
-          <input type="number" name="quantity" id="client-quantity" required />
+          <select name="quantity" id="client-quantity" required>
+            <option value=""></option>
+            <option value="1-5">1 - 5</option>
+            <option value="6-10">6 - 10</option>
+            <option value="11-20">11 - 20</option>
+            <option value="+20">+20</option>
+          </select>
         </div>
         <div class="form-group flex-col">
           <label for="client-message"
@@ -279,7 +291,7 @@ function sendInvoice() {
     name: document.querySelector('input[name="name"]').value,
     type: document.querySelector('input[name="type"]').value,
     number: document.querySelector('input[name="number"]').value,
-    quantity: document.querySelector('input[name="quantity"]').value,
+    quantity: document.querySelector('select[name="quantity"]').value,
     message: document.querySelector('textarea[name="message"]').value,
     hours: document.querySelector('input[name="hours"]').value,
   };

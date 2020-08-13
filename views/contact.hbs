@@ -9,7 +9,7 @@
     </div>
   </header>
   <section id="contact-form" class="main-section">
-    <h2>{{{__ "contact.contactForm.title"}}}</h2>
+    <h2 class="hero-title">{{{__ "contact.contactForm.title"}}}</h2>
     <div class="form contact-form">
       <div class="form-group flex-col">
         <label for="client-name">{{{__ "contact.contactForm.name"}}}<span class="mandatory">*</span></label>
@@ -31,7 +31,7 @@
     </div>
   </section>
   <section id="invoice-form" class="main-section">
-    <h2>{{{__ "contact.invoiceForm.title"}}}</h2>
+    <h2 class="hero-title">{{{__ "contact.invoiceForm.title"}}}</h2>
     <div class="form contact-form">
       <input type="hidden" id="requested-service" name="requestedService" value="${requestedService}">
       <div class="form-group flex-col">
@@ -84,9 +84,15 @@
             </select>
           </div>
           <div class="form-group flex-col">
-            <label for="client-quantity-1">{{{__ "contact.invoiceForm.quantity"}}}s<span
+            <label for="client-quantity-1">{{{__ "contact.invoiceForm.quantity"}}}<span
                 class="mandatory">*</span></label>
-            <input type="number" name="quantity" id="client-quantity-1" required />
+            <select name="quantity" id="client-quantity-1" required>
+              <option value=""></option>
+              <option value="1-5">1 - 5</option>
+              <option value="6-10">6 - 10</option>
+              <option value="11-20">11 - 20</option>
+              <option value="+20">+20</option>
+            </select>
           </div>
           <div class="form-group flex-col">
             <label for="client-message-1">{{{__ "contact.invoiceForm.message"}}}</label>

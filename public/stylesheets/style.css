@@ -309,7 +309,7 @@ html {
 
 @media screen and (max-width: 1025px) {
   .semi-underlined:before {
-    border-top: 3px solid #fc7753;
+    border-top: 3px solid #ffffff;
   }
 }
 

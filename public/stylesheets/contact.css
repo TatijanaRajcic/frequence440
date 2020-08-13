@@ -2,10 +2,6 @@
   background: #e5e5e5;
 }
 
-#contact h2 {
-  font-size: 3rem;
-}
-
 .contact-form {
   background: #ffffff;
   padding: 30px;
@@ -40,6 +36,17 @@
   margin-bottom: 20px;
 }
 
-select.select-presta-type option:hover {
-  box-shadow: 0 0 10px 100px #1882a8 inset;
+select {
+  background: url("/images/arrow.png") no-repeat right #ffffff;
+  background-position: 99%;
+}
+
+@media screen and (max-width: 500px) {
+  .buttons-panel {
+    flex-direction: column;
+  }
+
+  .buttons-panel .button {
+    width: max-content;
+  }
 }

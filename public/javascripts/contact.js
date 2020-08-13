@@ -119,7 +119,7 @@ function sendInvoice() {
     let serviceDetails = {
       type: oneService.querySelector('select[name="service-type"]').value,
       name: oneService.querySelector('select[name="service-name"]').value,
-      quantity: oneService.querySelector('input[name="quantity"]').value,
+      quantity: oneService.querySelector('select[name="quantity"]').value,
       message: oneService.querySelector('textarea[name="message"]').value,
     };
     invoiceToSend.services.push(serviceDetails);
@@ -167,7 +167,13 @@ function addNewService() {
     </div>
     <div class="form-group flex-col">
       <label for="client-quantity-${index}">Nombre de personnes<span class="mandatory">*</span></label>
-      <input type="number" name="quantity" id="client-quantity-${index}" required />
+      <select name="quantity" id="client-quantity-${index}" required>
+        <option value=""></option>
+        <option value="1-5">1 - 5</option>
+        <option value="6-10">6 - 10</option>
+        <option value="11-20">11 - 20</option>
+        <option value="+20">+20</option>
+      </select>
     </div>
     <div class="form-group flex-col">
       <label for="client-message-${index}">Message (merci de préciser les équipes qui seront concernées, les
@@ -198,7 +204,13 @@ function addNewService() {
     </div>
     <div class="form-group flex-col">
       <label for="client-quantity-${index}">Number of participants<span class="mandatory">*</span></label>
-      <input type="number" name="quantity" id="client-quantity-${index}" required />
+      <select name="quantity" id="client-quantity-${index}" required>
+        <option value=""></option>
+        <option value="1-5">1 - 5</option>
+        <option value="6-10">6 - 10</option>
+        <option value="11-20">11 - 20</option>
+        <option value="+20">+20</option>
+      </select>
     </div>
     <div class="form-group flex-col">
       <label for="client-message-${index}">Message (please mention your needs, field of interest, which teams will be involved, your time or space constraints, schedule, budget, etc.)</label>
