@@ -54,16 +54,16 @@
         <label for="client-type">Adresse de l'Entreprise ou Ecole du supérieur<span class="mandatory">*</span></label>
         <input type="text" name="type" id="client-address" required />
       </div>
-      <div class="form-group flex-col">
+      <div id="services" class="form-group flex-col">
         <p for="client-type">Prestations</p>
-        <div class="bordered">
+        <div class="service bordered">
           <div class="index-container flex space-b">
-            <p>01</p>
-            <img src="/images/menu-close-white.svg" id="close-invoice"></img>
+            <p class="index">01</p>
+            <img src="/images/menu-close-white.svg" class="close-invoice"></img>
           </div>
           <div class="form-group flex-col">
-            <label for="presta-type1">Type (diagnostic, atelier, conférence, formation)</label>
-            <select name="type1" id="client-type-1">
+            <label for="presta-type-1">Type (diagnostic, atelier, conférence, formation)</label>
+            <select class="select-presta-type" name="presta-1" id="presta-type-1">
               <option value=""></option>
               <option value="diagnostics">Diagnostics</option>
               <option value="ateliers">Ateliers</option>
@@ -72,18 +72,27 @@
             </select>
           </div>
           <div class="form-group flex-col">
-            <label for="presta-name-1">Nom de la prestation</label>
-            <select name="type1" id="client-type-1">
+            <label for="details-presta-1">Nom de la prestation</label>
+            <select class="select-presta-details" name="details-1" id="details-presta-1">
               <option value=""></option>
-              <option value="diagnostics">Diagnostics</option>
-              <option value="ateliers">Ateliers</option>
-              <option value="conférences">Conférences</option>
-              <option value="formations">Formations</option>
             </select>
+          </div>
+          <div class="form-group flex-col">
+            <label for="client-quantity-1">Nombre de personnes<span class="mandatory">*</span></label>
+            <input type="number" name="quantity-1" id="client-quantity-1" required />
+          </div>
+          <div class="form-group flex-col">
+            <label for="client-message-1">Message (merci de préciser les équipes qui seront concernées, les
+              contraintes de temps / espace / matériel, etc.)</label>
+            <textarea name="message-1" id="client-message-1" cols="30" rows="6"></textarea>
           </div>
         </div>
       </div>
-      <div class="flex align-c">
+      <div id="add" class="flex align-c justify-e">
+        <div>Ajouter une prestation</div>
+        <img src="/images/menu-add.svg"></img>
+      </div>
+      <div class="flex align-c justify-e">
         <button id="send-invoice" class="button black-button" type="submit">Envoyer</button>
         <div id="additional-message"></div>
       </div>

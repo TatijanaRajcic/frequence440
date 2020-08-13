@@ -25,3 +25,17 @@
 .form-group .form-group {
   margin: 20px 30px;
 }
+
+#add {
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+#add > div {
+  margin-right: 15px;
+  text-decoration: underline;
+}
+
+#contact .bordered {
+  margin-bottom: 20px;
+}
