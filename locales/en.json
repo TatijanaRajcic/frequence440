@@ -11,12 +11,14 @@
     "3": "About",
     "4": "Services",
     "5": "Resources",
+    "6": "Contact",
     "rawLinks": {
       "1": "/",
       "2": "/sustainability",
       "3": "/about",
       "4": "/services",
-      "5": "/resources"
+      "5": "/resources",
+      "6": "/contact"
     }
   },
   "home": {

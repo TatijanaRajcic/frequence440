@@ -11,12 +11,14 @@
     "3": "A propos",
     "4": "Les prestations",
     "5": "Les ressources",
+    "6": "Contact",
     "rawLinks": {
       "1": "/",
       "2": "/transition",
       "3": "/about",
       "4": "/prestations",
-      "5": "/ressources"
+      "5": "/ressources",
+      "6": "/contact"
     }
   },
   "home": {

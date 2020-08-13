@@ -39,3 +39,7 @@
 #contact .bordered {
   margin-bottom: 20px;
 }
+
+select.select-presta-type option:hover {
+  box-shadow: 0 0 10px 100px #1882a8 inset;
+}

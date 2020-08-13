@@ -309,12 +309,25 @@ html {
 
 @media screen and (max-width: 1025px) {
   .semi-underlined:before {
-    border-top: 3px solid #ffffff;
+    border-top: 3px solid #fc7753;
   }
 }
 
 .bordered {
   border: 1px solid #131e1e;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -ms-appearance: none; /* get rid of default appearance for IE8, 9 and 10*/
+  background: #ffffff;
+  border: 1px solid #adadad;
+}
+
+select:focus {
+  border: 1px solid red;
 }
 
 .flex {
