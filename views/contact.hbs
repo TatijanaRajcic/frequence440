@@ -35,12 +35,12 @@
     <div class="form contact-form">
       <input type="hidden" id="requested-service" name="requestedService" value="${requestedService}">
       <div class="form-group flex-col">
-        <label for="client-name">Nom<span class="mandatory">*</span></label>
-        <input type="text" name="name" id="client-name" required />
+        <label for="client-name-invoice">Nom<span class="mandatory">*</span></label>
+        <input type="text" name="name" id="client-name-invoice" required />
       </div>
       <div class="form-group flex-col">
-        <label for="client-email">Email de contact<span class="mandatory">*</span></label>
-        <input type="text" name="email" id="client-email" required />
+        <label for="client-email-invoice">Email de contact<span class="mandatory">*</span></label>
+        <input type="text" name="email" id="client-email-invoice" required />
       </div>
       <div class="form-group flex-col">
         <label for="client-number">Numéro de téléphone</label>
@@ -48,11 +48,11 @@
       </div>
       <div class="form-group flex-col">
         <label for="client-type">Nom de l'Entreprise ou Ecole du supérieur<span class="mandatory">*</span></label>
-        <input type="text" name="type" id="client-type" required />
+        <input type="text" name="client-type" id="client-type" required />
       </div>
       <div class="form-group flex-col">
         <label for="client-type">Adresse de l'Entreprise ou Ecole du supérieur<span class="mandatory">*</span></label>
-        <input type="text" name="type" id="client-address" required />
+        <input type="text" name="address" id="client-address" required />
       </div>
       <div id="services" class="form-group flex-col">
         <p for="client-type">Prestations</p>
@@ -62,8 +62,9 @@
             <img src="/images/menu-close-white.svg" class="close-invoice"></img>
           </div>
           <div class="form-group flex-col">
-            <label for="presta-type-1">Type (diagnostic, atelier, conférence, formation)</label>
-            <select class="select-presta-type" name="presta-1" id="presta-type-1">
+            <label for="presta-type-1">Type (diagnostic, atelier, conférence, formation)<span
+                class="mandatory">*</span></label>
+            <select class="select-presta-type" name="service-type" id="presta-type-1">
               <option value=""></option>
               <option value="diagnostics">Diagnostics</option>
               <option value="ateliers">Ateliers</option>
@@ -72,19 +73,19 @@
             </select>
           </div>
           <div class="form-group flex-col">
-            <label for="details-presta-1">Nom de la prestation</label>
-            <select class="select-presta-details" name="details-1" id="details-presta-1">
+            <label for="details-presta-1">Nom de la prestation<span class="mandatory">*</span></label>
+            <select class="select-presta-details" name="service-name" id="details-presta-1">
               <option value=""></option>
             </select>
           </div>
           <div class="form-group flex-col">
             <label for="client-quantity-1">Nombre de personnes<span class="mandatory">*</span></label>
-            <input type="number" name="quantity-1" id="client-quantity-1" required />
+            <input type="number" name="quantity" id="client-quantity-1" required />
           </div>
           <div class="form-group flex-col">
             <label for="client-message-1">Message (merci de préciser les équipes qui seront concernées, les
               contraintes de temps / espace / matériel, etc.)</label>
-            <textarea name="message-1" id="client-message-1" cols="30" rows="6"></textarea>
+            <textarea name="message" id="client-message-1" cols="30" rows="6"></textarea>
           </div>
         </div>
       </div>
@@ -93,8 +94,8 @@
         <img src="/images/menu-add.svg"></img>
       </div>
       <div class="flex align-c justify-e">
+        <div class="additional"></div>
         <button id="send-invoice" class="button black-button" type="submit">Envoyer</button>
-        <div id="additional-message"></div>
       </div>
     </div>
   </section>

@@ -2,10 +2,31 @@ let contactButton = document.querySelector("#send-contact");
 contactButton.onclick = sendContact;
 
 let prestaDetails = [
-  { presta: "diagnostics", details: ["Diagnostics1", "Diagnostics2"] },
-  { presta: "ateliers", details: ["ATELIER1", "ATELIER2"] },
-  { presta: "conférences", details: ["conf1", "conf2"] },
-  { presta: "formations", details: ["form1", "form2"] },
+  {
+    presta: "diagnostics",
+    details: ["Bilan carbone ®", "Diagnostic RSE", "Questionnaire équipes"],
+  },
+  { presta: "ateliers", details: ["Ateliers solutions", "Collective impact"] },
+  {
+    presta: "conférences",
+    details: [
+      "Les trois courbes",
+      "Les trois courbes - Ingénieurs",
+      "Elle est jolie ta robe aujourd’hui !",
+      "Conférence personnalisée",
+    ],
+  },
+  {
+    presta: "formations",
+    details: [
+      "Fresque du Climat",
+      "Atelier 2 Tonnes",
+      "Renaissance Ecologique",
+      "Fresque Biodiversité",
+      "Fresque Océane",
+      "Fresque du Numérique",
+    ],
+  },
 ];
 
 function sendContact() {
@@ -36,30 +57,43 @@ function sendContact() {
 }
 
 function sendInvoice() {
+  let invoice = document.querySelector("#invoice-form");
+  let notComplete = false;
+  invoice.querySelectorAll(".mandatory").forEach((mandatory) => {
+    if (mandatory.closest(".form-group").lastElementChild.value === "") {
+      let additionalMessage = document.querySelector(
+        "#invoice-form .additional"
+      );
+      additionalMessage.innerHTML = "You must complete everything";
+      notComplete = true;
+    }
+  });
+
+  if (notComplete) return;
+
   let invoiceToSend = {
-    requestedService: document.querySelector('input[name="requestedService"]')
-      .value,
-    email: document.querySelector('input[name="email"]').value,
-    name: document.querySelector('input[name="name"]').value,
-    type: document.querySelector('input[name="type"]').value,
-    number: document.querySelector('input[name="number"]').value,
-    quantity: document.querySelector('input[name="quantity"]').value,
-    message: document.querySelector('textarea[name="message"]').value,
-    hours: document.querySelector('input[name="hours"]').value,
+    email: invoice.querySelector('input[name="email"]').value,
+    name: invoice.querySelector('input[name="name"]').value,
+    number: invoice.querySelector('input[name="number"]').value,
+    clientType: invoice.querySelector('input[name="client-type"]').value,
+    address: invoice.querySelector('input[name="address"]').value,
+    services: [],
   };
 
-  let additionalMessage = document.querySelector("#additional-message");
-  if (
-    invoiceToSend.email === "" ||
-    invoiceToSend.name === "" ||
-    invoiceToSend.type === "" ||
-    invoiceToSend.number === ""
-  ) {
-    additionalMessage.innerHTML = `<p>Veuillez renseigner tous les champs obligatoires</p>`;
-    return;
-  }
+  document.querySelectorAll(".service").forEach((oneService) => {
+    let serviceDetails = {
+      type: oneService.querySelector('select[name="service-type"]').value,
+      name: oneService.querySelector('select[name="service-name"]').value,
+      quantity: oneService.querySelector('input[name="quantity"]').value,
+      message: oneService.querySelector('textarea[name="message"]').value,
+    };
+    invoiceToSend.services.push(serviceDetails);
+  });
+
+  console.log(invoiceToSend);
+
   axios
-    .post("/send-contact", invoiceToSend)
+    .post("/send-complete-invoice", invoiceToSend)
     .then((success) => {
       console.log("success:", success.data[0]);
       additionalMessage.innerHTML = `<p>${success.data[0]}</p>`;
@@ -80,8 +114,8 @@ function addNewService() {
     <img src="/images/menu-close-white.svg" class="close-invoice"></img>
   </div>
   <div class="form-group flex-col">
-    <label for="presta-type-${index}">Type (diagnostic, atelier, conférence, formation)</label>
-    <select class="select-presta-type" name="presta-${index}" id="presta-type-${index}">
+    <label for="presta-type-${index}">Type (diagnostic, atelier, conférence, formation)<span class="mandatory">*</span></label>
+    <select class="select-presta-type" name="service-type" id="presta-type-${index}">
       <option value=""></option>
       <option value="diagnostics">Diagnostics</option>
       <option value="ateliers">Ateliers</option>
@@ -90,19 +124,19 @@ function addNewService() {
     </select>
   </div>
   <div class="form-group flex-col">
-    <label for="details-presta-${index}">Nom de la prestation</label>
-    <select class="select-presta-details" name="details-${index}" id="details-presta-${index}">
+    <label for="details-presta-${index}">Nom de la prestation<span class="mandatory">*</span></label>
+    <select class="select-presta-details" name="service-name" id="details-presta-${index}">
       <option value=""></option>
     </select>
   </div>
   <div class="form-group flex-col">
     <label for="client-quantity-${index}">Nombre de personnes<span class="mandatory">*</span></label>
-    <input type="number" name="quantity-${index}" id="client-quantity-${index}" required />
+    <input type="number" name="quantity" id="client-quantity-${index}" required />
   </div>
   <div class="form-group flex-col">
     <label for="client-message-${index}">Message (merci de préciser les équipes qui seront concernées, les
       contraintes de temps / espace / matériel, etc.)</label>
-    <textarea name="message-${index}" id="client-message-${index}" cols="30" rows="6"></textarea>
+    <textarea name="message" id="client-message-${index}" cols="30" rows="6"></textarea>
   </div>`;
   newService.querySelector(".close-invoice").onclick = removeService;
   newService.querySelector(".select-presta-type").onchange = (e) => {
@@ -127,7 +161,7 @@ function fillPrestaList(e) {
   let listToFill = e.target
     .closest(".service")
     .querySelector(".select-presta-details");
-  listToFill.innerHTML = "";
+  listToFill.innerHTML = `<option value=""></option>`;
   let options = prestaDetails.find((element) => element.presta === selectedType)
     .details;
   options.forEach((oneOption) => {
@@ -143,3 +177,4 @@ document.querySelector(".close-invoice").onclick = removeService;
 document.querySelector(".select-presta-type").onchange = (e) => {
   fillPrestaList(e);
 };
+document.getElementById("send-invoice").onclick = sendInvoice;

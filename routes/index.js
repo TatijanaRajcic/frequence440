@@ -78,17 +78,17 @@ router.post("/send-invoice", function (req, res, next) {
     .sendMail({
       from: `demande devis <${email}>`,
       to: process.env.MY_EMAIL,
-      subject: `< FREQUENCE 440 > Nouvelle demande de devis de ${name}`,
+      subject: `< FREQUENCE 440 > Demande de devis individuel de ${name}`,
       text: message,
       html: `
-      <p>Prestation demandée: ${requestedService}</p>
-      <p>Nom du client: ${name}</p>
-      <p>Email du client: ${email}</p>
-      <p>Numéro de téléphone: ${number}</p>
-      <p>Nom de l'Entreprise ou Ecole du supérieur: ${type}</p>
-      <p>Nombre de personnes:${quantity}</p>
-      <p>Message: ${message}</p>
-      <p>Horaires: ${hours}</p>
+      <p><strong>Prestation demandée</strong>: ${requestedService}</p>
+      <p><strong>Nom du client</strong>: ${name}</p>
+      <p><strong>Email du client</strong>: ${email}</p>
+      <p><strong>Numéro de téléphone</strong>: ${number}</p>
+      <p><strong>Nom de l'Entreprise ou Ecole du supérieur</strong>: ${type}</p>
+      <p><strong>Nombre de personnes</strong>:${quantity}</p>
+      <p><strong>Message</strong>: ${message}</p>
+      <p><strong>Horaires</strong>: ${hours}</p>
       `,
     })
     .then(() =>
@@ -119,12 +119,68 @@ router.post("/send-contact", function (req, res, next) {
     .sendMail({
       from: `demande contact <${email}>`,
       to: process.env.MY_EMAIL,
-      subject: `< FREQUENCE 440 > Nouvelle demande de contact de ${name}`,
+      subject: `< FREQUENCE 440 > Demande de contact de ${name}`,
       text: message,
       html: `
-      <p>Nom du client: ${name}</p>
-      <p>Email du client: ${email}</p>
-      <p>Message: ${message}</p>
+      <p><strong>Nom du client</strong>: ${name}</p>
+      <p><strong>Email du client</strong>: ${email}</p>
+      <p><strong>Message</strong>: ${message}</p>
+      `,
+    })
+    .then(() =>
+      res.json([
+        "Votre demande a été envoyée avec succès",
+        "Your email has been successfully sent",
+      ])
+    )
+    .catch(
+      (error) => res.json(error)
+      // res.json([
+      //   "Une erreur s'est produite, veuillez réessayer",
+      //   "An error occured, please try again",
+      // ])
+    );
+});
+
+router.post("/send-complete-invoice", function (req, res, next) {
+  console.log(req.body);
+  let { email, name, number, clientType, address, services } = req.body;
+  let transporter = nodemailer.createTransport({
+    service: "Gmail",
+    auth: {
+      user: process.env.MY_EMAIL,
+      pass: process.env.MY_PASSWORD,
+    },
+  });
+
+  let servicesContent = "";
+  services.forEach((service, index) => {
+    servicesContent += `
+    <div>
+      <p>Prestation numéro ${index + 1}: </p>
+      <ul>
+        <li><strong>Type de prestation</strong>: ${service.type}</li>
+        <li><strong>Nom de la prestation</strong>: ${service.name}</li>
+        <li><strong>Nombre de personnes</strong>: ${service.quantity}</li>
+        <li><strong>Message spécifique à cette prestation</strong>: ${
+          service.message
+        }</li>
+      </ul>
+    </div>`;
+  });
+  transporter
+    .sendMail({
+      from: `demande devis complet <${email}>`,
+      to: process.env.MY_EMAIL,
+      subject: `< FREQUENCE 440 > Demande de devis complet de ${name}`,
+      text: name,
+      html: `
+      <p><strong>Nom du client</strong>: ${name}</p>
+      <p><strong>Email du client</strong>: ${email}</p>
+      <p><strong>Numéro de téléphone</strong>: ${number}</p>
+      <p><strong>Nom de l'Entreprise ou Ecole du supérieur</strong>: ${clientType}</p>
+      <p><strong>Adresse</strong>: ${address}</p>
+      <p><strong>Services demandés</strong>:${servicesContent}</p>
       `,
     })
     .then(() =>
