@@ -3,7 +3,6 @@
   background: #131e1e;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 2;
   padding: 50px 100px;
 }
 
