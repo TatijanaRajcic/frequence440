@@ -143,10 +143,10 @@
           "2": "Setting up the project monitoring",
           "3": "Carbon Footprint ® analysis",
           "4": "Half a day of climate seminar for your employees:",
-          "5": "Building your climate strategy: collaborative workshops: recurring ½ days with the concerned teams",
           "a": "Climate Collage",
           "b": "Carbon Footprint presentation",
           "c": "Sustainability conference"
+          "5": "Building your climate strategy: collaborative workshops: recurring ½ days with the concerned teams",
         }
       }
     }
@@ -254,11 +254,11 @@
     "contentList": {
       "1": {
         "title": "Data collected on this website",
-        "paragraph": "The data collected on this website include and are limited to the data you provide through the contact form and invoice request form. This data will never be shared outside Frequence 440. The data is stored in a secured computer for up to 2 years, for the purpose of business development of Frequence 440. In accordance with the GDPR, you can ask to receive a copy, modify or delete your information at all time -send the request through our contact form."
+        "paragraph": "The data collected on this website include and are limited to the data you provide through the contact form and quote request form. This data will never be shared outside Frequence 440. The data is stored in a secured computer for up to 2 years, for the purpose of business development of Frequence 440. In accordance with the GDPR, you can ask to receive a copy, modify or delete your information at all time -send the request through our contact form."
       },
       "2": {
         "title": "Data collected during a consulting job",
-        "paragraph": "Each consulting contract or invoice includes information about the use, duration of storage, and possibility to access, modify or delete the data collected during the mission."
+        "paragraph": "Each consulting contract or quote includes information about the use, duration of storage, and possibility to access, modify or delete the data collected during the mission."
       }
     }
   },
