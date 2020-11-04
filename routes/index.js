@@ -44,7 +44,7 @@ router.get("/contact", function (req, res, next) {
 
 router.get(["/ressources", "/resources"], function (req, res, next) {
   res.render("ongoing", {
-    styles: ["ongoing"],
+    styles: ["ongoing", "buttons"],
     currentPage: "ressources",
   });
 });

@@ -94,10 +94,7 @@
       "4": "Ateliers de co-construction"
     },
     "design": "Design",
-    "dev": "Développement",
-    "detailedServices": {
-      "1": "footer.detailedServices.1"
-    }
+    "dev": "Développement"
   },
   "prestations": {
     "subtitle": "Les prestations",
