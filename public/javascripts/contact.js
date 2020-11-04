@@ -167,7 +167,7 @@ function addNewService() {
     </div>
     <div class="form-group flex-col">
       <label for="client-quantity-${index}">Nombre de personnes<span class="mandatory">*</span></label>
-      <textarea name="message" id="client-quantity-${index}" cols="30" rows="6"></textarea>
+      <textarea name="quantity" id="client-quantity-${index}" cols="30" rows="6"></textarea>
     </div>
     <div class="form-group flex-col">
       <label for="client-message-${index}">Message (merci de préciser les équipes qui seront concernées, les
@@ -198,7 +198,7 @@ function addNewService() {
     </div>
     <div class="form-group flex-col">
       <label for="client-quantity-${index}">Number of participants<span class="mandatory">*</span></label>
-      <textarea name="message" id="client-quantity-${index}" cols="30" rows="6"></textarea>
+      <textarea name="quantity" id="client-quantity-${index}" cols="30" rows="6"></textarea>
     </div>
     <div class="form-group flex-col">
       <label for="client-message-${index}">Message (please mention your needs, field of interest, which teams will be involved, your time or space constraints, schedule, budget, etc.)</label>
