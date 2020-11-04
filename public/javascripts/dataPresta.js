@@ -58,7 +58,7 @@ var prestations = [
       {
         title: "Atelier 2 Tonnes",
         content:
-          "Pour comprendre les ordres de grandeur des solutions pour le climat et l’interaction individu / collectif, avec une simulation interactive basée sur les bilans carbone des participants, créée par François Laugier. Objectif : 2 tonnes pour la neutralité carbone en 2050",
+          "Pour comprendre les ordres de grandeur des solutions pour le climat et l’interaction individu / collectif, avec une simulation interactive basée sur les bilans carbone des participants, créée par François Laugier. Objectif : 2T de CO2eq/personne/an pour la neutralité carbone",
         callToAction: "demander un devis",
         duration: "3H",
       },
@@ -189,9 +189,9 @@ var prestations = [
       {
         title: "Les trois courbes",
         content:
-          "Panorama de la transition pour connaître les ordres de grandeur et les concepts essentiels à la bonne compréhension du développement durable et des solutions associées",
+          "Panorama de la transition pour connaître les ordres de grandeur et les concepts essentiels à la bonne compréhension du développement durable et des solutions associées. Le sujet est transversal : du climat à la santé, de l'agriculture au transport, de l'optimisation à la sobriété, de nombreux thèmes sont abordés. La question principale : comment, en tant que sociétés, pouvons-nous rendre notre monde plus résilient et durable ?",
         callToAction: "demander un devis",
-        duration: "30MIN à 1H30",
+        duration: "30MIN à 2H",
       },
       {
         title: "Les trois courbes - Ingénieurs",

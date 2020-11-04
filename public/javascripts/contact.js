@@ -167,13 +167,7 @@ function addNewService() {
     </div>
     <div class="form-group flex-col">
       <label for="client-quantity-${index}">Nombre de personnes<span class="mandatory">*</span></label>
-      <select name="quantity" id="client-quantity-${index}" required>
-        <option value=""></option>
-        <option value="1-5">1 - 5</option>
-        <option value="6-10">6 - 10</option>
-        <option value="11-20">11 - 20</option>
-        <option value="+20">+20</option>
-      </select>
+      <textarea name="message" id="client-quantity-${index}" cols="30" rows="6"></textarea>
     </div>
     <div class="form-group flex-col">
       <label for="client-message-${index}">Message (merci de préciser les équipes qui seront concernées, les
