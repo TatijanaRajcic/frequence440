@@ -72,7 +72,7 @@ var prestations = [
       {
         title: "Fresque Biodiversité",
         content:
-          "Pour comprendre les mécanismes de la biodiversité et comment limiter son effondrement, avec un atelier créatif basé sur le rapport de l’IPBES",
+          "Pour comprendre les mécanismes de la biodiversité et comment limiter son effondrement, avec un atelier créatif basé sur le rapport de l’IPBES, par C. Sirot, C. Ringenbach, G. & G. Vuillier et Deloitte DD",
         callToAction: "demander un devis",
         duration: "3H",
       },
@@ -124,7 +124,7 @@ var prestations = [
       {
         title: "Biodiversity Collage",
         content:
-          "Grasp the interactions within and the importance of biodiversity, and solutions to limit its collapse",
+          "Grasp the interactions within and the importance of biodiversity, and solutions to limit its collapse, by C. Sirot, C. Ringenbach, G. & G. Vuillier and Deloitte DD",
         callToAction: "ask for invoice",
         duration: "3H",
       },

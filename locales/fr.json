@@ -57,8 +57,12 @@
         "user": "VINCENT BOUETEL — DIRECTEUR IT DE LA SOCIÉTÉ GÉNÉRALE"
       },
       "2": {
-        "sentence": "Léa a accompagné CentraleSupelec pour une ambitieuse formation sur le climat. J'ai beaucoup apprécié sa créativité, ses apports pédagogiques, son sens de l'organisation et son recul sur ces questions difficiles. Ses interventions ont été extrêmement appréciées par les étudiants, pour leur contenu synthétique et précis, sa vision et la qualité de la relation humaine qu'elle a engagé avec eux.",
+        "sentence": "Léa a accompagné CentraleSupélec pour une ambitieuse formation sur le climat. J'ai beaucoup apprécié sa créativité, ses apports pédagogiques, son sens de l'organisation et son recul sur ces questions difficiles. Ses interventions ont été extrêmement appréciées par les étudiants, pour leur contenu synthétique et précis, sa vision et la qualité de la relation humaine qu'elle a engagé avec eux.",
         "user": "CHRISTOPHE LAUX — PROFESSEUR ET DIRECTEUR DE DÉPARTEMENT À CENTRALESUPELEC"
+      }
+      "3": {
+        "sentence": "Des félicitations toutes particulières pour Léa Ikkache, qui a été notre très sympathique et efficace coordinatrice Fresque du Climat, pour toute l'organisation de ces ateliers au Pôle Léonard de Vinci. Le contexte : 1300 étudiants concernés, 70 animateurs, des contraintes sanitaires rigoureuses à respecter absolument, ... Bref, pas simple, mais nous y sommes arrivés ensemble. Léa a géré tout cela de main de maître, et toujours avec calme et sourire !",
+        "user": "LAURE BERTRAND — DIRECTRICE DES SOFT SKILLS AU POLE UNIVERSITAIRE LEONARD DE VINCI"
       }
     }
   },
@@ -144,7 +148,7 @@
     "subtitle": "À propos",
     "mainTitle": "Fréquence 440",
     "content440": {
-      "1": "440 Herz est la fréquence principale de la note «La», souvent utilisée pour accorder les instruments de musique d'un orchestre.",
+      "1": "440 Hertz est la fréquence principale de la note «La», souvent utilisée pour accorder les instruments de musique d'un orchestre.",
       "2": "Pour la transition, il faut un mélange de technique, d’esprit scientifique – pour analyser la situation et pour évaluer nos solutions –, et de dialogue, de créativité – pour collaborer, réfléchir ensemble, et innover. La musique, à la fois très mathématique et physique, et en même temps une forme puissante d’expression et de créativité, est donc un symbole intéressant.",
       "3": "Il y a aussi l’idée de créer ensemble en étant différent.e. La diversité des timbres des instruments qui s’accordent grâce à une simple note, c’est beau non?"
     },
@@ -173,15 +177,15 @@
   },
   "transition": {
     "subtitle": "La transition",
-    "mainTitle": "Pourquoi une transition? <br>Vers quoi?",
-    "description": "La transition émane des enjeux majeurs du XXIème siècle, douloureusement exacerbés par la crise du COVID-19",
+    "mainTitle": "Pourquoi une transition ? <br>Vers quoi ?",
+    "description": "La transition émane des enjeux majeurs du XXIème siècle, douloureusement exacerbés par la crise de la COVID-19",
     "catchphrase": "Les enjeux majeurs du XXIe siècle",
     "content": {
       "1": {
         "title": "Minimiser le <a href='https://www.ipcc.ch/languages-2/francais/' target='blank'>changement climatique</a> et l’effondrement de la <a href='https://ipbes.net/global-assessment' target='blank'>biodiversité</a> pour garder notre capacité à nous alimenter en eau et nourriture et maintenir nos infrastructures en place "
       },
       "2": {
-        "title": "Prévoir et atténuer l’instabilité amenée par la <a href='https://livre.fnac.com/a6737145/Philippe-Bihouix-L-Age-des-low-tech-Vers-une-civilisation-techniquement-soutenable' target='blank'>raréfaction des ressources</a>, par notre système financier et par les crises démocratiques"
+        "title": "Prévoir et atténuer l’instabilité amenée par la <a href='https://www.seuil.com/ouvrage/l-age-des-low-tech-philippe-bihouix/9782021160727' target='blank'>raréfaction des ressources</a>, par notre système financier et par les crises démocratiques"
       },
       "3": {
         "title": "Lutter contre l’avancement des <a href='https://www.oxfamfrance.org/communiques-de-presse/davos-2020-nouveau-rapport-doxfam-sur-les-inegalites-mondiales/' target='blank'>inégalités</a>"
@@ -200,7 +204,7 @@
     "callToAction": {
       "1": "Les individus peuvent agir.",
       "2": "faire une transition personnelle",
-      "3": "Les entreprises et écoles du supérieur aussi*.",
+      "3": "Les entreprises et écoles du supérieur aussi.",
       "4": "Agir dans mon entreprise"
     },
     "imbricated": {
@@ -211,16 +215,16 @@
         "4": "Stratégie"
       },
       "second": {
-        "1": "Réaliser le bilan carbone de la chaîne de valeur et la minimiser",
-        "2": "Optimiser les ressources de façon durable",
-        "3": "Passer en économie circulaire",
-        "4": "Conception des produits & services"
-      },
-      "third": {
         "1": "Favoriser l’innovation et la prise d’initiative",
         "2": "Implémenter de nouvelles méthodes de travail",
         "3": "S’intégrer dans la communauté locale",
         "4": "Organisation"
+      },
+      "third": {
+        "1": "Réaliser le bilan carbone de la chaîne de valeur et le minimiser",
+        "2": "Optimiser les ressources de façon durable",
+        "3": "Passer en économie circulaire",
+        "4": "Conception des produits & services"
       },
       "fourth": {
         "1": "Atteindre la sobriété énergétique",

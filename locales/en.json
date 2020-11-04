@@ -22,7 +22,7 @@
     }
   },
   "home": {
-    "mainTitle": "Fréquence 440, your steppingstone to <a href='/sustainability'>sustainability</a>",
+    "mainTitle": "Fréquence 440, your stepping stone to <a href='/sustainability'>sustainability</a>",
     "introText": "For people and companies who want more sustainability and resilience, and who ask themselves: where can I start?",
     "welcomeMessage": "Welcome!",
     "welcomeSentence": "I offer two types of resources",
@@ -59,6 +59,10 @@
       "2": {
         "sentence": "Lea helped CentraleSupelec set up an ambitious climate training for students. I appreciated her creativity, educational approach, project management skills, and hindsight on difficult questions. Students were grateful for her clear and precise inputs, her vision, and the quality of the interaction.",
         "user": "CHRISTOPHE LAUX —  former Stanford Professor, and Professor at CentraleSupelec"
+      }
+      "3": {
+        "sentence": "Congratulations to Léa Ikkache, our nice and efficient climate coordinator, for organizing climate workshops at the Pôle Léonard de Vinci. The context: 1300 students, 70 teachers, strict sanitary rules ... A real challenge, but we succeeded together. Léa masterfully lead the project, always calmly and with a smile!",
+        "user": "LAURE BERTRAND — Soft Skills director at the Pole Universitaire Leonard de Vinci"
       }
     },
     "prestations": {
@@ -205,11 +209,11 @@
       }
     },
     "additional": {
-      "1": "These subjects are intertwined, a systemic approach is key to succeed.",
+      "1": "These subjects are intertwined, a systemic approach is key to succeed",
       "2": "See the manifesto",
-      "3": "For a person, or a company, the task might seem daunting. But some initiatives at a local scale can prove extremely relevant to:",
+      "3": "For a person, or a company, the task might seem daunting. But some initiatives at a local scale can prove extremely relevant in order to:",
       "4": "Convert negative impacts into solutions",
-      "5": "Improve our resilience, our ability to survive chocks"
+      "5": "Improve our resilience, our ability to survive shocks"
     },
     "callToAction": {
       "1": "You can act.",
