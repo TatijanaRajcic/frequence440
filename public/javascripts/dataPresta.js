@@ -5,7 +5,7 @@ var prestations = [
       {
         title: "Bilan carbone ®",
         content:
-          "Pour évaluer quantitativement votre impact sur le climat, votre vulnérabilité liée à la dépendance aux énergie fossiles, et connaître les solutions adaptées. Certification par l’Association Bilan Carbone déc 2020",
+          "Pour évaluer quantitativement votre impact sur le climat, votre vulnérabilité liée à la dépendance aux énergie fossiles, et connaître les solutions adaptées. Certification par l’Association Bilan Carbone en 2021",
         callToAction: "demander un devis",
       },
       {
@@ -226,7 +226,7 @@ var prestations = [
       {
         title: "Ateliers solutions",
         content:
-          "Accompagnement de vos équipes dans la co-construction d'objectifs et de plans d'action. Posture de facilitatrice pour encourager l'intelligence collective et l'innovation.",
+          "Accompagnement de vos équipes dans la co-construction d'objectifs et de plans d'action. Posture de facilitatrice pour encourager l'intelligence collective et l'innovation. Pour plus de détails sur les sujets possibles, voir <a href='/transition#graph'>ici</a>.",
         callToAction: "prendre rdv",
       },
       {

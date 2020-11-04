@@ -137,7 +137,7 @@
     },
     "callToAction": {
       "title": "Get started",
-      "catchphrase": "Choose one or several options. If you have questions before making your decision, I am available to meet you",
+      "catchphrase": "Choose one or several options. If you have questions before making your decision, feel free to contact me",
       "button": "Let’s meet",
       "additional": {
         "title": "We can work on a service package on the subject of your choosing.",
@@ -156,7 +156,8 @@
     }
   },
   "ongoing": {
-    "message": "Under construction."
+    "message": "Under construction, thank you for your patience",
+    "button" : "Home"
   },
   "about": {
     "subtitle": "About",

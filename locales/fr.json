@@ -142,7 +142,8 @@
     }
   },
   "ongoing": {
-    "message": "En construction."
+    "message": "En construction, merci de votre patience",
+    "button" : "Accueil"
   },
   "about": {
     "subtitle": "À propos",
