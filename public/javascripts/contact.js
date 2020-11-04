@@ -100,7 +100,7 @@ function sendInvoice() {
       additionalMessage.innerHTML =
         checkFrEn === "Je suis à votre écoute"
           ? "<p>Veuillez renseigner tous les champs obligatoires</p>"
-          : "Please enter every mandatory field";
+          : "Please enter all mandatory fields";
       notComplete = true;
     }
   });
@@ -119,7 +119,7 @@ function sendInvoice() {
     let serviceDetails = {
       type: oneService.querySelector('select[name="service-type"]').value,
       name: oneService.querySelector('select[name="service-name"]').value,
-      quantity: oneService.querySelector('select[name="quantity"]').value,
+      quantity: oneService.querySelector('textarea[name="quantity"]').value,
       message: oneService.querySelector('textarea[name="message"]').value,
     };
     invoiceToSend.services.push(serviceDetails);
