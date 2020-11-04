@@ -256,7 +256,8 @@
     "description": "To discuss your personal or professional projects, see possible synergies ...",
     "buttons": {
       "1": "Let's chat",
-      "2": "Ask for a quote"
+      "2": "Ask for a quote",
+      "3": "Let's meet"
     },
     "contactForm": {
       "title": "Reach out",
