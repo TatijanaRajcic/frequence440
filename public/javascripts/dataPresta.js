@@ -29,7 +29,7 @@ var prestations = [
         title: "Carbon Footprint ®",
         content:
           "Get a quantitative evaluation of your Carbon Footprint, assess your Energy-related risks, and learn about possible solutions. Certification from the French Carbon Footprint Association in December 2020",
-        callToAction: "ask for invoice",
+        callToAction: "ask for a quote",
       },
       {
         title: "Social Responsibility analysis",
@@ -41,7 +41,7 @@ var prestations = [
         title: "Teams surveys",
         content:
           "Understand the level of awareness of your teams about sustainability. Assess the motivation around these subjects and who would be interested in participating in sustainability projects",
-        callToAction: "ask for invoice",
+        callToAction: "ask for a quote",
       },
     ],
   },
@@ -104,42 +104,42 @@ var prestations = [
       {
         title: "Climate Collage",
         content: `Understand the mechanisms of climate change, from its sources to its consequences, with this creative workshop created by Cedric Ringenbach. More info <a target="_blank" href="https://www.climatecollage.org">here</a>`,
-        callToAction: "ask for invoice",
+        callToAction: "ask for a quote",
         duration: "3H",
       },
       {
         title: "2 tons",
         content:
           "2 tons, the weight of CO2 we should each be emitting yearly by 2050 to reach carbon neutrality. Enter a simulation to 2050 and chose your solutions to reach climate objectives, both as individuals and collectively. Workshop created by François Laugier",
-        callToAction: "ask for invoice",
+        callToAction: "ask for a quote",
         duration: "3H",
       },
       {
         title: "Ecological Renaissance",
         content:
           "Understand the interconnections and types of solutions to reach a low carbon world, with this inspiring workshop create by Julien Dossier. Work with a story and illustration based on the Sienna mural from 1338",
-        callToAction: "ask for invoice",
+        callToAction: "ask for a quote",
         duration: "1H to 3H",
       },
       {
         title: "Biodiversity Collage",
         content:
           "Grasp the interactions within and the importance of biodiversity, and solutions to limit its collapse, by C. Sirot, C. Ringenbach, G. & G. Vuillier and Deloitte DD",
-        callToAction: "ask for invoice",
+        callToAction: "ask for a quote",
         duration: "3H",
       },
       {
         title: "Oceans Collage",
         content:
           "Dive into the ocean life, threats to its biodiversity, and the corresponding solutions, thanks to this creative workshop by Alice Vitoux",
-        callToAction: "ask for invoice",
+        callToAction: "ask for a quote",
         duration: "3H",
       },
       {
         title: "Digital World Collage",
         content:
           "Understand the impacts of our digital consumptions and brainstorm on solutions for more digital sustainability with this creative workshop by Yvain Mouneu and Aurélien Deragne",
-        callToAction: "ask for invoice",
+        callToAction: "ask for a quote",
         duration: "3H",
       },
     ],
@@ -147,7 +147,7 @@ var prestations = [
       title: "Collective Intelligence training with experts",
       content:
         "Option – we can coach ambassadors amongst your employees to provide in-house training",
-      callToAction: "ask for invoice",
+      callToAction: "ask for a quote",
     },
   },
   {
@@ -157,19 +157,19 @@ var prestations = [
         title: "The three graphs",
         content:
           "A holistic view of sustainability: with the basic concepts and orders of magnitude to fully grasp why it’s necessary and what solutions look like",
-        callToAction: "ask for invoice",
+        callToAction: "ask for a quote",
       },
       {
         title: "The three graphs for engineers",
         content:
           "A holistic view of sustainability, with the implications for engineers",
-        callToAction: "ask for invoice",
+        callToAction: "ask for a quote",
       },
       {
         title: "Your dress looks <span class=break-line> nice today</span>",
         content:
           "The thorny issues of workplace sexism, context, data and possible solutions",
-        callToAction: "ask for invoice",
+        callToAction: "ask for a quote",
       },
       {
         title: "Special Conference",
@@ -180,7 +180,7 @@ var prestations = [
     addOn: {
       title: "With live surveys for audience participation",
       content: "The technical level conferences can be adapted to the audience",
-      callToAction: "ask for invoice",
+      callToAction: "ask for a quote",
     },
   },
   {
