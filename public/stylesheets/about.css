@@ -43,7 +43,7 @@
 
 #about img {
   position: absolute;
-  left: 0;
+  left: 20px;
   margin-bottom: 30px;
 }
 
@@ -80,6 +80,6 @@
 
 @media screen and (min-width: 500px) and (max-width: 1025px) {
   #about img {
-    width: 40vw;
+    width: 30vw;
   }
 }

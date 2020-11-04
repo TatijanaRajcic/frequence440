@@ -97,7 +97,7 @@ function createOneCard(oneArticle, index, resultDiv) {
   </div>
   `;
   if (oneArticle.title === "Ateliers solutions") {
-    let additionalText = `<p class="content"> Pour plus de détails sur les sujets possibles, voir <a href="/transition#graph" target='blank' style="text-decoration: underline;">ici</a>. </p>`;
+    let additionalText = `<p class="content"> Pour plus de détails sur les sujets possibles, voir <a href="/transition#graph" target='blank' style="text-decoration: underline;">ici</a> </p>`;
     newArticle.innerHTML += additionalText;
   }
   let link =
