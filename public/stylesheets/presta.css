@@ -104,10 +104,6 @@
   font-variant-numeric: tabular-nums;
 }
 
-.card .link{
-  text-decoration: underline;
-}
-
 .card h3 {
   font-size: 2.25rem;
   line-height: 2.5rem;

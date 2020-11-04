@@ -226,7 +226,7 @@ var prestations = [
       {
         title: "Ateliers solutions",
         content:
-          "Accompagnement de vos équipes dans la co-construction d'objectifs et de plans d'action. Posture de facilitatrice pour encourager l'intelligence collective et l'innovation. Pour plus de détails sur les sujets possibles, voir <a href='/transition#graph' target='blank' class='link'>ici</a>.",
+          "Accompagnement de vos équipes dans la co-construction d'objectifs et de plans d'action. Posture de facilitatrice pour encourager l'intelligence collective et l'innovation.",
         callToAction: "prendre rdv",
       },
       {
@@ -243,7 +243,7 @@ var prestations = [
       {
         title: "Solutions workshops",
         content:
-          'Facilitating sessions with your teams to build your objectives and action plans through collaboration, with innovative methods. For more details on the possible areas of work, please <a href="/sustainability#graph" target="blank" class="link">click here</a>',
+          'Facilitating sessions with your teams to build your objectives and action plans through collaboration, with innovative methods. For more details on the possible areas of work, please <a href="/sustainability#graph" target="blank" style="text-decoration: underline;">click here</a>',
         callToAction: "let's meet",
       },
       {
