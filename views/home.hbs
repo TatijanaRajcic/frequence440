@@ -13,6 +13,9 @@
       <div>
         <h2 class="hero-title">{{{__ "home.welcomeMessage"}}}</h2>
         <p class="hero-subtitle">{{{__ "home.welcomeSentence"}}}</p>
+        <a href="#clients" class="icon-container icon-container-black">
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
       </div>
     </div>
     <div class="right">
@@ -49,7 +52,7 @@
       </div>
     </div>
   </section>
-  <section class="clients main-section">
+  <section id="clients" class="clients main-section">
     <div>
       <h2 class="hero-title">{{{__ "home.clients.title"}}}</h2>
       <p class="hero-subtitle">{{{__ "home.clients.sentence"}}}</p>
@@ -72,8 +75,11 @@
       <figure class="img-cell"> <img src="/images/centrale.png" alt="logo Centrale Supélec">
       </figure>
     </div>
+    <a href="#testimonies" class="icon-container icon-container-black">
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
   </section>
-  <section class="testimonies main-section">
+  <section id="testimonies" class="testimonies main-section">
     <blockquote class="slides col flex-center">
       <p>{{{__ "home.quotes.1.sentence"}}}</p>
       <footer>{{{__ "home.quotes.1.user"}}}</footer>
