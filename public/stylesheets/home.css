@@ -72,6 +72,13 @@
   background: #131e1e;
   color: #ffffff;
 }
+
+#blackarrowfar {
+  background: #131e1e;
+  color: #ffffff;
+  padding-top: 70vh;
+}
+
 /* -------------------------- DISCOVER -------------------------- */
 
 .discover {
