@@ -17,7 +17,7 @@
   grid-column: 1/11;
 }
 
-.header-intro div:last-child(-1) {
+.header-intro div:nth-child(-1) {
   grid-column: 6/11;
   grid-row: 2/3;
   font-family: Traulha;
@@ -33,13 +33,13 @@
 }
 
 @media screen and (max-width: 1025px) {
-  .header-intro div:last-child(-1) {
+  .header-intro div:nth-child(-1) {
     grid-column: 1/11;
     padding-top: 30px;
   }
 }
 
-.header-intro div:last-child(-1) p {
+.header-intro div:nth-child(-1) p {
   margin: 0 0 30px 0;
   line-height: 2rem;
 }
