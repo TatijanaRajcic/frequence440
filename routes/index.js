@@ -29,7 +29,7 @@ router.get(["/transition", "/sustainability"], function (req, res, next) {
 
 router.get("/about", function (req, res, next) {
   res.render("about", {
-    styles: ["header", "about", "full-page-list"],
+    styles: ["header", "about", "full-page-list","buttons"],
     currentPage: "about",
   });
 });
