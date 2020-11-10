@@ -59,6 +59,8 @@
 }
 
 .icon-container {
+  background: #131e1e;
+  color: #ffffff;
   margin-top: 50px;
 }
 
@@ -67,12 +69,6 @@
     display: none;
   }
 }
-
-.icon-container-black {
-  background: #131e1e;
-  color: #ffffff;
-}
-
 
 
 /* -------------------------- DISCOVER -------------------------- */
