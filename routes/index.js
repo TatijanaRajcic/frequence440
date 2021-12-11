@@ -22,7 +22,7 @@ router.get(["/prestations", "/services"], function (req, res, next) {
 
 router.get(["/transition", "/sustainability"], function (req, res, next) {
   res.render("transition", {
-    styles: ["header", "transition", "full-page-list", "buttons"],
+    styles: ["header", "transition", "full-page-list", "buttons","presta"],
     currentPage: "transition",
   });
 });
