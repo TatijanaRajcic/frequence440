@@ -141,6 +141,11 @@
     "message": "Under construction, thank you for your patience",
     "button" : "Home"
   },
+  "resources": {
+    "subtitle": "Resources",
+    "mainTitle" : "Are you participating in the transition?",
+    "description" : "Below are resources to dive deeper: a discussion possibility and a manifesto"
+  },
   "about": {
     "subtitle": "About",
     "mainTitle": "Fréquence 440",

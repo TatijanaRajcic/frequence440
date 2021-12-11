@@ -141,6 +141,11 @@
     "message": "En construction, merci de votre patience",
     "button" : "Accueil"
   },
+  "resources": {
+    "subtitle": "Les ressources",
+    "mainTitle" : "Vous êtes en transition presonnelle ?",
+    "description" : "Voici des ressources pour creuser le sujet : un espace de discussion et un manifeste pédagogique"
+  },
   "about": {
     "subtitle": "À propos",
     "mainTitle": "Fréquence 440",
