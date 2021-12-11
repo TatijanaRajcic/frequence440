@@ -144,7 +144,16 @@
   "resources": {
     "subtitle": "Resources",
     "mainTitle" : "Are you participating in the transition?",
-    "description" : "Below are resources to dive deeper: a discussion possibility and a manifesto"
+    "description" : "Below are resources to dive deeper: a discussion possibility and a manifesto",
+    "callToAction": {
+      "title":"Let's chat!",
+      "catchphrase": "There are many ways you can act, I'm available if you want to discuss this",
+      "button": "schedule a call"
+    },
+    "manifeste": {
+      "title": "Manifesto",
+      "catchphrase": "My personal and researched vision of sustainability"
+    }
   },
   "about": {
     "subtitle": "About",
