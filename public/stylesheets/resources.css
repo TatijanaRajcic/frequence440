@@ -1,0 +1,28 @@
+.call-to-action > div {
+  width: 50%;
+}
+
+.call-to-action > div:last-child {
+  background: #131e1e;
+  color: #ffffff;
+  padding: 50px;
+}
+
+.call-to-action > div:last-child > p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
+.call-to-action a.button {
+  margin-top: 80px;
+  width: max-content;
+}
+
+.options {
+  padding-top: 40px;
+}
+
+.options > p {
+  padding-bottom: 15px;
+}
