@@ -147,12 +147,12 @@
     "description" : "Trouver sa place dans la transition peut être laborieux. Voici quelques ressources pour creuser le sujet",
     "callToAction": {
       "title":"Discussion",
-      "catchphrase": "Pour faire le point sur votre projet personnel, éventuellement être mis.e en contact avec des structures",
+      "catchphrase": "Pour parler votre projet personnel, ou pour des mises en contact",
       "button": "prenez RDV"
     },
     "manifeste": {
       "title": "Manifeste",
-      "catchphrase": "Une vision pédagogique et sourcée de la transition"
+      "catchphrase": "Une vision pédagogique, multi-format et sourcée de la transition"
     }
   },
   "about": {
