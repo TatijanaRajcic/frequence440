@@ -1,5 +1,6 @@
 .call-to-action > div {
   width: 50%;
+  padding: 50px;
 }
 
 .call-to-action-black {
@@ -23,7 +24,7 @@
   width: max-content;
 }
 
-.call-to-action a.icon {
+.call-to-action a.icon-container {
   margin-top: 80px;
 }
 
