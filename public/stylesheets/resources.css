@@ -10,7 +10,11 @@
 
 .call-to-action-black > p {
   color: #ffffff;
-  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.call-to-action-black > h2 {
+  color: #ffffff;
   line-height: 1.5rem;
 }
 
