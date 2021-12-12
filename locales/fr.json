@@ -146,13 +146,13 @@
     "mainTitle" : "Vous êtes en transition presonnelle ?",
     "description" : "Trouver sa place dans la transition peut être laborieux. Voici quelques ressources pour creuser le sujet",
     "callToAction": {
-      "title":"Envie de discuter de votre projet personnel ?",
-      "catchphrase": "Pour faire le point, éventuellement être mis.e en contact avec des structures",
+      "title":"Discussion",
+      "catchphrase": "Pour faire le point sur votre projet personnel, éventuellement être mis.e en contact avec des structures",
       "button": "prenez RDV"
     },
     "manifeste": {
       "title": "Manifeste",
-      "catchphrase": "Une vision personnelle et sourcée de la transition"
+      "catchphrase": "Une vision pédagogique et sourcée de la transition"
     }
   },
   "about": {
