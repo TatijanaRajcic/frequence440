@@ -2,16 +2,16 @@
   width: 50%;
 }
 
-.call-to-action > div:last-child {
+.call-to-action-black {
   background: #131e1e;
   color: #ffffff;
   padding: 50px;
 }
 
-.call-to-action > div:last-child > p {
+.call-to-action-black > p {
+  color: #ffffff;
   font-size: 1.125rem;
   line-height: 1.5rem;
-  text-transform: uppercase;
 }
 
 .call-to-action a.button {
