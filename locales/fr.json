@@ -144,10 +144,10 @@
   "resources": {
     "subtitle": "Les ressources",
     "mainTitle" : "Vous êtes en transition presonnelle ?",
-    "description" : "Voici des ressources pour creuser le sujet : un espace de discussion et un manifeste pédagogique",
+    "description" : "Trouver sa place dans la transition peut être laborieux. Voici quelques ressources pour creuser le sujet",
     "callToAction": {
       "title":"Envie de discuter de votre projet personnel ?",
-      "catchphrase": "Les possibilités d'agir sont nombreuses, si vous voulez faire le tri ensemble, je suis joignable",
+      "catchphrase": "Pour faire le point, éventuellement être mis.e en contact avec des structures",
       "button": "prenez RDV"
     },
     "manifeste": {

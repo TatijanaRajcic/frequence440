@@ -144,10 +144,10 @@
   "resources": {
     "subtitle": "Resources",
     "mainTitle" : "Are you participating in the transition?",
-    "description" : "Below are resources to dive deeper: a discussion possibility and a manifesto",
+    "description" : "Finding your calling in the transition can be tricky. Below are resources to dive deeper",
     "callToAction": {
       "title":"Let's chat!",
-      "catchphrase": "There are many ways you can act, I'm available if you want to discuss this",
+      "catchphrase": "To discuss your projects, or if you need contacts in France",
       "button": "schedule a call"
     },
     "manifeste": {

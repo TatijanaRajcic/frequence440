@@ -44,7 +44,7 @@ router.get("/contact", function (req, res, next) {
 
 router.get(["/ressources", "/resources"], function (req, res, next) {
   res.render("resources", {
-    styles: ["header","transition", "full-page-list", "buttons"],
+    styles: ["header","transition","presta","full-page-list", "buttons"],
     currentPage: "ressources",
   });
 });
