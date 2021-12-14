@@ -26,6 +26,12 @@
   margin-top: 80px;
 }
 
+#blackarrow {
+  background: #131e1e;
+  color: #ffffff;
+  margin-top: 80px;
+}
+
 /*MEDIA QUERIES */
 
 @media screen and (max-width: 850px) {
@@ -101,6 +107,6 @@
 }
 
 .graph-container img {
-  width: 80%;
+  width: 100%;
   margin-top: 30px;
 }
