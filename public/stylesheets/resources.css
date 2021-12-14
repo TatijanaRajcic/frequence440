@@ -104,9 +104,10 @@
 
 .graph-container {
   grid-column: 1/-1;
+  padding: 0px;
 }
 
 .graph-container img {
   width: 100%;
-  margin-top: 30px;
+  /*margin-top: 30px;*/
 }
