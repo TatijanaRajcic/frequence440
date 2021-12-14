@@ -143,8 +143,13 @@
   },
   "resources": {
     "subtitle": "Les ressources",
-    "mainTitle" : "Vous êtes en transition presonnelle ?",
-    "description" : "Trouver sa place dans la transition peut être laborieux. Voici quelques ressources pour creuser le sujet",
+    "mainTitle": "Vous êtes en transition presonnelle ?",
+    "description": "Trouver sa place dans la transition peut être laborieux. Voici quelques ressources pour creuser le sujet",
+    "spheres":{
+      "title": "Pour les individus",
+      "subtitle":"Il existe au moins 3 sphères d'action. Il ne faut pas forcément tout faire, tout de suite, plutôt prendre son temps et trouver ce qui vous convient le mieux",
+      "graph":"graph_indiv_fr"
+    },
     "callToAction": {
       "title":"Discussion",
       "catchphrase": "Pour parler votre projet personnel, ou pour des mises en contact",

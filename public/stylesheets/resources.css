@@ -94,3 +94,13 @@
   }
 }
 
+/* Graph */
+
+.graph-container {
+  grid-column: 1/-1;
+}
+
+.graph-container img {
+  width: 100%;
+  margin-top: 30px;
+}
