@@ -34,7 +34,7 @@
 
 /*MEDIA QUERIES */
 
-@media screen and (max-width: 850px) {
+/*@media screen and (max-width: 850px) {
   .presta-grid {
     grid-template-columns: initial;
   }
@@ -46,7 +46,7 @@
   #cards {
     padding: 0;
   }
-}
+}*/
 
 /*@media screen and (min-width: 1500px) {
   #cards {
@@ -54,17 +54,17 @@
   }
 }*/
 
-@media screen and (max-width: 500px) {
+/*@media screen and (max-width: 500px) {
   #cards {
     grid-column-start: 1;
   }
-}
+}*/
 
-/*@media screen and (max-width: 500px) {
-  #presta .buttons-panel .mixed-button {
+@media screen and (max-width: 500px) {
+  #resources .blackarrow {
     display: none;
   }
-}*/
+}
 
 @media screen and (max-width: 1025px) {
   .call-to-action > div {
