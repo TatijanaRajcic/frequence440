@@ -40,22 +40,26 @@
   justify-content:  center;
   align-items: center;
   row-gap: 60px;
+  margin-top: 60px;
 }
 
 .comic-item-left {
   flex: 50%;
+  width:  80%;
 }
 
 .comic-item-right {
   flex: 50%;
+  width:  80%;
 }
 
 .comic-item-center {
   flex: 100%;
+  width: 70%;
 }
 
 .comic-item {
-  height:  60%;
+  height: auto;
 }
 
 @media screen and (max-width: 800px) {
