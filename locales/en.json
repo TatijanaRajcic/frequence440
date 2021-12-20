@@ -154,12 +154,20 @@
     "callToAction": {
       "title":"Let's chat!",
       "catchphrase": "To discuss your projects, or if you need connections in France",
-      "button": "schedule a call"
+      "button": "schedule a call",
+      "manifeste": {
+        "title": "Manifesto",
+        "catchphrase": "My pedagogical and researched vision of sustainability"
+      },
     },
-    "manifeste": {
-      "title": "Manifesto",
-      "catchphrase": "My pedagogical and researched vision of sustainability"
-    }
+    "comic": {
+      "title":"The starting point of the manifesto, drawings by Elodie Schnitzler",
+      "1":"<BD_vignette1>",
+      "2":"<BD_vignette2>",
+      "3":"<BD_vignette3>",
+      "4":"<BD_vignette4>",
+      "5":"<BD_vignette5>"
+    },    
   },
   "about": {
     "subtitle": "About",

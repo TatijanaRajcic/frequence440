@@ -154,12 +154,20 @@
     "callToAction": {
       "title":"Discussion",
       "catchphrase": "Pour parler votre projet personnel, ou pour des mises en contact",
-      "button": "prenez RDV"
+      "button": "prenez RDV",
+      "manifeste": {
+        "title": "Manifeste",
+        "catchphrase": "Une vision pédagogique, multi-format et sourcée de la transition"
+      },
     },
-    "manifeste": {
-      "title": "Manifeste",
-      "catchphrase": "Une vision pédagogique, multi-format et sourcée de la transition"
-    }
+    "comic": {
+      "title":"La génèse du projet - dessins d'Elodie Schnitzler",
+      "1":"<BD_vignette1>",
+      "2":"<BD_vignette2>",
+      "3":"<BD_vignette3>",
+      "4":"<BD_vignette4>",
+      "5":"<BD_vignette5>"
+    }, 
   },
   "about": {
     "subtitle": "À propos",

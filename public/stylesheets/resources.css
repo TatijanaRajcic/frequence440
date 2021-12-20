@@ -32,6 +32,34 @@
   margin-top: 80px;
 }
 
+/*Comic*/
+.flex-container {
+  display:  flex;
+  flex-directon: row;
+  flex-wrap: wrap;
+  justify-content:  center;
+  align-items: center;
+  height: 600px;
+}
+
+.comic-item-left {
+  flex: 50%;
+}
+
+.comic-item-right {
+  flex: 50%;
+}
+
+.comic-item {
+  flex: 100%;
+}
+
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+
 /*MEDIA QUERIES */
 
 /*@media screen and (max-width: 850px) {
