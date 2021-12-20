@@ -33,7 +33,7 @@
 }
 
 /*Comic*/
-.flex-container {
+.comic {
   display:  flex;
   flex-directon: row;
   flex-wrap: wrap;
