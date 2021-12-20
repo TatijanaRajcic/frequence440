@@ -39,7 +39,7 @@
   flex-wrap: wrap;
   justify-content:  center;
   align-items: center;
-  gap: 60px;
+  row-gap: 60px;
 }
 
 .comic-item-left {
