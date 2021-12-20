@@ -18,7 +18,6 @@
       "3": "/about",
       "4": "/services",
       "5": "/resources",
-      "5b":"/resources#resources-manifeste",
       "6": "/contact"
     }
   },
@@ -161,7 +160,8 @@
       },
     },
     "comic": {
-      "title":"The starting point of the manifesto, drawings by Elodie Schnitzler",
+      "title":"The starting point of the manifesto",
+      "subtitle": "drawings by Elodie Schnitzler",
       "1":"<BD_vignette1>",
       "2":"<BD_vignette2>",
       "3":"<BD_vignette3>",
