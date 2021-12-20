@@ -45,12 +45,12 @@
 
 .comic-item-left {
   flex: 50%;
-  width:  80%;
+  width:  70%;
 }
 
 .comic-item-right {
   flex: 50%;
-  width:  80%;
+  width:  70%;
 }
 
 .comic-item-center {
@@ -65,6 +65,9 @@
 @media screen and (max-width: 800px) {
   .comic-item-right, .comic-item-left {
     flex: 100%;
+  }
+  .comic-item {
+    width: 100%;
   }
 }
 
