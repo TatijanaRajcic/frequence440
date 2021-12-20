@@ -162,11 +162,11 @@
     "comic": {
       "title":"La génèse du projet",
       "subtitle": "Dessins d'Elodie Schnitzler",
-      "1":"<BD_vignette1>",
-      "2":"<BD_vignette2>",
-      "3":"<BD_vignette3>",
-      "4":"<BD_vignette4>",
-      "5":"<BD_vignette5>"
+      "1":"BD_vignette1",
+      "2":"BD_vignette2",
+      "3":"BD_vignette3",
+      "4":"BD_vignette4",
+      "5":"BD_vignette5"
     } 
   },
   "about": {
