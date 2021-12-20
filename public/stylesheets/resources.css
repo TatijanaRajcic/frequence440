@@ -39,7 +39,6 @@
   flex-wrap: wrap;
   justify-content:  center;
   align-items: center;
-  height: 1000px;
 }
 
 .comic-item-left {
@@ -55,15 +54,12 @@
 }
 
 .comic-item {
-  height:  1000px;
+  height:  500px;
 }
 
 @media screen and (max-width: 800px) {
-  .flex-item-right, .flex-item-left {
+  .comic-item-right, .comic-item-left {
     flex: 100%;
-  }
-  .comic-item {
-    height:  600px;
   }
 }
 
