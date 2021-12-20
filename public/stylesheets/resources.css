@@ -54,7 +54,7 @@
 }
 
 .comic-item {
-  /*height:  500px;*/
+  height:  80%;
 }
 
 @media screen and (max-width: 800px) {
