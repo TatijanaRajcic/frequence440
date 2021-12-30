@@ -162,11 +162,11 @@
     "comic": {
       "title":"The starting point of the manifesto",
       "subtitle": "Drawings by Elodie Schnitzler",
-      "1":"BD_vignette1_100",
-      "2":"BD_vignette2_100",
-      "3":"BD_vignette3_100",
-      "4":"BD_vignette4_100",
-      "5":"BD_vignette5_200"
+      "1":"BD_vignette1_100_en",
+      "2":"BD_vignette2_100_en",
+      "3":"BD_vignette3_100_en",
+      "4":"BD_vignette4_100_en",
+      "5":"BD_vignette5_200_en"
     }    
   },
   "about": {
